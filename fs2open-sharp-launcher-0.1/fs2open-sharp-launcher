@@ -1,3 +1,0 @@
-#!/bin/sh
-
-exec mono "./fs2_opensharplauncher.exe" "$@"

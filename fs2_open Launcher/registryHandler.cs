@@ -4,13 +4,16 @@ using Microsoft.Win32;
 public class registryHandler
 {
     RegistryKey the_key;
-
+	bool uac;
 	public registryHandler(string key)
 	{
 		RegistryKey uac_key = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System");
 		string platform = Environment.GetEnvironmentVariable("PROGRAMFILES(X86)");
-		string uac = uac_key.GetValue("EnableLUA").ToString();
-		if(uac!="1") {
+		if(uac_key.GetValue("EnableLUA")==null||uac_key.GetValue("EnableLUA").ToString()!="1")
+			uac = false;
+		else
+			uac = true;
+		if(!uac) {
 			if(platform==null) {
 				the_key = Registry.LocalMachine.OpenSubKey(key,true);
 			} else {

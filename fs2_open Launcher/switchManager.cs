@@ -5,7 +5,7 @@ using System.Collections.Generic;
 	
 public class switchManager {
 
-	private Dictionary<string,string> settings = new Dictionary<string,string>();
+	public Dictionary<string,string> settings = new Dictionary<string,string>();
 //	private string[] settings = new string[256];
 	
 	
@@ -64,12 +64,13 @@ public class switchManager {
 	}
 	
 	public bool disable_value(string set_me) {
-		if(settings.ContainsKey(set_me)) {
-			settings[set_me] = null;
-			return true;
-		} else {
-			return false;
-		}		
+		//if(settings.ContainsKey(set_me)) {
+		//    settings[set_me] = null;
+		//    return true;
+		//} else {
+		//    return false;
+		//}		
+		return disable(set_me);
 	}
 	
 	public string get_value(string get_me) {

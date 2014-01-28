@@ -60,6 +60,14 @@ public partial class MainWindow {
     
     private Gtk.Label GtkLabel95;
     
+    private Gtk.HSeparator hseparator1;
+    
+    private Gtk.HBox hbox22;
+    
+    private Gtk.Image image16;
+    
+    private Gtk.Label label3;
+    
     private Gtk.Label label13;
     
     private Gtk.VBox vbox5;
@@ -104,6 +112,14 @@ public partial class MainWindow {
     
     private Gtk.Alignment GtkAlignment9;
     
+    private Gtk.ComboBox generalGraphicsCombo;
+    
+    private Gtk.Label GtkLabel6;
+    
+    private Gtk.Frame frame28;
+    
+    private Gtk.Alignment GtkAlignment33;
+    
     private Gtk.VBox vbox13;
     
     private Gtk.CheckButton checkWindow;
@@ -120,7 +136,7 @@ public partial class MainWindow {
     
     private Gtk.CheckButton checkNoGrab;
     
-    private Gtk.Label GtkLabel87;
+    private Gtk.Label GtkLabel107;
     
     private Gtk.Label label4;
     
@@ -164,11 +180,57 @@ public partial class MainWindow {
     
     private Gtk.VBox vbox6;
     
+    private Gtk.Frame frame23;
+    
+    private Gtk.Alignment GtkAlignment26;
+    
+    private Gtk.ComboBox soundDeviceCombo;
+    
+    private Gtk.Label GtkLabel26;
+    
+    private Gtk.Frame speechFrame;
+    
+    private Gtk.Alignment GtkAlignment35;
+    
+    private Gtk.VBox vbox1;
+    
+    private Gtk.CheckButton techroomVoiceCheck;
+    
+    private Gtk.CheckButton briefingsVoiceCheck;
+    
+    private Gtk.CheckButton ingameVoiceCheck;
+    
+    private Gtk.Frame frame30;
+    
+    private Gtk.Alignment GtkAlignment27;
+    
+    private Gtk.HScale voiceVolumeScale;
+    
+    private Gtk.Label GtkLabel84;
+    
+    private Gtk.Frame frame25;
+    
+    private Gtk.Alignment GtkAlignment29;
+    
+    private Gtk.ComboBox voiceCombo;
+    
+    private Gtk.Label GtkLabel103;
+    
+    private Gtk.Label GtkLabel86;
+    
+    private Gtk.Frame frame24;
+    
+    private Gtk.Alignment GtkAlignment28;
+    
+    private Gtk.VBox vbox19;
+    
     private Gtk.CheckButton checkSoundPreload;
     
     private Gtk.CheckButton checkMusic;
     
     private Gtk.CheckButton checkSound;
+    
+    private Gtk.Label GtkLabel109;
     
     private Gtk.Label label6;
     
@@ -189,6 +251,42 @@ public partial class MainWindow {
     private Gtk.CheckButton checkRearmTimer;
     
     private Gtk.Label label8;
+    
+    private Gtk.VBox vbox3;
+    
+    private Gtk.Frame frame31;
+    
+    private Gtk.Alignment GtkAlignment36;
+    
+    private Gtk.ComboBox joystickCombo;
+    
+    private Gtk.Label GtkLabel37;
+    
+    private Gtk.CheckButton forceFeedbackCheck;
+    
+    private Gtk.CheckButton directionalHitCheck;
+    
+    private Gtk.Label label2;
+    
+    private Gtk.VBox vbox21;
+    
+    private Gtk.Frame frame17;
+    
+    private Gtk.Alignment GtkAlignment30;
+    
+    private Gtk.ComboBox connectionTypeCombo;
+    
+    private Gtk.Label GtkLabel110;
+    
+    private Gtk.Frame frame26;
+    
+    private Gtk.Alignment GtkAlignment31;
+    
+    private Gtk.ComboBox connectionSpeedCombo;
+    
+    private Gtk.Label GtkLabel105;
+    
+    private Gtk.Label label1;
     
     private Gtk.VBox vbox15;
     
@@ -233,6 +331,16 @@ public partial class MainWindow {
     private Gtk.Label label17;
     
     private Gtk.Label GtkLabel94;
+    
+    private Gtk.Frame frame1;
+    
+    private Gtk.Alignment GtkAlignment16;
+    
+    private Gtk.ScrolledWindow GtkScrolledWindow3;
+    
+    private Gtk.TextView switchTextView;
+    
+    private Gtk.Label GtkLabel83;
     
     private Gtk.Label label15;
     
@@ -408,7 +516,7 @@ public partial class MainWindow {
     
     private Gtk.Label label14;
     
-    private Gtk.VBox vbox3;
+    private Gtk.VBox vbox20;
     
     private Gtk.CheckButton checkImgToDDS;
     
@@ -430,9 +538,25 @@ public partial class MainWindow {
     
     private Gtk.Alignment GtkAlignment5;
     
+    private Gtk.SpinButton forceLocalPortSpinner;
+    
+    private Gtk.Label GtkLabel100;
+    
+    private Gtk.Frame frame27;
+    
+    private Gtk.Alignment GtkAlignment32;
+    
+    private Gtk.Entry forceIpAddressEntry;
+    
+    private Gtk.Label GtkLabel106;
+    
+    private Gtk.Frame frame29;
+    
+    private Gtk.Alignment GtkAlignment34;
+    
     private Gtk.Entry entryCustom;
     
-    private Gtk.Label GtkLabel96;
+    private Gtk.Label GtkLabel108;
     
     private Gtk.Label label20;
     
@@ -446,7 +570,7 @@ public partial class MainWindow {
     
     private Gtk.TextView textErrorOutput;
     
-    private Gtk.Label GtkLabel97;
+    private Gtk.Label GtkLabel101;
     
     private Gtk.Frame frame21;
     
@@ -456,7 +580,7 @@ public partial class MainWindow {
     
     private Gtk.TextView textStandardOutput;
     
-    private Gtk.Label GtkLabel98;
+    private Gtk.Label GtkLabel104;
     
     private Gtk.Label label7;
     
@@ -485,7 +609,7 @@ public partial class MainWindow {
         this.notebook3 = new Gtk.Notebook();
         this.notebook3.CanFocus = true;
         this.notebook3.Name = "notebook3";
-        this.notebook3.CurrentPage = 5;
+        this.notebook3.CurrentPage = 7;
         this.notebook3.TabPos = ((Gtk.PositionType)(0));
         // Container child notebook3.Gtk.Notebook+NotebookChild
         this.vbox4 = new Gtk.VBox();
@@ -575,7 +699,7 @@ public partial class MainWindow {
         // Container child hbox20.Gtk.Box+BoxChild
         this.label21 = new Gtk.Label();
         this.label21.Name = "label21";
-        this.label21.LabelProp = Mono.Unix.Catalog.GetString("go through each of the tabs to set all of the scary options!");
+        this.label21.LabelProp = Mono.Unix.Catalog.GetString("go through each of the tabs to set all of the options!");
         this.label21.Justify = ((Gtk.Justification)(2));
         this.hbox20.Add(this.label21);
         Gtk.Box.BoxChild w9 = ((Gtk.Box.BoxChild)(this.hbox20[this.label21]));
@@ -676,6 +800,43 @@ public partial class MainWindow {
         w34.Position = 7;
         w34.Expand = false;
         w34.Fill = false;
+        // Container child vbox4.Gtk.Box+BoxChild
+        this.hseparator1 = new Gtk.HSeparator();
+        this.hseparator1.Name = "hseparator1";
+        this.vbox4.Add(this.hseparator1);
+        Gtk.Box.BoxChild w35 = ((Gtk.Box.BoxChild)(this.vbox4[this.hseparator1]));
+        w35.Position = 8;
+        w35.Expand = false;
+        w35.Fill = false;
+        // Container child vbox4.Gtk.Box+BoxChild
+        this.hbox22 = new Gtk.HBox();
+        this.hbox22.Name = "hbox22";
+        this.hbox22.Spacing = 6;
+        // Container child hbox22.Gtk.Box+BoxChild
+        this.image16 = new Gtk.Image();
+        this.image16.Name = "image16";
+        this.image16.Pixbuf = Stetic.IconLoader.LoadIcon(this, "gtk-jump-to", Gtk.IconSize.Menu, 16);
+        this.hbox22.Add(this.image16);
+        Gtk.Box.BoxChild w36 = ((Gtk.Box.BoxChild)(this.hbox22[this.image16]));
+        w36.PackType = ((Gtk.PackType)(1));
+        w36.Position = 0;
+        w36.Expand = false;
+        w36.Fill = false;
+        // Container child hbox22.Gtk.Box+BoxChild
+        this.label3 = new Gtk.Label();
+        this.label3.Name = "label3";
+        this.label3.LabelProp = Mono.Unix.Catalog.GetString("And then click the Launch! button below");
+        this.hbox22.Add(this.label3);
+        Gtk.Box.BoxChild w37 = ((Gtk.Box.BoxChild)(this.hbox22[this.label3]));
+        w37.PackType = ((Gtk.PackType)(1));
+        w37.Position = 1;
+        w37.Expand = false;
+        w37.Fill = false;
+        this.vbox4.Add(this.hbox22);
+        Gtk.Box.BoxChild w38 = ((Gtk.Box.BoxChild)(this.vbox4[this.hbox22]));
+        w38.Position = 9;
+        w38.Expand = false;
+        w38.Fill = false;
         this.notebook3.Add(this.vbox4);
         // Notebook tab
         this.label13 = new Gtk.Label();
@@ -710,6 +871,7 @@ public partial class MainWindow {
         this.comboResolution.AppendText(Mono.Unix.Catalog.GetString("1280x960"));
         this.comboResolution.AppendText(Mono.Unix.Catalog.GetString("1280x1024"));
         this.comboResolution.AppendText(Mono.Unix.Catalog.GetString("1366x768"));
+        this.comboResolution.AppendText(Mono.Unix.Catalog.GetString("1440x900"));
         this.comboResolution.AppendText(Mono.Unix.Catalog.GetString("1600x1200"));
         this.comboResolution.AppendText(Mono.Unix.Catalog.GetString("1920x1080"));
         this.comboResolution.Name = "comboResolution";
@@ -722,10 +884,10 @@ public partial class MainWindow {
         this.GtkLabel77.UseMarkup = true;
         this.frame2.LabelWidget = this.GtkLabel77;
         this.hbox21.Add(this.frame2);
-        Gtk.Box.BoxChild w38 = ((Gtk.Box.BoxChild)(this.hbox21[this.frame2]));
-        w38.Position = 0;
-        w38.Expand = false;
-        w38.Fill = false;
+        Gtk.Box.BoxChild w42 = ((Gtk.Box.BoxChild)(this.hbox21[this.frame2]));
+        w42.Position = 0;
+        w42.Expand = false;
+        w42.Fill = false;
         // Container child hbox21.Gtk.Box+BoxChild
         this.frame6 = new Gtk.Frame();
         this.frame6.Name = "frame6";
@@ -748,15 +910,15 @@ public partial class MainWindow {
         this.GtkLabel92.UseMarkup = true;
         this.frame6.LabelWidget = this.GtkLabel92;
         this.hbox21.Add(this.frame6);
-        Gtk.Box.BoxChild w41 = ((Gtk.Box.BoxChild)(this.hbox21[this.frame6]));
-        w41.Position = 1;
-        w41.Expand = false;
-        w41.Fill = false;
+        Gtk.Box.BoxChild w45 = ((Gtk.Box.BoxChild)(this.hbox21[this.frame6]));
+        w45.Position = 1;
+        w45.Expand = false;
+        w45.Fill = false;
         this.vbox5.Add(this.hbox21);
-        Gtk.Box.BoxChild w42 = ((Gtk.Box.BoxChild)(this.vbox5[this.hbox21]));
-        w42.Position = 0;
-        w42.Expand = false;
-        w42.Fill = false;
+        Gtk.Box.BoxChild w46 = ((Gtk.Box.BoxChild)(this.vbox5[this.hbox21]));
+        w46.Position = 0;
+        w46.Expand = false;
+        w46.Fill = false;
         // Container child vbox5.Gtk.Box+BoxChild
         this.hbox1 = new Gtk.HBox();
         this.hbox1.Name = "hbox1";
@@ -772,6 +934,7 @@ public partial class MainWindow {
         this.GtkAlignment20.LeftPadding = ((uint)(12));
         // Container child GtkAlignment20.Gtk.Container+ContainerChild
         this.comboAA = Gtk.ComboBox.NewText();
+        this.comboAA.AppendText(Mono.Unix.Catalog.GetString("None"));
         this.comboAA.AppendText(Mono.Unix.Catalog.GetString("2x"));
         this.comboAA.AppendText(Mono.Unix.Catalog.GetString("4x"));
         this.comboAA.AppendText(Mono.Unix.Catalog.GetString("8x"));
@@ -786,10 +949,10 @@ public partial class MainWindow {
         this.GtkLabel89.UseMarkup = true;
         this.frame4.LabelWidget = this.GtkLabel89;
         this.hbox1.Add(this.frame4);
-        Gtk.Box.BoxChild w45 = ((Gtk.Box.BoxChild)(this.hbox1[this.frame4]));
-        w45.Position = 0;
-        w45.Expand = false;
-        w45.Fill = false;
+        Gtk.Box.BoxChild w49 = ((Gtk.Box.BoxChild)(this.hbox1[this.frame4]));
+        w49.Position = 0;
+        w49.Expand = false;
+        w49.Fill = false;
         // Container child hbox1.Gtk.Box+BoxChild
         this.frame3 = new Gtk.Frame();
         this.frame3.Name = "frame3";
@@ -816,15 +979,15 @@ public partial class MainWindow {
         this.GtkLabel78.UseMarkup = true;
         this.frame3.LabelWidget = this.GtkLabel78;
         this.hbox1.Add(this.frame3);
-        Gtk.Box.BoxChild w48 = ((Gtk.Box.BoxChild)(this.hbox1[this.frame3]));
-        w48.Position = 1;
-        w48.Expand = false;
-        w48.Fill = false;
+        Gtk.Box.BoxChild w52 = ((Gtk.Box.BoxChild)(this.hbox1[this.frame3]));
+        w52.Position = 1;
+        w52.Expand = false;
+        w52.Fill = false;
         this.vbox5.Add(this.hbox1);
-        Gtk.Box.BoxChild w49 = ((Gtk.Box.BoxChild)(this.vbox5[this.hbox1]));
-        w49.Position = 1;
-        w49.Expand = false;
-        w49.Fill = false;
+        Gtk.Box.BoxChild w53 = ((Gtk.Box.BoxChild)(this.vbox5[this.hbox1]));
+        w53.Position = 1;
+        w53.Expand = false;
+        w53.Fill = false;
         // Container child vbox5.Gtk.Box+BoxChild
         this.frame7 = new Gtk.Frame();
         this.frame7.Name = "frame7";
@@ -834,6 +997,34 @@ public partial class MainWindow {
         this.GtkAlignment9.Name = "GtkAlignment9";
         this.GtkAlignment9.LeftPadding = ((uint)(12));
         // Container child GtkAlignment9.Gtk.Container+ContainerChild
+        this.generalGraphicsCombo = Gtk.ComboBox.NewText();
+        this.generalGraphicsCombo.AppendText(Mono.Unix.Catalog.GetString("Terrible"));
+        this.generalGraphicsCombo.AppendText(Mono.Unix.Catalog.GetString("Low"));
+        this.generalGraphicsCombo.AppendText(Mono.Unix.Catalog.GetString("Medium"));
+        this.generalGraphicsCombo.AppendText(Mono.Unix.Catalog.GetString("High"));
+        this.generalGraphicsCombo.Name = "generalGraphicsCombo";
+        this.generalGraphicsCombo.Active = 3;
+        this.GtkAlignment9.Add(this.generalGraphicsCombo);
+        this.frame7.Add(this.GtkAlignment9);
+        this.GtkLabel6 = new Gtk.Label();
+        this.GtkLabel6.Name = "GtkLabel6";
+        this.GtkLabel6.LabelProp = Mono.Unix.Catalog.GetString("<b>General Graphics Settings</b>");
+        this.GtkLabel6.UseMarkup = true;
+        this.frame7.LabelWidget = this.GtkLabel6;
+        this.vbox5.Add(this.frame7);
+        Gtk.Box.BoxChild w56 = ((Gtk.Box.BoxChild)(this.vbox5[this.frame7]));
+        w56.Position = 2;
+        w56.Expand = false;
+        w56.Fill = false;
+        // Container child vbox5.Gtk.Box+BoxChild
+        this.frame28 = new Gtk.Frame();
+        this.frame28.Name = "frame28";
+        this.frame28.ShadowType = ((Gtk.ShadowType)(0));
+        // Container child frame28.Gtk.Container+ContainerChild
+        this.GtkAlignment33 = new Gtk.Alignment(0F, 0F, 1F, 1F);
+        this.GtkAlignment33.Name = "GtkAlignment33";
+        this.GtkAlignment33.LeftPadding = ((uint)(12));
+        // Container child GtkAlignment33.Gtk.Container+ContainerChild
         this.vbox13 = new Gtk.VBox();
         this.vbox13.Name = "vbox13";
         this.vbox13.Homogeneous = true;
@@ -846,10 +1037,10 @@ public partial class MainWindow {
         this.checkWindow.DrawIndicator = true;
         this.checkWindow.UseUnderline = true;
         this.vbox13.Add(this.checkWindow);
-        Gtk.Box.BoxChild w50 = ((Gtk.Box.BoxChild)(this.vbox13[this.checkWindow]));
-        w50.Position = 0;
-        w50.Expand = false;
-        w50.Fill = false;
+        Gtk.Box.BoxChild w57 = ((Gtk.Box.BoxChild)(this.vbox13[this.checkWindow]));
+        w57.Position = 0;
+        w57.Expand = false;
+        w57.Fill = false;
         // Container child vbox13.Gtk.Box+BoxChild
         this.checkFPS = new Gtk.CheckButton();
         this.checkFPS.CanFocus = true;
@@ -858,10 +1049,10 @@ public partial class MainWindow {
         this.checkFPS.DrawIndicator = true;
         this.checkFPS.UseUnderline = true;
         this.vbox13.Add(this.checkFPS);
-        Gtk.Box.BoxChild w51 = ((Gtk.Box.BoxChild)(this.vbox13[this.checkFPS]));
-        w51.Position = 1;
-        w51.Expand = false;
-        w51.Fill = false;
+        Gtk.Box.BoxChild w58 = ((Gtk.Box.BoxChild)(this.vbox13[this.checkFPS]));
+        w58.Position = 1;
+        w58.Expand = false;
+        w58.Fill = false;
         // Container child vbox13.Gtk.Box+BoxChild
         this.checkVSync = new Gtk.CheckButton();
         this.checkVSync.CanFocus = true;
@@ -869,10 +1060,10 @@ public partial class MainWindow {
         this.checkVSync.Label = Mono.Unix.Catalog.GetString("Keep the frame rate up (no_vsync)");
         this.checkVSync.DrawIndicator = true;
         this.vbox13.Add(this.checkVSync);
-        Gtk.Box.BoxChild w52 = ((Gtk.Box.BoxChild)(this.vbox13[this.checkVSync]));
-        w52.Position = 2;
-        w52.Expand = false;
-        w52.Fill = false;
+        Gtk.Box.BoxChild w59 = ((Gtk.Box.BoxChild)(this.vbox13[this.checkVSync]));
+        w59.Position = 2;
+        w59.Expand = false;
+        w59.Fill = false;
         // Container child vbox13.Gtk.Box+BoxChild
         this.checkHTL = new Gtk.CheckButton();
         this.checkHTL.CanFocus = true;
@@ -881,10 +1072,10 @@ public partial class MainWindow {
         this.checkHTL.DrawIndicator = true;
         this.checkHTL.UseUnderline = true;
         this.vbox13.Add(this.checkHTL);
-        Gtk.Box.BoxChild w53 = ((Gtk.Box.BoxChild)(this.vbox13[this.checkHTL]));
-        w53.Position = 3;
-        w53.Expand = false;
-        w53.Fill = false;
+        Gtk.Box.BoxChild w60 = ((Gtk.Box.BoxChild)(this.vbox13[this.checkHTL]));
+        w60.Position = 3;
+        w60.Expand = false;
+        w60.Fill = false;
         // Container child vbox13.Gtk.Box+BoxChild
         this.checkGamma = new Gtk.CheckButton();
         this.checkGamma.CanFocus = true;
@@ -892,10 +1083,10 @@ public partial class MainWindow {
         this.checkGamma.Label = Mono.Unix.Catalog.GetString("Or this (no_set_gamma)");
         this.checkGamma.DrawIndicator = true;
         this.vbox13.Add(this.checkGamma);
-        Gtk.Box.BoxChild w54 = ((Gtk.Box.BoxChild)(this.vbox13[this.checkGamma]));
-        w54.Position = 4;
-        w54.Expand = false;
-        w54.Fill = false;
+        Gtk.Box.BoxChild w61 = ((Gtk.Box.BoxChild)(this.vbox13[this.checkGamma]));
+        w61.Position = 4;
+        w61.Expand = false;
+        w61.Fill = false;
         // Container child vbox13.Gtk.Box+BoxChild
         this.checkGLSL = new Gtk.CheckButton();
         this.checkGLSL.CanFocus = true;
@@ -903,10 +1094,10 @@ public partial class MainWindow {
         this.checkGLSL.Label = Mono.Unix.Catalog.GetString("Only check this if GLSL  doesn't work (no_glsl)");
         this.checkGLSL.DrawIndicator = true;
         this.vbox13.Add(this.checkGLSL);
-        Gtk.Box.BoxChild w55 = ((Gtk.Box.BoxChild)(this.vbox13[this.checkGLSL]));
-        w55.Position = 5;
-        w55.Expand = false;
-        w55.Fill = false;
+        Gtk.Box.BoxChild w62 = ((Gtk.Box.BoxChild)(this.vbox13[this.checkGLSL]));
+        w62.Position = 5;
+        w62.Expand = false;
+        w62.Fill = false;
         // Container child vbox13.Gtk.Box+BoxChild
         this.checkNoGrab = new Gtk.CheckButton();
         this.checkNoGrab.CanFocus = true;
@@ -915,25 +1106,25 @@ public partial class MainWindow {
         this.checkNoGrab.DrawIndicator = true;
         this.checkNoGrab.UseUnderline = true;
         this.vbox13.Add(this.checkNoGrab);
-        Gtk.Box.BoxChild w56 = ((Gtk.Box.BoxChild)(this.vbox13[this.checkNoGrab]));
-        w56.Position = 6;
-        w56.Expand = false;
-        w56.Fill = false;
-        this.GtkAlignment9.Add(this.vbox13);
-        this.frame7.Add(this.GtkAlignment9);
-        this.GtkLabel87 = new Gtk.Label();
-        this.GtkLabel87.Name = "GtkLabel87";
-        this.GtkLabel87.LabelProp = Mono.Unix.Catalog.GetString("<b>Other Stuff</b>");
-        this.GtkLabel87.UseMarkup = true;
-        this.frame7.LabelWidget = this.GtkLabel87;
-        this.vbox5.Add(this.frame7);
-        Gtk.Box.BoxChild w59 = ((Gtk.Box.BoxChild)(this.vbox5[this.frame7]));
-        w59.Position = 2;
-        w59.Expand = false;
-        w59.Fill = false;
+        Gtk.Box.BoxChild w63 = ((Gtk.Box.BoxChild)(this.vbox13[this.checkNoGrab]));
+        w63.Position = 6;
+        w63.Expand = false;
+        w63.Fill = false;
+        this.GtkAlignment33.Add(this.vbox13);
+        this.frame28.Add(this.GtkAlignment33);
+        this.GtkLabel107 = new Gtk.Label();
+        this.GtkLabel107.Name = "GtkLabel107";
+        this.GtkLabel107.LabelProp = Mono.Unix.Catalog.GetString("<b>Other Stuff</b>");
+        this.GtkLabel107.UseMarkup = true;
+        this.frame28.LabelWidget = this.GtkLabel107;
+        this.vbox5.Add(this.frame28);
+        Gtk.Box.BoxChild w66 = ((Gtk.Box.BoxChild)(this.vbox5[this.frame28]));
+        w66.Position = 3;
+        w66.Expand = false;
+        w66.Fill = false;
         this.notebook3.Add(this.vbox5);
-        Gtk.Notebook.NotebookChild w60 = ((Gtk.Notebook.NotebookChild)(this.notebook3[this.vbox5]));
-        w60.Position = 1;
+        Gtk.Notebook.NotebookChild w67 = ((Gtk.Notebook.NotebookChild)(this.notebook3[this.vbox5]));
+        w67.Position = 1;
         // Notebook tab
         this.label4 = new Gtk.Label();
         this.label4.Name = "label4";
@@ -961,10 +1152,10 @@ public partial class MainWindow {
         this.checkSpec.DrawIndicator = true;
         this.checkSpec.UseUnderline = true;
         this.vbox7.Add(this.checkSpec);
-        Gtk.Box.BoxChild w61 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkSpec]));
-        w61.Position = 0;
-        w61.Expand = false;
-        w61.Fill = false;
+        Gtk.Box.BoxChild w68 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkSpec]));
+        w68.Position = 0;
+        w68.Expand = false;
+        w68.Fill = false;
         // Container child vbox7.Gtk.Box+BoxChild
         this.checkEnvironment = new Gtk.CheckButton();
         this.checkEnvironment.CanFocus = true;
@@ -973,10 +1164,10 @@ public partial class MainWindow {
         this.checkEnvironment.DrawIndicator = true;
         this.checkEnvironment.UseUnderline = true;
         this.vbox7.Add(this.checkEnvironment);
-        Gtk.Box.BoxChild w62 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkEnvironment]));
-        w62.Position = 1;
-        w62.Expand = false;
-        w62.Fill = false;
+        Gtk.Box.BoxChild w69 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkEnvironment]));
+        w69.Position = 1;
+        w69.Expand = false;
+        w69.Fill = false;
         // Container child vbox7.Gtk.Box+BoxChild
         this.checkGlow = new Gtk.CheckButton();
         this.checkGlow.CanFocus = true;
@@ -985,10 +1176,10 @@ public partial class MainWindow {
         this.checkGlow.DrawIndicator = true;
         this.checkGlow.UseUnderline = true;
         this.vbox7.Add(this.checkGlow);
-        Gtk.Box.BoxChild w63 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkGlow]));
-        w63.Position = 2;
-        w63.Expand = false;
-        w63.Fill = false;
+        Gtk.Box.BoxChild w70 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkGlow]));
+        w70.Position = 2;
+        w70.Expand = false;
+        w70.Fill = false;
         // Container child vbox7.Gtk.Box+BoxChild
         this.checkMissileLighting = new Gtk.CheckButton();
         this.checkMissileLighting.CanFocus = true;
@@ -996,10 +1187,10 @@ public partial class MainWindow {
         this.checkMissileLighting.Label = Mono.Unix.Catalog.GetString("Makes the missiles look more realistic (missile_lighting)");
         this.checkMissileLighting.DrawIndicator = true;
         this.vbox7.Add(this.checkMissileLighting);
-        Gtk.Box.BoxChild w64 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkMissileLighting]));
-        w64.Position = 3;
-        w64.Expand = false;
-        w64.Fill = false;
+        Gtk.Box.BoxChild w71 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkMissileLighting]));
+        w71.Position = 3;
+        w71.Expand = false;
+        w71.Fill = false;
         // Container child vbox7.Gtk.Box+BoxChild
         this.checkShockwave = new Gtk.CheckButton();
         this.checkShockwave.CanFocus = true;
@@ -1008,10 +1199,10 @@ public partial class MainWindow {
         this.checkShockwave.DrawIndicator = true;
         this.checkShockwave.UseUnderline = true;
         this.vbox7.Add(this.checkShockwave);
-        Gtk.Box.BoxChild w65 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkShockwave]));
-        w65.Position = 4;
-        w65.Expand = false;
-        w65.Fill = false;
+        Gtk.Box.BoxChild w72 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkShockwave]));
+        w72.Position = 4;
+        w72.Expand = false;
+        w72.Fill = false;
         // Container child vbox7.Gtk.Box+BoxChild
         this.checkWarp = new Gtk.CheckButton();
         this.checkWarp.CanFocus = true;
@@ -1020,10 +1211,10 @@ public partial class MainWindow {
         this.checkWarp.DrawIndicator = true;
         this.checkWarp.UseUnderline = true;
         this.vbox7.Add(this.checkWarp);
-        Gtk.Box.BoxChild w66 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkWarp]));
-        w66.Position = 5;
-        w66.Expand = false;
-        w66.Fill = false;
+        Gtk.Box.BoxChild w73 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkWarp]));
+        w73.Position = 5;
+        w73.Expand = false;
+        w73.Fill = false;
         // Container child vbox7.Gtk.Box+BoxChild
         this.checkShipChoice = new Gtk.CheckButton();
         this.checkShipChoice.CanFocus = true;
@@ -1031,10 +1222,10 @@ public partial class MainWindow {
         this.checkShipChoice.Label = Mono.Unix.Catalog.GetString("Show 3D models when picking your ship (ship_choice_3d)");
         this.checkShipChoice.DrawIndicator = true;
         this.vbox7.Add(this.checkShipChoice);
-        Gtk.Box.BoxChild w67 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkShipChoice]));
-        w67.Position = 6;
-        w67.Expand = false;
-        w67.Fill = false;
+        Gtk.Box.BoxChild w74 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkShipChoice]));
+        w74.Position = 6;
+        w74.Expand = false;
+        w74.Fill = false;
         // Container child vbox7.Gtk.Box+BoxChild
         this.checkWeaponChoice = new Gtk.CheckButton();
         this.checkWeaponChoice.CanFocus = true;
@@ -1042,10 +1233,10 @@ public partial class MainWindow {
         this.checkWeaponChoice.Label = Mono.Unix.Catalog.GetString("Show 3D models when picking missiles (weapon_choice_3d)");
         this.checkWeaponChoice.DrawIndicator = true;
         this.vbox7.Add(this.checkWeaponChoice);
-        Gtk.Box.BoxChild w68 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkWeaponChoice]));
-        w68.Position = 7;
-        w68.Expand = false;
-        w68.Fill = false;
+        Gtk.Box.BoxChild w75 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkWeaponChoice]));
+        w75.Position = 7;
+        w75.Expand = false;
+        w75.Fill = false;
         // Container child vbox7.Gtk.Box+BoxChild
         this.checkNormal = new Gtk.CheckButton();
         this.checkNormal.CanFocus = true;
@@ -1054,10 +1245,10 @@ public partial class MainWindow {
         this.checkNormal.DrawIndicator = true;
         this.checkNormal.UseUnderline = true;
         this.vbox7.Add(this.checkNormal);
-        Gtk.Box.BoxChild w69 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkNormal]));
-        w69.Position = 8;
-        w69.Expand = false;
-        w69.Fill = false;
+        Gtk.Box.BoxChild w76 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkNormal]));
+        w76.Position = 8;
+        w76.Expand = false;
+        w76.Fill = false;
         // Container child vbox7.Gtk.Box+BoxChild
         this.checkHeight = new Gtk.CheckButton();
         this.checkHeight.CanFocus = true;
@@ -1066,10 +1257,10 @@ public partial class MainWindow {
         this.checkHeight.DrawIndicator = true;
         this.checkHeight.UseUnderline = true;
         this.vbox7.Add(this.checkHeight);
-        Gtk.Box.BoxChild w70 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkHeight]));
-        w70.Position = 9;
-        w70.Expand = false;
-        w70.Fill = false;
+        Gtk.Box.BoxChild w77 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkHeight]));
+        w77.Position = 9;
+        w77.Expand = false;
+        w77.Fill = false;
         // Container child vbox7.Gtk.Box+BoxChild
         this.checkDebris = new Gtk.CheckButton();
         this.checkDebris.CanFocus = true;
@@ -1078,10 +1269,10 @@ public partial class MainWindow {
         this.checkDebris.DrawIndicator = true;
         this.checkDebris.UseUnderline = true;
         this.vbox7.Add(this.checkDebris);
-        Gtk.Box.BoxChild w71 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkDebris]));
-        w71.Position = 10;
-        w71.Expand = false;
-        w71.Fill = false;
+        Gtk.Box.BoxChild w78 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkDebris]));
+        w78.Position = 10;
+        w78.Expand = false;
+        w78.Fill = false;
         // Container child vbox7.Gtk.Box+BoxChild
         this.checkVideoScaling = new Gtk.CheckButton();
         this.checkVideoScaling.CanFocus = true;
@@ -1090,27 +1281,27 @@ public partial class MainWindow {
         this.checkVideoScaling.DrawIndicator = true;
         this.checkVideoScaling.UseUnderline = true;
         this.vbox7.Add(this.checkVideoScaling);
-        Gtk.Box.BoxChild w72 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkVideoScaling]));
-        w72.Position = 11;
-        w72.Expand = false;
-        w72.Fill = false;
+        Gtk.Box.BoxChild w79 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkVideoScaling]));
+        w79.Position = 11;
+        w79.Expand = false;
+        w79.Fill = false;
         // Container child vbox7.Gtk.Box+BoxChild
         this.checkMovies = new Gtk.CheckButton();
         this.checkMovies.CanFocus = true;
         this.checkMovies.Name = "checkMovies";
-        this.checkMovies.Label = Mono.Unix.Catalog.GetString("Disable all the awesome videos (nomovies)");
+        this.checkMovies.Label = Mono.Unix.Catalog.GetString("Disable all the movies (nomovies)");
         this.checkMovies.DrawIndicator = true;
         this.checkMovies.UseUnderline = true;
         this.vbox7.Add(this.checkMovies);
-        Gtk.Box.BoxChild w73 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkMovies]));
-        w73.Position = 12;
-        w73.Expand = false;
-        w73.Fill = false;
+        Gtk.Box.BoxChild w80 = ((Gtk.Box.BoxChild)(this.vbox7[this.checkMovies]));
+        w80.Position = 12;
+        w80.Expand = false;
+        w80.Fill = false;
         this.GtkAlignment12.Add(this.vbox7);
         this.frame5.Add(this.GtkAlignment12);
         this.notebook3.Add(this.frame5);
-        Gtk.Notebook.NotebookChild w76 = ((Gtk.Notebook.NotebookChild)(this.notebook3[this.frame5]));
-        w76.Position = 2;
+        Gtk.Notebook.NotebookChild w83 = ((Gtk.Notebook.NotebookChild)(this.notebook3[this.frame5]));
+        w83.Position = 2;
         // Notebook tab
         this.label5 = new Gtk.Label();
         this.label5.Name = "label5";
@@ -1128,48 +1319,212 @@ public partial class MainWindow {
         // Container child GtkAlignment7.Gtk.Container+ContainerChild
         this.vbox6 = new Gtk.VBox();
         this.vbox6.Name = "vbox6";
-        this.vbox6.Homogeneous = true;
         this.vbox6.Spacing = 6;
         // Container child vbox6.Gtk.Box+BoxChild
+        this.frame23 = new Gtk.Frame();
+        this.frame23.Name = "frame23";
+        this.frame23.ShadowType = ((Gtk.ShadowType)(0));
+        // Container child frame23.Gtk.Container+ContainerChild
+        this.GtkAlignment26 = new Gtk.Alignment(0F, 0F, 1F, 1F);
+        this.GtkAlignment26.Name = "GtkAlignment26";
+        this.GtkAlignment26.LeftPadding = ((uint)(12));
+        // Container child GtkAlignment26.Gtk.Container+ContainerChild
+        this.soundDeviceCombo = Gtk.ComboBox.NewText();
+        this.soundDeviceCombo.AppendText(Mono.Unix.Catalog.GetString("Generic Software"));
+        this.soundDeviceCombo.Name = "soundDeviceCombo";
+        this.soundDeviceCombo.Active = 0;
+        this.GtkAlignment26.Add(this.soundDeviceCombo);
+        this.frame23.Add(this.GtkAlignment26);
+        this.GtkLabel26 = new Gtk.Label();
+        this.GtkLabel26.Name = "GtkLabel26";
+        this.GtkLabel26.LabelProp = Mono.Unix.Catalog.GetString("<b>Sound Device</b>");
+        this.GtkLabel26.UseMarkup = true;
+        this.frame23.LabelWidget = this.GtkLabel26;
+        this.vbox6.Add(this.frame23);
+        Gtk.Box.BoxChild w86 = ((Gtk.Box.BoxChild)(this.vbox6[this.frame23]));
+        w86.Position = 0;
+        w86.Expand = false;
+        w86.Fill = false;
+        // Container child vbox6.Gtk.Box+BoxChild
+        this.speechFrame = new Gtk.Frame();
+        this.speechFrame.Name = "speechFrame";
+        this.speechFrame.ShadowType = ((Gtk.ShadowType)(0));
+        // Container child speechFrame.Gtk.Container+ContainerChild
+        this.GtkAlignment35 = new Gtk.Alignment(0F, 0F, 1F, 1F);
+        this.GtkAlignment35.Name = "GtkAlignment35";
+        this.GtkAlignment35.LeftPadding = ((uint)(12));
+        // Container child GtkAlignment35.Gtk.Container+ContainerChild
+        this.vbox1 = new Gtk.VBox();
+        this.vbox1.Name = "vbox1";
+        this.vbox1.Spacing = 6;
+        // Container child vbox1.Gtk.Box+BoxChild
+        this.techroomVoiceCheck = new Gtk.CheckButton();
+        this.techroomVoiceCheck.CanFocus = true;
+        this.techroomVoiceCheck.Name = "techroomVoiceCheck";
+        this.techroomVoiceCheck.Label = Mono.Unix.Catalog.GetString("Enable in techroom");
+        this.techroomVoiceCheck.DrawIndicator = true;
+        this.techroomVoiceCheck.UseUnderline = true;
+        this.vbox1.Add(this.techroomVoiceCheck);
+        Gtk.Box.BoxChild w87 = ((Gtk.Box.BoxChild)(this.vbox1[this.techroomVoiceCheck]));
+        w87.Position = 0;
+        w87.Expand = false;
+        w87.Fill = false;
+        // Container child vbox1.Gtk.Box+BoxChild
+        this.briefingsVoiceCheck = new Gtk.CheckButton();
+        this.briefingsVoiceCheck.CanFocus = true;
+        this.briefingsVoiceCheck.Name = "briefingsVoiceCheck";
+        this.briefingsVoiceCheck.Label = Mono.Unix.Catalog.GetString("Enable in briefings");
+        this.briefingsVoiceCheck.DrawIndicator = true;
+        this.briefingsVoiceCheck.UseUnderline = true;
+        this.vbox1.Add(this.briefingsVoiceCheck);
+        Gtk.Box.BoxChild w88 = ((Gtk.Box.BoxChild)(this.vbox1[this.briefingsVoiceCheck]));
+        w88.Position = 1;
+        w88.Expand = false;
+        w88.Fill = false;
+        // Container child vbox1.Gtk.Box+BoxChild
+        this.ingameVoiceCheck = new Gtk.CheckButton();
+        this.ingameVoiceCheck.CanFocus = true;
+        this.ingameVoiceCheck.Name = "ingameVoiceCheck";
+        this.ingameVoiceCheck.Label = Mono.Unix.Catalog.GetString("Enable in-game");
+        this.ingameVoiceCheck.DrawIndicator = true;
+        this.ingameVoiceCheck.UseUnderline = true;
+        this.vbox1.Add(this.ingameVoiceCheck);
+        Gtk.Box.BoxChild w89 = ((Gtk.Box.BoxChild)(this.vbox1[this.ingameVoiceCheck]));
+        w89.Position = 2;
+        w89.Expand = false;
+        w89.Fill = false;
+        // Container child vbox1.Gtk.Box+BoxChild
+        this.frame30 = new Gtk.Frame();
+        this.frame30.Name = "frame30";
+        this.frame30.ShadowType = ((Gtk.ShadowType)(0));
+        // Container child frame30.Gtk.Container+ContainerChild
+        this.GtkAlignment27 = new Gtk.Alignment(0F, 0F, 1F, 1F);
+        this.GtkAlignment27.Name = "GtkAlignment27";
+        this.GtkAlignment27.LeftPadding = ((uint)(12));
+        // Container child GtkAlignment27.Gtk.Container+ContainerChild
+        this.voiceVolumeScale = new Gtk.HScale(null);
+        this.voiceVolumeScale.CanFocus = true;
+        this.voiceVolumeScale.Name = "voiceVolumeScale";
+        this.voiceVolumeScale.Adjustment.Upper = 100;
+        this.voiceVolumeScale.Adjustment.PageIncrement = 10;
+        this.voiceVolumeScale.Adjustment.StepIncrement = 1;
+        this.voiceVolumeScale.Adjustment.Value = 100;
+        this.voiceVolumeScale.DrawValue = true;
+        this.voiceVolumeScale.Digits = 0;
+        this.voiceVolumeScale.ValuePos = ((Gtk.PositionType)(2));
+        this.GtkAlignment27.Add(this.voiceVolumeScale);
+        this.frame30.Add(this.GtkAlignment27);
+        this.GtkLabel84 = new Gtk.Label();
+        this.GtkLabel84.Name = "GtkLabel84";
+        this.GtkLabel84.LabelProp = Mono.Unix.Catalog.GetString("<b>Volume</b>");
+        this.GtkLabel84.UseMarkup = true;
+        this.frame30.LabelWidget = this.GtkLabel84;
+        this.vbox1.Add(this.frame30);
+        Gtk.Box.BoxChild w92 = ((Gtk.Box.BoxChild)(this.vbox1[this.frame30]));
+        w92.Position = 3;
+        w92.Expand = false;
+        w92.Fill = false;
+        // Container child vbox1.Gtk.Box+BoxChild
+        this.frame25 = new Gtk.Frame();
+        this.frame25.Name = "frame25";
+        this.frame25.ShadowType = ((Gtk.ShadowType)(0));
+        // Container child frame25.Gtk.Container+ContainerChild
+        this.GtkAlignment29 = new Gtk.Alignment(0F, 0F, 1F, 1F);
+        this.GtkAlignment29.Name = "GtkAlignment29";
+        this.GtkAlignment29.LeftPadding = ((uint)(12));
+        // Container child GtkAlignment29.Gtk.Container+ContainerChild
+        this.voiceCombo = Gtk.ComboBox.NewText();
+        this.voiceCombo.AppendText(Mono.Unix.Catalog.GetString("Default Voice"));
+        this.voiceCombo.Name = "voiceCombo";
+        this.voiceCombo.Active = 0;
+        this.GtkAlignment29.Add(this.voiceCombo);
+        this.frame25.Add(this.GtkAlignment29);
+        this.GtkLabel103 = new Gtk.Label();
+        this.GtkLabel103.Name = "GtkLabel103";
+        this.GtkLabel103.LabelProp = Mono.Unix.Catalog.GetString("<b>Voice</b>");
+        this.GtkLabel103.UseMarkup = true;
+        this.frame25.LabelWidget = this.GtkLabel103;
+        this.vbox1.Add(this.frame25);
+        Gtk.Box.BoxChild w95 = ((Gtk.Box.BoxChild)(this.vbox1[this.frame25]));
+        w95.Position = 4;
+        w95.Expand = false;
+        w95.Fill = false;
+        this.GtkAlignment35.Add(this.vbox1);
+        this.speechFrame.Add(this.GtkAlignment35);
+        this.GtkLabel86 = new Gtk.Label();
+        this.GtkLabel86.Name = "GtkLabel86";
+        this.GtkLabel86.LabelProp = Mono.Unix.Catalog.GetString("<b>Speech Synthesis</b>");
+        this.GtkLabel86.UseMarkup = true;
+        this.speechFrame.LabelWidget = this.GtkLabel86;
+        this.vbox6.Add(this.speechFrame);
+        Gtk.Box.BoxChild w98 = ((Gtk.Box.BoxChild)(this.vbox6[this.speechFrame]));
+        w98.Position = 1;
+        w98.Expand = false;
+        w98.Fill = false;
+        // Container child vbox6.Gtk.Box+BoxChild
+        this.frame24 = new Gtk.Frame();
+        this.frame24.Name = "frame24";
+        this.frame24.ShadowType = ((Gtk.ShadowType)(0));
+        // Container child frame24.Gtk.Container+ContainerChild
+        this.GtkAlignment28 = new Gtk.Alignment(0F, 0F, 1F, 1F);
+        this.GtkAlignment28.Name = "GtkAlignment28";
+        this.GtkAlignment28.LeftPadding = ((uint)(12));
+        // Container child GtkAlignment28.Gtk.Container+ContainerChild
+        this.vbox19 = new Gtk.VBox();
+        this.vbox19.Name = "vbox19";
+        this.vbox19.Spacing = 6;
+        // Container child vbox19.Gtk.Box+BoxChild
         this.checkSoundPreload = new Gtk.CheckButton();
         this.checkSoundPreload.CanFocus = true;
         this.checkSoundPreload.Name = "checkSoundPreload";
         this.checkSoundPreload.Label = Mono.Unix.Catalog.GetString("Prevent stuttering in-game (snd_preload)");
         this.checkSoundPreload.DrawIndicator = true;
-        this.vbox6.Add(this.checkSoundPreload);
-        Gtk.Box.BoxChild w77 = ((Gtk.Box.BoxChild)(this.vbox6[this.checkSoundPreload]));
-        w77.Position = 0;
-        w77.Expand = false;
-        w77.Fill = false;
-        // Container child vbox6.Gtk.Box+BoxChild
+        this.vbox19.Add(this.checkSoundPreload);
+        Gtk.Box.BoxChild w99 = ((Gtk.Box.BoxChild)(this.vbox19[this.checkSoundPreload]));
+        w99.Position = 0;
+        w99.Expand = false;
+        w99.Fill = false;
+        // Container child vbox19.Gtk.Box+BoxChild
         this.checkMusic = new Gtk.CheckButton();
         this.checkMusic.CanFocus = true;
         this.checkMusic.Name = "checkMusic";
-        this.checkMusic.Label = Mono.Unix.Catalog.GetString("Disable the awesome music :( (nomusic)");
+        this.checkMusic.Label = Mono.Unix.Catalog.GetString("Disable the music (nomusic)");
         this.checkMusic.DrawIndicator = true;
         this.checkMusic.UseUnderline = true;
-        this.vbox6.Add(this.checkMusic);
-        Gtk.Box.BoxChild w78 = ((Gtk.Box.BoxChild)(this.vbox6[this.checkMusic]));
-        w78.Position = 1;
-        w78.Expand = false;
-        w78.Fill = false;
-        // Container child vbox6.Gtk.Box+BoxChild
+        this.vbox19.Add(this.checkMusic);
+        Gtk.Box.BoxChild w100 = ((Gtk.Box.BoxChild)(this.vbox19[this.checkMusic]));
+        w100.Position = 1;
+        w100.Expand = false;
+        w100.Fill = false;
+        // Container child vbox19.Gtk.Box+BoxChild
         this.checkSound = new Gtk.CheckButton();
         this.checkSound.CanFocus = true;
         this.checkSound.Name = "checkSound";
-        this.checkSound.Label = Mono.Unix.Catalog.GetString("Disable all sound :(( (nosound)");
+        this.checkSound.Label = Mono.Unix.Catalog.GetString("Disable all sound (nosound)");
         this.checkSound.DrawIndicator = true;
         this.checkSound.UseUnderline = true;
-        this.vbox6.Add(this.checkSound);
-        Gtk.Box.BoxChild w79 = ((Gtk.Box.BoxChild)(this.vbox6[this.checkSound]));
-        w79.Position = 2;
-        w79.Expand = false;
-        w79.Fill = false;
+        this.vbox19.Add(this.checkSound);
+        Gtk.Box.BoxChild w101 = ((Gtk.Box.BoxChild)(this.vbox19[this.checkSound]));
+        w101.Position = 2;
+        w101.Expand = false;
+        w101.Fill = false;
+        this.GtkAlignment28.Add(this.vbox19);
+        this.frame24.Add(this.GtkAlignment28);
+        this.GtkLabel109 = new Gtk.Label();
+        this.GtkLabel109.Name = "GtkLabel109";
+        this.GtkLabel109.LabelProp = Mono.Unix.Catalog.GetString("<b>Other</b>");
+        this.GtkLabel109.UseMarkup = true;
+        this.frame24.LabelWidget = this.GtkLabel109;
+        this.vbox6.Add(this.frame24);
+        Gtk.Box.BoxChild w104 = ((Gtk.Box.BoxChild)(this.vbox6[this.frame24]));
+        w104.Position = 2;
+        w104.Expand = false;
+        w104.Fill = false;
         this.GtkAlignment7.Add(this.vbox6);
         this.frame8.Add(this.GtkAlignment7);
         this.notebook3.Add(this.frame8);
-        Gtk.Notebook.NotebookChild w82 = ((Gtk.Notebook.NotebookChild)(this.notebook3[this.frame8]));
-        w82.Position = 3;
+        Gtk.Notebook.NotebookChild w107 = ((Gtk.Notebook.NotebookChild)(this.notebook3[this.frame8]));
+        w107.Position = 3;
         // Notebook tab
         this.label6 = new Gtk.Label();
         this.label6.Name = "label6";
@@ -1197,22 +1552,22 @@ public partial class MainWindow {
         this.checkDualScanLines.DrawIndicator = true;
         this.checkDualScanLines.UseUnderline = true;
         this.vbox9.Add(this.checkDualScanLines);
-        Gtk.Box.BoxChild w83 = ((Gtk.Box.BoxChild)(this.vbox9[this.checkDualScanLines]));
-        w83.Position = 0;
-        w83.Expand = false;
-        w83.Fill = false;
+        Gtk.Box.BoxChild w108 = ((Gtk.Box.BoxChild)(this.vbox9[this.checkDualScanLines]));
+        w108.Position = 0;
+        w108.Expand = false;
+        w108.Fill = false;
         // Container child vbox9.Gtk.Box+BoxChild
         this.checkTargetInfo = new Gtk.CheckButton();
         this.checkTargetInfo.CanFocus = true;
         this.checkTargetInfo.Name = "checkTargetInfo";
-        this.checkTargetInfo.Label = Mono.Unix.Catalog.GetString("Display target info next to the target! Brilliant! (targetinfo)");
+        this.checkTargetInfo.Label = Mono.Unix.Catalog.GetString("Display target info next to the target (targetinfo)");
         this.checkTargetInfo.DrawIndicator = true;
         this.checkTargetInfo.UseUnderline = true;
         this.vbox9.Add(this.checkTargetInfo);
-        Gtk.Box.BoxChild w84 = ((Gtk.Box.BoxChild)(this.vbox9[this.checkTargetInfo]));
-        w84.Position = 1;
-        w84.Expand = false;
-        w84.Fill = false;
+        Gtk.Box.BoxChild w109 = ((Gtk.Box.BoxChild)(this.vbox9[this.checkTargetInfo]));
+        w109.Position = 1;
+        w109.Expand = false;
+        w109.Fill = false;
         // Container child vbox9.Gtk.Box+BoxChild
         this.checkOrbRadar = new Gtk.CheckButton();
         this.checkOrbRadar.CanFocus = true;
@@ -1221,10 +1576,10 @@ public partial class MainWindow {
         this.checkOrbRadar.DrawIndicator = true;
         this.checkOrbRadar.UseUnderline = true;
         this.vbox9.Add(this.checkOrbRadar);
-        Gtk.Box.BoxChild w85 = ((Gtk.Box.BoxChild)(this.vbox9[this.checkOrbRadar]));
-        w85.Position = 2;
-        w85.Expand = false;
-        w85.Fill = false;
+        Gtk.Box.BoxChild w110 = ((Gtk.Box.BoxChild)(this.vbox9[this.checkOrbRadar]));
+        w110.Position = 2;
+        w110.Expand = false;
+        w110.Fill = false;
         // Container child vbox9.Gtk.Box+BoxChild
         this.checkBallisticGauge = new Gtk.CheckButton();
         this.checkBallisticGauge.CanFocus = true;
@@ -1232,10 +1587,10 @@ public partial class MainWindow {
         this.checkBallisticGauge.Label = Mono.Unix.Catalog.GetString("Add a gauge for ammo-based weapons (ballistic_gauge)");
         this.checkBallisticGauge.DrawIndicator = true;
         this.vbox9.Add(this.checkBallisticGauge);
-        Gtk.Box.BoxChild w86 = ((Gtk.Box.BoxChild)(this.vbox9[this.checkBallisticGauge]));
-        w86.Position = 3;
-        w86.Expand = false;
-        w86.Fill = false;
+        Gtk.Box.BoxChild w111 = ((Gtk.Box.BoxChild)(this.vbox9[this.checkBallisticGauge]));
+        w111.Position = 3;
+        w111.Expand = false;
+        w111.Fill = false;
         // Container child vbox9.Gtk.Box+BoxChild
         this.checkRearmTimer = new Gtk.CheckButton();
         this.checkRearmTimer.CanFocus = true;
@@ -1243,21 +1598,156 @@ public partial class MainWindow {
         this.checkRearmTimer.Label = Mono.Unix.Catalog.GetString("Show how long until a rearm finishes (rearm_timer)");
         this.checkRearmTimer.DrawIndicator = true;
         this.vbox9.Add(this.checkRearmTimer);
-        Gtk.Box.BoxChild w87 = ((Gtk.Box.BoxChild)(this.vbox9[this.checkRearmTimer]));
-        w87.Position = 4;
-        w87.Expand = false;
-        w87.Fill = false;
+        Gtk.Box.BoxChild w112 = ((Gtk.Box.BoxChild)(this.vbox9[this.checkRearmTimer]));
+        w112.Position = 4;
+        w112.Expand = false;
+        w112.Fill = false;
         this.GtkAlignment8.Add(this.vbox9);
         this.frame11.Add(this.GtkAlignment8);
         this.notebook3.Add(this.frame11);
-        Gtk.Notebook.NotebookChild w90 = ((Gtk.Notebook.NotebookChild)(this.notebook3[this.frame11]));
-        w90.Position = 4;
+        Gtk.Notebook.NotebookChild w115 = ((Gtk.Notebook.NotebookChild)(this.notebook3[this.frame11]));
+        w115.Position = 4;
         // Notebook tab
         this.label8 = new Gtk.Label();
         this.label8.Name = "label8";
         this.label8.LabelProp = Mono.Unix.Catalog.GetString("HUD");
         this.notebook3.SetTabLabel(this.frame11, this.label8);
         this.label8.ShowAll();
+        // Container child notebook3.Gtk.Notebook+NotebookChild
+        this.vbox3 = new Gtk.VBox();
+        this.vbox3.Name = "vbox3";
+        this.vbox3.Homogeneous = true;
+        this.vbox3.Spacing = 6;
+        // Container child vbox3.Gtk.Box+BoxChild
+        this.frame31 = new Gtk.Frame();
+        this.frame31.Name = "frame31";
+        this.frame31.ShadowType = ((Gtk.ShadowType)(0));
+        // Container child frame31.Gtk.Container+ContainerChild
+        this.GtkAlignment36 = new Gtk.Alignment(0F, 0F, 1F, 1F);
+        this.GtkAlignment36.Name = "GtkAlignment36";
+        this.GtkAlignment36.LeftPadding = ((uint)(12));
+        // Container child GtkAlignment36.Gtk.Container+ContainerChild
+        this.joystickCombo = Gtk.ComboBox.NewText();
+        this.joystickCombo.AppendText(Mono.Unix.Catalog.GetString("None"));
+        this.joystickCombo.AppendText(Mono.Unix.Catalog.GetString("Whatever was connected first"));
+        this.joystickCombo.Name = "joystickCombo";
+        this.joystickCombo.Active = 1;
+        this.GtkAlignment36.Add(this.joystickCombo);
+        this.frame31.Add(this.GtkAlignment36);
+        this.GtkLabel37 = new Gtk.Label();
+        this.GtkLabel37.Name = "GtkLabel37";
+        this.GtkLabel37.LabelProp = Mono.Unix.Catalog.GetString("<b>Select a joystick</b>");
+        this.GtkLabel37.UseMarkup = true;
+        this.frame31.LabelWidget = this.GtkLabel37;
+        this.vbox3.Add(this.frame31);
+        Gtk.Box.BoxChild w118 = ((Gtk.Box.BoxChild)(this.vbox3[this.frame31]));
+        w118.Position = 0;
+        w118.Expand = false;
+        w118.Fill = false;
+        // Container child vbox3.Gtk.Box+BoxChild
+        this.forceFeedbackCheck = new Gtk.CheckButton();
+        this.forceFeedbackCheck.CanFocus = true;
+        this.forceFeedbackCheck.Name = "forceFeedbackCheck";
+        this.forceFeedbackCheck.Label = Mono.Unix.Catalog.GetString("Enable Force Feedback");
+        this.forceFeedbackCheck.DrawIndicator = true;
+        this.forceFeedbackCheck.UseUnderline = true;
+        this.vbox3.Add(this.forceFeedbackCheck);
+        Gtk.Box.BoxChild w119 = ((Gtk.Box.BoxChild)(this.vbox3[this.forceFeedbackCheck]));
+        w119.Position = 1;
+        w119.Expand = false;
+        w119.Fill = false;
+        // Container child vbox3.Gtk.Box+BoxChild
+        this.directionalHitCheck = new Gtk.CheckButton();
+        this.directionalHitCheck.CanFocus = true;
+        this.directionalHitCheck.Name = "directionalHitCheck";
+        this.directionalHitCheck.Label = Mono.Unix.Catalog.GetString("Enable Directional Hit");
+        this.directionalHitCheck.DrawIndicator = true;
+        this.directionalHitCheck.UseUnderline = true;
+        this.vbox3.Add(this.directionalHitCheck);
+        Gtk.Box.BoxChild w120 = ((Gtk.Box.BoxChild)(this.vbox3[this.directionalHitCheck]));
+        w120.Position = 2;
+        w120.Expand = false;
+        w120.Fill = false;
+        this.notebook3.Add(this.vbox3);
+        Gtk.Notebook.NotebookChild w121 = ((Gtk.Notebook.NotebookChild)(this.notebook3[this.vbox3]));
+        w121.Position = 5;
+        // Notebook tab
+        this.label2 = new Gtk.Label();
+        this.label2.Name = "label2";
+        this.label2.LabelProp = Mono.Unix.Catalog.GetString("Joystick");
+        this.notebook3.SetTabLabel(this.vbox3, this.label2);
+        this.label2.ShowAll();
+        // Container child notebook3.Gtk.Notebook+NotebookChild
+        this.vbox21 = new Gtk.VBox();
+        this.vbox21.Name = "vbox21";
+        this.vbox21.Homogeneous = true;
+        this.vbox21.Spacing = 6;
+        // Container child vbox21.Gtk.Box+BoxChild
+        this.frame17 = new Gtk.Frame();
+        this.frame17.Name = "frame17";
+        this.frame17.ShadowType = ((Gtk.ShadowType)(0));
+        // Container child frame17.Gtk.Container+ContainerChild
+        this.GtkAlignment30 = new Gtk.Alignment(0F, 0F, 1F, 1F);
+        this.GtkAlignment30.Name = "GtkAlignment30";
+        this.GtkAlignment30.LeftPadding = ((uint)(12));
+        // Container child GtkAlignment30.Gtk.Container+ContainerChild
+        this.connectionTypeCombo = Gtk.ComboBox.NewText();
+        this.connectionTypeCombo.AppendText(Mono.Unix.Catalog.GetString("None"));
+        this.connectionTypeCombo.AppendText(Mono.Unix.Catalog.GetString("Dialup"));
+        this.connectionTypeCombo.AppendText(Mono.Unix.Catalog.GetString("LAN, DSL, Cable or some other really good kind"));
+        this.connectionTypeCombo.Name = "connectionTypeCombo";
+        this.connectionTypeCombo.Active = 0;
+        this.GtkAlignment30.Add(this.connectionTypeCombo);
+        this.frame17.Add(this.GtkAlignment30);
+        this.GtkLabel110 = new Gtk.Label();
+        this.GtkLabel110.Name = "GtkLabel110";
+        this.GtkLabel110.LabelProp = Mono.Unix.Catalog.GetString("<b>What kind of Internet connection do you have?</b>");
+        this.GtkLabel110.UseMarkup = true;
+        this.frame17.LabelWidget = this.GtkLabel110;
+        this.vbox21.Add(this.frame17);
+        Gtk.Box.BoxChild w124 = ((Gtk.Box.BoxChild)(this.vbox21[this.frame17]));
+        w124.Position = 0;
+        w124.Expand = false;
+        w124.Fill = false;
+        // Container child vbox21.Gtk.Box+BoxChild
+        this.frame26 = new Gtk.Frame();
+        this.frame26.Name = "frame26";
+        this.frame26.ShadowType = ((Gtk.ShadowType)(0));
+        // Container child frame26.Gtk.Container+ContainerChild
+        this.GtkAlignment31 = new Gtk.Alignment(0F, 0F, 1F, 1F);
+        this.GtkAlignment31.Name = "GtkAlignment31";
+        this.GtkAlignment31.LeftPadding = ((uint)(12));
+        // Container child GtkAlignment31.Gtk.Container+ContainerChild
+        this.connectionSpeedCombo = Gtk.ComboBox.NewText();
+        this.connectionSpeedCombo.AppendText(Mono.Unix.Catalog.GetString("I don't know"));
+        this.connectionSpeedCombo.AppendText(Mono.Unix.Catalog.GetString("Slower than 56Kbps"));
+        this.connectionSpeedCombo.AppendText(Mono.Unix.Catalog.GetString("56Kbps"));
+        this.connectionSpeedCombo.AppendText(Mono.Unix.Catalog.GetString("64Kbps"));
+        this.connectionSpeedCombo.AppendText(Mono.Unix.Catalog.GetString("128Kbps"));
+        this.connectionSpeedCombo.AppendText(Mono.Unix.Catalog.GetString("Greater than 128Kbps"));
+        this.connectionSpeedCombo.Name = "connectionSpeedCombo";
+        this.connectionSpeedCombo.Active = 0;
+        this.GtkAlignment31.Add(this.connectionSpeedCombo);
+        this.frame26.Add(this.GtkAlignment31);
+        this.GtkLabel105 = new Gtk.Label();
+        this.GtkLabel105.Name = "GtkLabel105";
+        this.GtkLabel105.LabelProp = Mono.Unix.Catalog.GetString("<b>How fast is it? Most connections will be the last one.</b>");
+        this.GtkLabel105.UseMarkup = true;
+        this.frame26.LabelWidget = this.GtkLabel105;
+        this.vbox21.Add(this.frame26);
+        Gtk.Box.BoxChild w127 = ((Gtk.Box.BoxChild)(this.vbox21[this.frame26]));
+        w127.Position = 1;
+        w127.Expand = false;
+        w127.Fill = false;
+        this.notebook3.Add(this.vbox21);
+        Gtk.Notebook.NotebookChild w128 = ((Gtk.Notebook.NotebookChild)(this.notebook3[this.vbox21]));
+        w128.Position = 6;
+        // Notebook tab
+        this.label1 = new Gtk.Label();
+        this.label1.Name = "label1";
+        this.label1.LabelProp = Mono.Unix.Catalog.GetString("Network");
+        this.notebook3.SetTabLabel(this.vbox21, this.label1);
+        this.label1.ShowAll();
         // Container child notebook3.Gtk.Notebook+NotebookChild
         this.vbox15 = new Gtk.VBox();
         this.vbox15.Name = "vbox15";
@@ -1281,34 +1771,34 @@ public partial class MainWindow {
         this.GtkLabel85.UseMarkup = true;
         this.frame15.LabelWidget = this.GtkLabel85;
         this.vbox15.Add(this.frame15);
-        Gtk.Box.BoxChild w93 = ((Gtk.Box.BoxChild)(this.vbox15[this.frame15]));
-        w93.Position = 0;
-        w93.Expand = false;
-        w93.Fill = false;
+        Gtk.Box.BoxChild w131 = ((Gtk.Box.BoxChild)(this.vbox15[this.frame15]));
+        w131.Position = 0;
+        w131.Expand = false;
+        w131.Fill = false;
         // Container child vbox15.Gtk.Box+BoxChild
         this.imageMod = new Gtk.Image();
         this.imageMod.Name = "imageMod";
         this.imageMod.Pixbuf = Gdk.Pixbuf.LoadFromResource("FS2.png");
         this.vbox15.Add(this.imageMod);
-        Gtk.Box.BoxChild w94 = ((Gtk.Box.BoxChild)(this.vbox15[this.imageMod]));
-        w94.Position = 1;
-        w94.Expand = false;
-        w94.Fill = false;
+        Gtk.Box.BoxChild w132 = ((Gtk.Box.BoxChild)(this.vbox15[this.imageMod]));
+        w132.Position = 1;
+        w132.Expand = false;
+        w132.Fill = false;
         // Container child vbox15.Gtk.Box+BoxChild
         this.GtkScrolledWindow = new Gtk.ScrolledWindow();
         this.GtkScrolledWindow.Name = "GtkScrolledWindow";
         this.GtkScrolledWindow.ShadowType = ((Gtk.ShadowType)(1));
         // Container child GtkScrolledWindow.Gtk.Container+ContainerChild
         this.textMod = new Gtk.TextView();
-        this.textMod.Buffer.Text = "It's Freespace f*cking 2!";
+        this.textMod.Buffer.Text = "It's Freespace 2! Yay!";
         this.textMod.CanFocus = true;
         this.textMod.Name = "textMod";
         this.textMod.Editable = false;
         this.textMod.WrapMode = ((Gtk.WrapMode)(2));
         this.GtkScrolledWindow.Add(this.textMod);
         this.vbox15.Add(this.GtkScrolledWindow);
-        Gtk.Box.BoxChild w96 = ((Gtk.Box.BoxChild)(this.vbox15[this.GtkScrolledWindow]));
-        w96.Position = 2;
+        Gtk.Box.BoxChild w134 = ((Gtk.Box.BoxChild)(this.vbox15[this.GtkScrolledWindow]));
+        w134.Position = 2;
         // Container child vbox15.Gtk.Box+BoxChild
         this.checkBabylon = new Gtk.CheckButton();
         this.checkBabylon.CanFocus = true;
@@ -1317,10 +1807,10 @@ public partial class MainWindow {
         this.checkBabylon.DrawIndicator = true;
         this.checkBabylon.UseUnderline = true;
         this.vbox15.Add(this.checkBabylon);
-        Gtk.Box.BoxChild w97 = ((Gtk.Box.BoxChild)(this.vbox15[this.checkBabylon]));
-        w97.Position = 3;
-        w97.Expand = false;
-        w97.Fill = false;
+        Gtk.Box.BoxChild w135 = ((Gtk.Box.BoxChild)(this.vbox15[this.checkBabylon]));
+        w135.Position = 3;
+        w135.Expand = false;
+        w135.Fill = false;
         // Container child vbox15.Gtk.Box+BoxChild
         this.checkWIngCommander = new Gtk.CheckButton();
         this.checkWIngCommander.CanFocus = true;
@@ -1329,13 +1819,13 @@ public partial class MainWindow {
         this.checkWIngCommander.DrawIndicator = true;
         this.checkWIngCommander.UseUnderline = true;
         this.vbox15.Add(this.checkWIngCommander);
-        Gtk.Box.BoxChild w98 = ((Gtk.Box.BoxChild)(this.vbox15[this.checkWIngCommander]));
-        w98.Position = 4;
-        w98.Expand = false;
-        w98.Fill = false;
+        Gtk.Box.BoxChild w136 = ((Gtk.Box.BoxChild)(this.vbox15[this.checkWIngCommander]));
+        w136.Position = 4;
+        w136.Expand = false;
+        w136.Fill = false;
         this.notebook3.Add(this.vbox15);
-        Gtk.Notebook.NotebookChild w99 = ((Gtk.Notebook.NotebookChild)(this.notebook3[this.vbox15]));
-        w99.Position = 5;
+        Gtk.Notebook.NotebookChild w137 = ((Gtk.Notebook.NotebookChild)(this.notebook3[this.vbox15]));
+        w137.Position = 7;
         // Notebook tab
         this.label18 = new Gtk.Label();
         this.label18.Name = "label18";
@@ -1364,19 +1854,19 @@ public partial class MainWindow {
         this.image94.Name = "image94";
         this.image94.Pixbuf = Stetic.IconLoader.LoadIcon(this, "gtk-execute", Gtk.IconSize.Menu, 16);
         this.hbox19.Add(this.image94);
-        Gtk.Box.BoxChild w100 = ((Gtk.Box.BoxChild)(this.hbox19[this.image94]));
-        w100.Position = 0;
-        w100.Expand = false;
-        w100.Fill = false;
+        Gtk.Box.BoxChild w138 = ((Gtk.Box.BoxChild)(this.hbox19[this.image94]));
+        w138.Position = 0;
+        w138.Expand = false;
+        w138.Fill = false;
         // Container child hbox19.Gtk.Box+BoxChild
         this.label16 = new Gtk.Label();
         this.label16.Name = "label16";
         this.label16.LabelProp = Mono.Unix.Catalog.GetString("Just click the Launch! button below to start playing!");
         this.hbox19.Add(this.label16);
-        Gtk.Box.BoxChild w101 = ((Gtk.Box.BoxChild)(this.hbox19[this.label16]));
-        w101.Position = 1;
-        w101.Expand = false;
-        w101.Fill = false;
+        Gtk.Box.BoxChild w139 = ((Gtk.Box.BoxChild)(this.hbox19[this.label16]));
+        w139.Position = 1;
+        w139.Expand = false;
+        w139.Fill = false;
         this.GtkAlignment11.Add(this.hbox19);
         this.frame16.Add(this.GtkAlignment11);
         this.GtkLabel93 = new Gtk.Label();
@@ -1385,10 +1875,10 @@ public partial class MainWindow {
         this.GtkLabel93.UseMarkup = true;
         this.frame16.LabelWidget = this.GtkLabel93;
         this.vbox14.Add(this.frame16);
-        Gtk.Box.BoxChild w104 = ((Gtk.Box.BoxChild)(this.vbox14[this.frame16]));
-        w104.Position = 0;
-        w104.Expand = false;
-        w104.Fill = false;
+        Gtk.Box.BoxChild w142 = ((Gtk.Box.BoxChild)(this.vbox14[this.frame16]));
+        w142.Position = 0;
+        w142.Expand = false;
+        w142.Fill = false;
         // Container child vbox14.Gtk.Box+BoxChild
         this.frame10 = new Gtk.Frame();
         this.frame10.Name = "frame10";
@@ -1409,13 +1899,43 @@ public partial class MainWindow {
         this.GtkLabel94.UseMarkup = true;
         this.frame10.LabelWidget = this.GtkLabel94;
         this.vbox14.Add(this.frame10);
-        Gtk.Box.BoxChild w107 = ((Gtk.Box.BoxChild)(this.vbox14[this.frame10]));
-        w107.Position = 1;
-        w107.Expand = false;
-        w107.Fill = false;
+        Gtk.Box.BoxChild w145 = ((Gtk.Box.BoxChild)(this.vbox14[this.frame10]));
+        w145.Position = 1;
+        w145.Expand = false;
+        w145.Fill = false;
+        // Container child vbox14.Gtk.Box+BoxChild
+        this.frame1 = new Gtk.Frame();
+        this.frame1.Name = "frame1";
+        this.frame1.ShadowType = ((Gtk.ShadowType)(0));
+        // Container child frame1.Gtk.Container+ContainerChild
+        this.GtkAlignment16 = new Gtk.Alignment(0F, 0F, 1F, 1F);
+        this.GtkAlignment16.Name = "GtkAlignment16";
+        this.GtkAlignment16.LeftPadding = ((uint)(12));
+        // Container child GtkAlignment16.Gtk.Container+ContainerChild
+        this.GtkScrolledWindow3 = new Gtk.ScrolledWindow();
+        this.GtkScrolledWindow3.Name = "GtkScrolledWindow3";
+        this.GtkScrolledWindow3.HscrollbarPolicy = ((Gtk.PolicyType)(2));
+        this.GtkScrolledWindow3.ShadowType = ((Gtk.ShadowType)(1));
+        // Container child GtkScrolledWindow3.Gtk.Container+ContainerChild
+        this.switchTextView = new Gtk.TextView();
+        this.switchTextView.CanFocus = true;
+        this.switchTextView.Name = "switchTextView";
+        this.switchTextView.WrapMode = ((Gtk.WrapMode)(2));
+        this.GtkScrolledWindow3.Add(this.switchTextView);
+        this.GtkAlignment16.Add(this.GtkScrolledWindow3);
+        this.frame1.Add(this.GtkAlignment16);
+        this.GtkLabel83 = new Gtk.Label();
+        this.GtkLabel83.Name = "GtkLabel83";
+        this.GtkLabel83.LabelProp = Mono.Unix.Catalog.GetString("<b>Here's all the switches you've selected:</b>");
+        this.GtkLabel83.UseMarkup = true;
+        this.frame1.LabelWidget = this.GtkLabel83;
+        this.vbox14.Add(this.frame1);
+        Gtk.Box.BoxChild w149 = ((Gtk.Box.BoxChild)(this.vbox14[this.frame1]));
+        w149.PackType = ((Gtk.PackType)(1));
+        w149.Position = 2;
         this.notebook3.Add(this.vbox14);
-        Gtk.Notebook.NotebookChild w108 = ((Gtk.Notebook.NotebookChild)(this.notebook3[this.vbox14]));
-        w108.Position = 6;
+        Gtk.Notebook.NotebookChild w150 = ((Gtk.Notebook.NotebookChild)(this.notebook3[this.vbox14]));
+        w150.Position = 8;
         // Notebook tab
         this.label15 = new Gtk.Label();
         this.label15.Name = "label15";
@@ -1449,8 +1969,8 @@ public partial class MainWindow {
         this.checkAmbient.Label = Mono.Unix.Catalog.GetString("Ambient Factor (ambient_factor)");
         this.checkAmbient.DrawIndicator = true;
         this.hbox2.Add(this.checkAmbient);
-        Gtk.Box.BoxChild w109 = ((Gtk.Box.BoxChild)(this.hbox2[this.checkAmbient]));
-        w109.Position = 0;
+        Gtk.Box.BoxChild w151 = ((Gtk.Box.BoxChild)(this.hbox2[this.checkAmbient]));
+        w151.Position = 0;
         // Container child hbox2.Gtk.Box+BoxChild
         this.spinAmbient = new Gtk.SpinButton(0, 1000, 1);
         this.spinAmbient.Sensitive = false;
@@ -1461,15 +1981,15 @@ public partial class MainWindow {
         this.spinAmbient.Numeric = true;
         this.spinAmbient.Value = 120;
         this.hbox2.Add(this.spinAmbient);
-        Gtk.Box.BoxChild w110 = ((Gtk.Box.BoxChild)(this.hbox2[this.spinAmbient]));
-        w110.Position = 1;
-        w110.Expand = false;
-        w110.Fill = false;
+        Gtk.Box.BoxChild w152 = ((Gtk.Box.BoxChild)(this.hbox2[this.spinAmbient]));
+        w152.Position = 1;
+        w152.Expand = false;
+        w152.Fill = false;
         this.vbox8.Add(this.hbox2);
-        Gtk.Box.BoxChild w111 = ((Gtk.Box.BoxChild)(this.vbox8[this.hbox2]));
-        w111.Position = 0;
-        w111.Expand = false;
-        w111.Fill = false;
+        Gtk.Box.BoxChild w153 = ((Gtk.Box.BoxChild)(this.vbox8[this.hbox2]));
+        w153.Position = 0;
+        w153.Expand = false;
+        w153.Fill = false;
         // Container child vbox8.Gtk.Box+BoxChild
         this.checkEmissiveLight = new Gtk.CheckButton();
         this.checkEmissiveLight.CanFocus = true;
@@ -1477,10 +1997,10 @@ public partial class MainWindow {
         this.checkEmissiveLight.Label = Mono.Unix.Catalog.GetString("No Emissive Light (no_emissive_light)");
         this.checkEmissiveLight.DrawIndicator = true;
         this.vbox8.Add(this.checkEmissiveLight);
-        Gtk.Box.BoxChild w112 = ((Gtk.Box.BoxChild)(this.vbox8[this.checkEmissiveLight]));
-        w112.Position = 1;
-        w112.Expand = false;
-        w112.Fill = false;
+        Gtk.Box.BoxChild w154 = ((Gtk.Box.BoxChild)(this.vbox8[this.checkEmissiveLight]));
+        w154.Position = 1;
+        w154.Expand = false;
+        w154.Fill = false;
         // Container child vbox8.Gtk.Box+BoxChild
         this.hbox3 = new Gtk.HBox();
         this.hbox3.Name = "hbox3";
@@ -1492,8 +2012,8 @@ public partial class MainWindow {
         this.checkSpecExp.Label = Mono.Unix.Catalog.GetString("Specularity Exp(ansion?) (spec_exp)");
         this.checkSpecExp.DrawIndicator = true;
         this.hbox3.Add(this.checkSpecExp);
-        Gtk.Box.BoxChild w113 = ((Gtk.Box.BoxChild)(this.hbox3[this.checkSpecExp]));
-        w113.Position = 0;
+        Gtk.Box.BoxChild w155 = ((Gtk.Box.BoxChild)(this.hbox3[this.checkSpecExp]));
+        w155.Position = 0;
         // Container child hbox3.Gtk.Box+BoxChild
         this.spinSpecExp = new Gtk.SpinButton(0, 100, 1);
         this.spinSpecExp.Sensitive = false;
@@ -1504,15 +2024,15 @@ public partial class MainWindow {
         this.spinSpecExp.Numeric = true;
         this.spinSpecExp.Value = 16;
         this.hbox3.Add(this.spinSpecExp);
-        Gtk.Box.BoxChild w114 = ((Gtk.Box.BoxChild)(this.hbox3[this.spinSpecExp]));
-        w114.Position = 1;
-        w114.Expand = false;
-        w114.Fill = false;
+        Gtk.Box.BoxChild w156 = ((Gtk.Box.BoxChild)(this.hbox3[this.spinSpecExp]));
+        w156.Position = 1;
+        w156.Expand = false;
+        w156.Fill = false;
         this.vbox8.Add(this.hbox3);
-        Gtk.Box.BoxChild w115 = ((Gtk.Box.BoxChild)(this.vbox8[this.hbox3]));
-        w115.Position = 2;
-        w115.Expand = false;
-        w115.Fill = false;
+        Gtk.Box.BoxChild w157 = ((Gtk.Box.BoxChild)(this.vbox8[this.hbox3]));
+        w157.Position = 2;
+        w157.Expand = false;
+        w157.Fill = false;
         // Container child vbox8.Gtk.Box+BoxChild
         this.hbox4 = new Gtk.HBox();
         this.hbox4.Name = "hbox4";
@@ -1524,8 +2044,8 @@ public partial class MainWindow {
         this.checkSpecPoint.Label = Mono.Unix.Catalog.GetString("Specularity Point (spec_point)");
         this.checkSpecPoint.DrawIndicator = true;
         this.hbox4.Add(this.checkSpecPoint);
-        Gtk.Box.BoxChild w116 = ((Gtk.Box.BoxChild)(this.hbox4[this.checkSpecPoint]));
-        w116.Position = 0;
+        Gtk.Box.BoxChild w158 = ((Gtk.Box.BoxChild)(this.hbox4[this.checkSpecPoint]));
+        w158.Position = 0;
         // Container child hbox4.Gtk.Box+BoxChild
         this.spinSpecPoint = new Gtk.SpinButton(0, 100, 1);
         this.spinSpecPoint.Sensitive = false;
@@ -1537,15 +2057,15 @@ public partial class MainWindow {
         this.spinSpecPoint.Numeric = true;
         this.spinSpecPoint.Value = 1;
         this.hbox4.Add(this.spinSpecPoint);
-        Gtk.Box.BoxChild w117 = ((Gtk.Box.BoxChild)(this.hbox4[this.spinSpecPoint]));
-        w117.Position = 1;
-        w117.Expand = false;
-        w117.Fill = false;
+        Gtk.Box.BoxChild w159 = ((Gtk.Box.BoxChild)(this.hbox4[this.spinSpecPoint]));
+        w159.Position = 1;
+        w159.Expand = false;
+        w159.Fill = false;
         this.vbox8.Add(this.hbox4);
-        Gtk.Box.BoxChild w118 = ((Gtk.Box.BoxChild)(this.vbox8[this.hbox4]));
-        w118.Position = 3;
-        w118.Expand = false;
-        w118.Fill = false;
+        Gtk.Box.BoxChild w160 = ((Gtk.Box.BoxChild)(this.vbox8[this.hbox4]));
+        w160.Position = 3;
+        w160.Expand = false;
+        w160.Fill = false;
         // Container child vbox8.Gtk.Box+BoxChild
         this.hbox5 = new Gtk.HBox();
         this.hbox5.Name = "hbox5";
@@ -1557,8 +2077,8 @@ public partial class MainWindow {
         this.checkSpecStatic.Label = Mono.Unix.Catalog.GetString("Specularity Static (spec_static)");
         this.checkSpecStatic.DrawIndicator = true;
         this.hbox5.Add(this.checkSpecStatic);
-        Gtk.Box.BoxChild w119 = ((Gtk.Box.BoxChild)(this.hbox5[this.checkSpecStatic]));
-        w119.Position = 0;
+        Gtk.Box.BoxChild w161 = ((Gtk.Box.BoxChild)(this.hbox5[this.checkSpecStatic]));
+        w161.Position = 0;
         // Container child hbox5.Gtk.Box+BoxChild
         this.spinSpecStatic = new Gtk.SpinButton(0, 100, 1);
         this.spinSpecStatic.Sensitive = false;
@@ -1570,15 +2090,15 @@ public partial class MainWindow {
         this.spinSpecStatic.Numeric = true;
         this.spinSpecStatic.Value = 1;
         this.hbox5.Add(this.spinSpecStatic);
-        Gtk.Box.BoxChild w120 = ((Gtk.Box.BoxChild)(this.hbox5[this.spinSpecStatic]));
-        w120.Position = 1;
-        w120.Expand = false;
-        w120.Fill = false;
+        Gtk.Box.BoxChild w162 = ((Gtk.Box.BoxChild)(this.hbox5[this.spinSpecStatic]));
+        w162.Position = 1;
+        w162.Expand = false;
+        w162.Fill = false;
         this.vbox8.Add(this.hbox5);
-        Gtk.Box.BoxChild w121 = ((Gtk.Box.BoxChild)(this.vbox8[this.hbox5]));
-        w121.Position = 4;
-        w121.Expand = false;
-        w121.Fill = false;
+        Gtk.Box.BoxChild w163 = ((Gtk.Box.BoxChild)(this.vbox8[this.hbox5]));
+        w163.Position = 4;
+        w163.Expand = false;
+        w163.Fill = false;
         // Container child vbox8.Gtk.Box+BoxChild
         this.hbox6 = new Gtk.HBox();
         this.hbox6.Name = "hbox6";
@@ -1590,8 +2110,8 @@ public partial class MainWindow {
         this.checkSpecTube.Label = Mono.Unix.Catalog.GetString("Specularity Tube (spec_tube)");
         this.checkSpecTube.DrawIndicator = true;
         this.hbox6.Add(this.checkSpecTube);
-        Gtk.Box.BoxChild w122 = ((Gtk.Box.BoxChild)(this.hbox6[this.checkSpecTube]));
-        w122.Position = 0;
+        Gtk.Box.BoxChild w164 = ((Gtk.Box.BoxChild)(this.hbox6[this.checkSpecTube]));
+        w164.Position = 0;
         // Container child hbox6.Gtk.Box+BoxChild
         this.spinSpecTube = new Gtk.SpinButton(0, 100, 1);
         this.spinSpecTube.Sensitive = false;
@@ -1603,15 +2123,15 @@ public partial class MainWindow {
         this.spinSpecTube.Numeric = true;
         this.spinSpecTube.Value = 1;
         this.hbox6.Add(this.spinSpecTube);
-        Gtk.Box.BoxChild w123 = ((Gtk.Box.BoxChild)(this.hbox6[this.spinSpecTube]));
-        w123.Position = 1;
-        w123.Expand = false;
-        w123.Fill = false;
+        Gtk.Box.BoxChild w165 = ((Gtk.Box.BoxChild)(this.hbox6[this.spinSpecTube]));
+        w165.Position = 1;
+        w165.Expand = false;
+        w165.Fill = false;
         this.vbox8.Add(this.hbox6);
-        Gtk.Box.BoxChild w124 = ((Gtk.Box.BoxChild)(this.vbox8[this.hbox6]));
-        w124.Position = 5;
-        w124.Expand = false;
-        w124.Fill = false;
+        Gtk.Box.BoxChild w166 = ((Gtk.Box.BoxChild)(this.vbox8[this.hbox6]));
+        w166.Position = 5;
+        w166.Expand = false;
+        w166.Fill = false;
         // Container child vbox8.Gtk.Box+BoxChild
         this.hbox7 = new Gtk.HBox();
         this.hbox7.Name = "hbox7";
@@ -1623,8 +2143,8 @@ public partial class MainWindow {
         this.checkOGLSpec.Label = Mono.Unix.Catalog.GetString("OpenGL Specularity (ogl_spec)");
         this.checkOGLSpec.DrawIndicator = true;
         this.hbox7.Add(this.checkOGLSpec);
-        Gtk.Box.BoxChild w125 = ((Gtk.Box.BoxChild)(this.hbox7[this.checkOGLSpec]));
-        w125.Position = 0;
+        Gtk.Box.BoxChild w167 = ((Gtk.Box.BoxChild)(this.hbox7[this.checkOGLSpec]));
+        w167.Position = 0;
         // Container child hbox7.Gtk.Box+BoxChild
         this.spinOGLSpec = new Gtk.SpinButton(0, 128, 1);
         this.spinOGLSpec.Sensitive = false;
@@ -1635,15 +2155,15 @@ public partial class MainWindow {
         this.spinOGLSpec.Numeric = true;
         this.spinOGLSpec.Value = 80;
         this.hbox7.Add(this.spinOGLSpec);
-        Gtk.Box.BoxChild w126 = ((Gtk.Box.BoxChild)(this.hbox7[this.spinOGLSpec]));
-        w126.Position = 1;
-        w126.Expand = false;
-        w126.Fill = false;
+        Gtk.Box.BoxChild w168 = ((Gtk.Box.BoxChild)(this.hbox7[this.spinOGLSpec]));
+        w168.Position = 1;
+        w168.Expand = false;
+        w168.Fill = false;
         this.vbox8.Add(this.hbox7);
-        Gtk.Box.BoxChild w127 = ((Gtk.Box.BoxChild)(this.vbox8[this.hbox7]));
-        w127.Position = 6;
-        w127.Expand = false;
-        w127.Fill = false;
+        Gtk.Box.BoxChild w169 = ((Gtk.Box.BoxChild)(this.vbox8[this.hbox7]));
+        w169.Position = 6;
+        w169.Expand = false;
+        w169.Fill = false;
         this.GtkAlignment13.Add(this.vbox8);
         this.frame12.Add(this.GtkAlignment13);
         this.GtkLabel50 = new Gtk.Label();
@@ -1652,10 +2172,10 @@ public partial class MainWindow {
         this.GtkLabel50.UseMarkup = true;
         this.frame12.LabelWidget = this.GtkLabel50;
         this.vbox10.Add(this.frame12);
-        Gtk.Box.BoxChild w130 = ((Gtk.Box.BoxChild)(this.vbox10[this.frame12]));
-        w130.Position = 0;
-        w130.Expand = false;
-        w130.Fill = false;
+        Gtk.Box.BoxChild w172 = ((Gtk.Box.BoxChild)(this.vbox10[this.frame12]));
+        w172.Position = 0;
+        w172.Expand = false;
+        w172.Fill = false;
         // Container child vbox10.Gtk.Box+BoxChild
         this.frame13 = new Gtk.Frame();
         this.frame13.Name = "frame13";
@@ -1679,8 +2199,8 @@ public partial class MainWindow {
         this.checkClipDist.Label = Mono.Unix.Catalog.GetString("Clipping Distance (clipdist)");
         this.checkClipDist.DrawIndicator = true;
         this.hbox8.Add(this.checkClipDist);
-        Gtk.Box.BoxChild w131 = ((Gtk.Box.BoxChild)(this.hbox8[this.checkClipDist]));
-        w131.Position = 0;
+        Gtk.Box.BoxChild w173 = ((Gtk.Box.BoxChild)(this.hbox8[this.checkClipDist]));
+        w173.Position = 0;
         // Container child hbox8.Gtk.Box+BoxChild
         this.spinClipDist = new Gtk.SpinButton(0, 100, 1);
         this.spinClipDist.Sensitive = false;
@@ -1690,15 +2210,15 @@ public partial class MainWindow {
         this.spinClipDist.ClimbRate = 1;
         this.spinClipDist.Numeric = true;
         this.hbox8.Add(this.spinClipDist);
-        Gtk.Box.BoxChild w132 = ((Gtk.Box.BoxChild)(this.hbox8[this.spinClipDist]));
-        w132.Position = 1;
-        w132.Expand = false;
-        w132.Fill = false;
+        Gtk.Box.BoxChild w174 = ((Gtk.Box.BoxChild)(this.hbox8[this.spinClipDist]));
+        w174.Position = 1;
+        w174.Expand = false;
+        w174.Fill = false;
         this.vbox17.Add(this.hbox8);
-        Gtk.Box.BoxChild w133 = ((Gtk.Box.BoxChild)(this.vbox17[this.hbox8]));
-        w133.Position = 0;
-        w133.Expand = false;
-        w133.Fill = false;
+        Gtk.Box.BoxChild w175 = ((Gtk.Box.BoxChild)(this.vbox17[this.hbox8]));
+        w175.Position = 0;
+        w175.Expand = false;
+        w175.Fill = false;
         // Container child vbox17.Gtk.Box+BoxChild
         this.hbox9 = new Gtk.HBox();
         this.hbox9.Name = "hbox9";
@@ -1711,8 +2231,8 @@ public partial class MainWindow {
         this.checkFOV.DrawIndicator = true;
         this.checkFOV.UseUnderline = true;
         this.hbox9.Add(this.checkFOV);
-        Gtk.Box.BoxChild w134 = ((Gtk.Box.BoxChild)(this.hbox9[this.checkFOV]));
-        w134.Position = 0;
+        Gtk.Box.BoxChild w176 = ((Gtk.Box.BoxChild)(this.hbox9[this.checkFOV]));
+        w176.Position = 0;
         // Container child hbox9.Gtk.Box+BoxChild
         this.spinFOV = new Gtk.SpinButton(0, 6.28, 0.1);
         this.spinFOV.Sensitive = false;
@@ -1724,15 +2244,15 @@ public partial class MainWindow {
         this.spinFOV.Numeric = true;
         this.spinFOV.Value = 0.75;
         this.hbox9.Add(this.spinFOV);
-        Gtk.Box.BoxChild w135 = ((Gtk.Box.BoxChild)(this.hbox9[this.spinFOV]));
-        w135.Position = 1;
-        w135.Expand = false;
-        w135.Fill = false;
+        Gtk.Box.BoxChild w177 = ((Gtk.Box.BoxChild)(this.hbox9[this.spinFOV]));
+        w177.Position = 1;
+        w177.Expand = false;
+        w177.Fill = false;
         this.vbox17.Add(this.hbox9);
-        Gtk.Box.BoxChild w136 = ((Gtk.Box.BoxChild)(this.vbox17[this.hbox9]));
-        w136.Position = 1;
-        w136.Expand = false;
-        w136.Fill = false;
+        Gtk.Box.BoxChild w178 = ((Gtk.Box.BoxChild)(this.vbox17[this.hbox9]));
+        w178.Position = 1;
+        w178.Expand = false;
+        w178.Fill = false;
         this.GtkAlignment14.Add(this.vbox17);
         this.frame13.Add(this.GtkAlignment14);
         this.GtkLabel81 = new Gtk.Label();
@@ -1741,13 +2261,13 @@ public partial class MainWindow {
         this.GtkLabel81.UseMarkup = true;
         this.frame13.LabelWidget = this.GtkLabel81;
         this.vbox10.Add(this.frame13);
-        Gtk.Box.BoxChild w139 = ((Gtk.Box.BoxChild)(this.vbox10[this.frame13]));
-        w139.Position = 1;
-        w139.Expand = false;
-        w139.Fill = false;
+        Gtk.Box.BoxChild w181 = ((Gtk.Box.BoxChild)(this.vbox10[this.frame13]));
+        w181.Position = 1;
+        w181.Expand = false;
+        w181.Fill = false;
         this.notebook3.Add(this.vbox10);
-        Gtk.Notebook.NotebookChild w140 = ((Gtk.Notebook.NotebookChild)(this.notebook3[this.vbox10]));
-        w140.Position = 7;
+        Gtk.Notebook.NotebookChild w182 = ((Gtk.Notebook.NotebookChild)(this.notebook3[this.vbox10]));
+        w182.Position = 9;
         // Notebook tab
         this.label10 = new Gtk.Label();
         this.label10.Name = "label10";
@@ -1766,10 +2286,10 @@ public partial class MainWindow {
         this.checkStandalone.DrawIndicator = true;
         this.checkStandalone.UseUnderline = true;
         this.vbox16.Add(this.checkStandalone);
-        Gtk.Box.BoxChild w141 = ((Gtk.Box.BoxChild)(this.vbox16[this.checkStandalone]));
-        w141.Position = 0;
-        w141.Expand = false;
-        w141.Fill = false;
+        Gtk.Box.BoxChild w183 = ((Gtk.Box.BoxChild)(this.vbox16[this.checkStandalone]));
+        w183.Position = 0;
+        w183.Expand = false;
+        w183.Fill = false;
         // Container child vbox16.Gtk.Box+BoxChild
         this.checkStartServer = new Gtk.CheckButton();
         this.checkStartServer.CanFocus = true;
@@ -1778,10 +2298,10 @@ public partial class MainWindow {
         this.checkStartServer.DrawIndicator = true;
         this.checkStartServer.UseUnderline = true;
         this.vbox16.Add(this.checkStartServer);
-        Gtk.Box.BoxChild w142 = ((Gtk.Box.BoxChild)(this.vbox16[this.checkStartServer]));
-        w142.Position = 1;
-        w142.Expand = false;
-        w142.Fill = false;
+        Gtk.Box.BoxChild w184 = ((Gtk.Box.BoxChild)(this.vbox16[this.checkStartServer]));
+        w184.Position = 1;
+        w184.Expand = false;
+        w184.Fill = false;
         // Container child vbox16.Gtk.Box+BoxChild
         this.frame14 = new Gtk.Frame();
         this.frame14.Name = "frame14";
@@ -1806,8 +2326,8 @@ public partial class MainWindow {
         this.checkClosed.DrawIndicator = true;
         this.checkClosed.UseUnderline = true;
         this.hbox10.Add(this.checkClosed);
-        Gtk.Box.BoxChild w143 = ((Gtk.Box.BoxChild)(this.hbox10[this.checkClosed]));
-        w143.Position = 0;
+        Gtk.Box.BoxChild w185 = ((Gtk.Box.BoxChild)(this.hbox10[this.checkClosed]));
+        w185.Position = 0;
         // Container child hbox10.Gtk.Box+BoxChild
         this.checkRestricted = new Gtk.CheckButton();
         this.checkRestricted.CanFocus = true;
@@ -1816,8 +2336,8 @@ public partial class MainWindow {
         this.checkRestricted.DrawIndicator = true;
         this.checkRestricted.UseUnderline = true;
         this.hbox10.Add(this.checkRestricted);
-        Gtk.Box.BoxChild w144 = ((Gtk.Box.BoxChild)(this.hbox10[this.checkRestricted]));
-        w144.Position = 1;
+        Gtk.Box.BoxChild w186 = ((Gtk.Box.BoxChild)(this.hbox10[this.checkRestricted]));
+        w186.Position = 1;
         // Container child hbox10.Gtk.Box+BoxChild
         this.checkMultilog = new Gtk.CheckButton();
         this.checkMultilog.CanFocus = true;
@@ -1826,8 +2346,8 @@ public partial class MainWindow {
         this.checkMultilog.DrawIndicator = true;
         this.checkMultilog.UseUnderline = true;
         this.hbox10.Add(this.checkMultilog);
-        Gtk.Box.BoxChild w145 = ((Gtk.Box.BoxChild)(this.hbox10[this.checkMultilog]));
-        w145.Position = 2;
+        Gtk.Box.BoxChild w187 = ((Gtk.Box.BoxChild)(this.hbox10[this.checkMultilog]));
+        w187.Position = 2;
         // Container child hbox10.Gtk.Box+BoxChild
         this.checkMPNoReturn = new Gtk.CheckButton();
         this.checkMPNoReturn.CanFocus = true;
@@ -1836,13 +2356,13 @@ public partial class MainWindow {
         this.checkMPNoReturn.DrawIndicator = true;
         this.checkMPNoReturn.UseUnderline = true;
         this.hbox10.Add(this.checkMPNoReturn);
-        Gtk.Box.BoxChild w146 = ((Gtk.Box.BoxChild)(this.hbox10[this.checkMPNoReturn]));
-        w146.Position = 3;
+        Gtk.Box.BoxChild w188 = ((Gtk.Box.BoxChild)(this.hbox10[this.checkMPNoReturn]));
+        w188.Position = 3;
         this.vbox12.Add(this.hbox10);
-        Gtk.Box.BoxChild w147 = ((Gtk.Box.BoxChild)(this.vbox12[this.hbox10]));
-        w147.Position = 0;
-        w147.Expand = false;
-        w147.Fill = false;
+        Gtk.Box.BoxChild w189 = ((Gtk.Box.BoxChild)(this.vbox12[this.hbox10]));
+        w189.Position = 0;
+        w189.Expand = false;
+        w189.Fill = false;
         // Container child vbox12.Gtk.Box+BoxChild
         this.hbox11 = new Gtk.HBox();
         this.hbox11.Name = "hbox11";
@@ -1855,8 +2375,8 @@ public partial class MainWindow {
         this.checkGameName.DrawIndicator = true;
         this.checkGameName.UseUnderline = true;
         this.hbox11.Add(this.checkGameName);
-        Gtk.Box.BoxChild w148 = ((Gtk.Box.BoxChild)(this.hbox11[this.checkGameName]));
-        w148.Position = 0;
+        Gtk.Box.BoxChild w190 = ((Gtk.Box.BoxChild)(this.hbox11[this.checkGameName]));
+        w190.Position = 0;
         // Container child hbox11.Gtk.Box+BoxChild
         this.entryGameName = new Gtk.Entry();
         this.entryGameName.Sensitive = false;
@@ -1866,13 +2386,13 @@ public partial class MainWindow {
         this.entryGameName.WidthChars = 2;
         this.entryGameName.InvisibleChar = '●';
         this.hbox11.Add(this.entryGameName);
-        Gtk.Box.BoxChild w149 = ((Gtk.Box.BoxChild)(this.hbox11[this.entryGameName]));
-        w149.Position = 1;
+        Gtk.Box.BoxChild w191 = ((Gtk.Box.BoxChild)(this.hbox11[this.entryGameName]));
+        w191.Position = 1;
         this.vbox12.Add(this.hbox11);
-        Gtk.Box.BoxChild w150 = ((Gtk.Box.BoxChild)(this.vbox12[this.hbox11]));
-        w150.Position = 1;
-        w150.Expand = false;
-        w150.Fill = false;
+        Gtk.Box.BoxChild w192 = ((Gtk.Box.BoxChild)(this.vbox12[this.hbox11]));
+        w192.Position = 1;
+        w192.Expand = false;
+        w192.Fill = false;
         // Container child vbox12.Gtk.Box+BoxChild
         this.hbox12 = new Gtk.HBox();
         this.hbox12.Name = "hbox12";
@@ -1885,8 +2405,8 @@ public partial class MainWindow {
         this.checkPassword.DrawIndicator = true;
         this.checkPassword.UseUnderline = true;
         this.hbox12.Add(this.checkPassword);
-        Gtk.Box.BoxChild w151 = ((Gtk.Box.BoxChild)(this.hbox12[this.checkPassword]));
-        w151.Position = 0;
+        Gtk.Box.BoxChild w193 = ((Gtk.Box.BoxChild)(this.hbox12[this.checkPassword]));
+        w193.Position = 0;
         // Container child hbox12.Gtk.Box+BoxChild
         this.entryPassword = new Gtk.Entry();
         this.entryPassword.Sensitive = false;
@@ -1896,13 +2416,13 @@ public partial class MainWindow {
         this.entryPassword.WidthChars = 0;
         this.entryPassword.InvisibleChar = '●';
         this.hbox12.Add(this.entryPassword);
-        Gtk.Box.BoxChild w152 = ((Gtk.Box.BoxChild)(this.hbox12[this.entryPassword]));
-        w152.Position = 1;
+        Gtk.Box.BoxChild w194 = ((Gtk.Box.BoxChild)(this.hbox12[this.entryPassword]));
+        w194.Position = 1;
         this.vbox12.Add(this.hbox12);
-        Gtk.Box.BoxChild w153 = ((Gtk.Box.BoxChild)(this.vbox12[this.hbox12]));
-        w153.Position = 2;
-        w153.Expand = false;
-        w153.Fill = false;
+        Gtk.Box.BoxChild w195 = ((Gtk.Box.BoxChild)(this.vbox12[this.hbox12]));
+        w195.Position = 2;
+        w195.Expand = false;
+        w195.Fill = false;
         // Container child vbox12.Gtk.Box+BoxChild
         this.hbox13 = new Gtk.HBox();
         this.hbox13.Name = "hbox13";
@@ -1915,8 +2435,8 @@ public partial class MainWindow {
         this.checkAllowAbove.DrawIndicator = true;
         this.checkAllowAbove.UseUnderline = true;
         this.hbox13.Add(this.checkAllowAbove);
-        Gtk.Box.BoxChild w154 = ((Gtk.Box.BoxChild)(this.hbox13[this.checkAllowAbove]));
-        w154.Position = 0;
+        Gtk.Box.BoxChild w196 = ((Gtk.Box.BoxChild)(this.hbox13[this.checkAllowAbove]));
+        w196.Position = 0;
         // Container child hbox13.Gtk.Box+BoxChild
         this.spinAllowAbove = new Gtk.SpinButton(0, 100, 1);
         this.spinAllowAbove.Sensitive = false;
@@ -1926,15 +2446,15 @@ public partial class MainWindow {
         this.spinAllowAbove.ClimbRate = 1;
         this.spinAllowAbove.Numeric = true;
         this.hbox13.Add(this.spinAllowAbove);
-        Gtk.Box.BoxChild w155 = ((Gtk.Box.BoxChild)(this.hbox13[this.spinAllowAbove]));
-        w155.Position = 1;
-        w155.Expand = false;
-        w155.Fill = false;
+        Gtk.Box.BoxChild w197 = ((Gtk.Box.BoxChild)(this.hbox13[this.spinAllowAbove]));
+        w197.Position = 1;
+        w197.Expand = false;
+        w197.Fill = false;
         this.vbox12.Add(this.hbox13);
-        Gtk.Box.BoxChild w156 = ((Gtk.Box.BoxChild)(this.vbox12[this.hbox13]));
-        w156.Position = 3;
-        w156.Expand = false;
-        w156.Fill = false;
+        Gtk.Box.BoxChild w198 = ((Gtk.Box.BoxChild)(this.vbox12[this.hbox13]));
+        w198.Position = 3;
+        w198.Expand = false;
+        w198.Fill = false;
         // Container child vbox12.Gtk.Box+BoxChild
         this.hbox14 = new Gtk.HBox();
         this.hbox14.Name = "hbox14";
@@ -1947,8 +2467,8 @@ public partial class MainWindow {
         this.checkAllowBelow.DrawIndicator = true;
         this.checkAllowBelow.UseUnderline = true;
         this.hbox14.Add(this.checkAllowBelow);
-        Gtk.Box.BoxChild w157 = ((Gtk.Box.BoxChild)(this.hbox14[this.checkAllowBelow]));
-        w157.Position = 0;
+        Gtk.Box.BoxChild w199 = ((Gtk.Box.BoxChild)(this.hbox14[this.checkAllowBelow]));
+        w199.Position = 0;
         // Container child hbox14.Gtk.Box+BoxChild
         this.spinAllowBelow = new Gtk.SpinButton(0, 100, 1);
         this.spinAllowBelow.Sensitive = false;
@@ -1958,15 +2478,15 @@ public partial class MainWindow {
         this.spinAllowBelow.ClimbRate = 1;
         this.spinAllowBelow.Numeric = true;
         this.hbox14.Add(this.spinAllowBelow);
-        Gtk.Box.BoxChild w158 = ((Gtk.Box.BoxChild)(this.hbox14[this.spinAllowBelow]));
-        w158.Position = 1;
-        w158.Expand = false;
-        w158.Fill = false;
+        Gtk.Box.BoxChild w200 = ((Gtk.Box.BoxChild)(this.hbox14[this.spinAllowBelow]));
+        w200.Position = 1;
+        w200.Expand = false;
+        w200.Fill = false;
         this.vbox12.Add(this.hbox14);
-        Gtk.Box.BoxChild w159 = ((Gtk.Box.BoxChild)(this.vbox12[this.hbox14]));
-        w159.Position = 4;
-        w159.Expand = false;
-        w159.Fill = false;
+        Gtk.Box.BoxChild w201 = ((Gtk.Box.BoxChild)(this.vbox12[this.hbox14]));
+        w201.Position = 4;
+        w201.Expand = false;
+        w201.Fill = false;
         // Container child vbox12.Gtk.Box+BoxChild
         this.hbox15 = new Gtk.HBox();
         this.hbox15.Name = "hbox15";
@@ -1979,8 +2499,8 @@ public partial class MainWindow {
         this.checkPort.DrawIndicator = true;
         this.checkPort.UseUnderline = true;
         this.hbox15.Add(this.checkPort);
-        Gtk.Box.BoxChild w160 = ((Gtk.Box.BoxChild)(this.hbox15[this.checkPort]));
-        w160.Position = 0;
+        Gtk.Box.BoxChild w202 = ((Gtk.Box.BoxChild)(this.hbox15[this.checkPort]));
+        w202.Position = 0;
         // Container child hbox15.Gtk.Box+BoxChild
         this.spinPort = new Gtk.SpinButton(0, 100000, 1);
         this.spinPort.Sensitive = false;
@@ -1990,15 +2510,15 @@ public partial class MainWindow {
         this.spinPort.ClimbRate = 1;
         this.spinPort.Numeric = true;
         this.hbox15.Add(this.spinPort);
-        Gtk.Box.BoxChild w161 = ((Gtk.Box.BoxChild)(this.hbox15[this.spinPort]));
-        w161.Position = 1;
-        w161.Expand = false;
-        w161.Fill = false;
+        Gtk.Box.BoxChild w203 = ((Gtk.Box.BoxChild)(this.hbox15[this.spinPort]));
+        w203.Position = 1;
+        w203.Expand = false;
+        w203.Fill = false;
         this.vbox12.Add(this.hbox15);
-        Gtk.Box.BoxChild w162 = ((Gtk.Box.BoxChild)(this.vbox12[this.hbox15]));
-        w162.Position = 5;
-        w162.Expand = false;
-        w162.Fill = false;
+        Gtk.Box.BoxChild w204 = ((Gtk.Box.BoxChild)(this.vbox12[this.hbox15]));
+        w204.Position = 5;
+        w204.Expand = false;
+        w204.Fill = false;
         // Container child vbox12.Gtk.Box+BoxChild
         this.hbox16 = new Gtk.HBox();
         this.hbox16.Name = "hbox16";
@@ -2011,8 +2531,8 @@ public partial class MainWindow {
         this.checkTimeout.DrawIndicator = true;
         this.checkTimeout.UseUnderline = true;
         this.hbox16.Add(this.checkTimeout);
-        Gtk.Box.BoxChild w163 = ((Gtk.Box.BoxChild)(this.hbox16[this.checkTimeout]));
-        w163.Position = 0;
+        Gtk.Box.BoxChild w205 = ((Gtk.Box.BoxChild)(this.hbox16[this.checkTimeout]));
+        w205.Position = 0;
         // Container child hbox16.Gtk.Box+BoxChild
         this.spinTimeout = new Gtk.SpinButton(0, 100000, 1);
         this.spinTimeout.Sensitive = false;
@@ -2022,15 +2542,15 @@ public partial class MainWindow {
         this.spinTimeout.ClimbRate = 1;
         this.spinTimeout.Numeric = true;
         this.hbox16.Add(this.spinTimeout);
-        Gtk.Box.BoxChild w164 = ((Gtk.Box.BoxChild)(this.hbox16[this.spinTimeout]));
-        w164.Position = 1;
-        w164.Expand = false;
-        w164.Fill = false;
+        Gtk.Box.BoxChild w206 = ((Gtk.Box.BoxChild)(this.hbox16[this.spinTimeout]));
+        w206.Position = 1;
+        w206.Expand = false;
+        w206.Fill = false;
         this.vbox12.Add(this.hbox16);
-        Gtk.Box.BoxChild w165 = ((Gtk.Box.BoxChild)(this.vbox12[this.hbox16]));
-        w165.Position = 6;
-        w165.Expand = false;
-        w165.Fill = false;
+        Gtk.Box.BoxChild w207 = ((Gtk.Box.BoxChild)(this.vbox12[this.hbox16]));
+        w207.Position = 6;
+        w207.Expand = false;
+        w207.Fill = false;
         // Container child vbox12.Gtk.Box+BoxChild
         this.hbox17 = new Gtk.HBox();
         this.hbox17.Name = "hbox17";
@@ -2044,8 +2564,8 @@ public partial class MainWindow {
         this.checkbutton87.DrawIndicator = true;
         this.checkbutton87.UseUnderline = true;
         this.hbox17.Add(this.checkbutton87);
-        Gtk.Box.BoxChild w166 = ((Gtk.Box.BoxChild)(this.hbox17[this.checkbutton87]));
-        w166.Position = 0;
+        Gtk.Box.BoxChild w208 = ((Gtk.Box.BoxChild)(this.hbox17[this.checkbutton87]));
+        w208.Position = 0;
         // Container child hbox17.Gtk.Box+BoxChild
         this.entry5 = new Gtk.Entry();
         this.entry5.Sensitive = false;
@@ -2055,13 +2575,13 @@ public partial class MainWindow {
         this.entry5.IsEditable = true;
         this.entry5.InvisibleChar = '●';
         this.hbox17.Add(this.entry5);
-        Gtk.Box.BoxChild w167 = ((Gtk.Box.BoxChild)(this.hbox17[this.entry5]));
-        w167.Position = 1;
+        Gtk.Box.BoxChild w209 = ((Gtk.Box.BoxChild)(this.hbox17[this.entry5]));
+        w209.Position = 1;
         this.vbox12.Add(this.hbox17);
-        Gtk.Box.BoxChild w168 = ((Gtk.Box.BoxChild)(this.vbox12[this.hbox17]));
-        w168.Position = 7;
-        w168.Expand = false;
-        w168.Fill = false;
+        Gtk.Box.BoxChild w210 = ((Gtk.Box.BoxChild)(this.vbox12[this.hbox17]));
+        w210.Position = 7;
+        w210.Expand = false;
+        w210.Fill = false;
         // Container child vbox12.Gtk.Box+BoxChild
         this.hbox18 = new Gtk.HBox();
         this.hbox18.Name = "hbox18";
@@ -2074,8 +2594,8 @@ public partial class MainWindow {
         this.checkCapObjectUpdate.DrawIndicator = true;
         this.checkCapObjectUpdate.UseUnderline = true;
         this.hbox18.Add(this.checkCapObjectUpdate);
-        Gtk.Box.BoxChild w169 = ((Gtk.Box.BoxChild)(this.hbox18[this.checkCapObjectUpdate]));
-        w169.Position = 0;
+        Gtk.Box.BoxChild w211 = ((Gtk.Box.BoxChild)(this.hbox18[this.checkCapObjectUpdate]));
+        w211.Position = 0;
         // Container child hbox18.Gtk.Box+BoxChild
         this.spinCapObjectUpdate = new Gtk.SpinButton(0, 3, 1);
         this.spinCapObjectUpdate.Sensitive = false;
@@ -2085,15 +2605,15 @@ public partial class MainWindow {
         this.spinCapObjectUpdate.ClimbRate = 1;
         this.spinCapObjectUpdate.Numeric = true;
         this.hbox18.Add(this.spinCapObjectUpdate);
-        Gtk.Box.BoxChild w170 = ((Gtk.Box.BoxChild)(this.hbox18[this.spinCapObjectUpdate]));
-        w170.Position = 1;
-        w170.Expand = false;
-        w170.Fill = false;
+        Gtk.Box.BoxChild w212 = ((Gtk.Box.BoxChild)(this.hbox18[this.spinCapObjectUpdate]));
+        w212.Position = 1;
+        w212.Expand = false;
+        w212.Fill = false;
         this.vbox12.Add(this.hbox18);
-        Gtk.Box.BoxChild w171 = ((Gtk.Box.BoxChild)(this.vbox12[this.hbox18]));
-        w171.Position = 8;
-        w171.Expand = false;
-        w171.Fill = false;
+        Gtk.Box.BoxChild w213 = ((Gtk.Box.BoxChild)(this.vbox12[this.hbox18]));
+        w213.Position = 8;
+        w213.Expand = false;
+        w213.Fill = false;
         this.GtkAlignment15.Add(this.vbox12);
         this.frame14.Add(this.GtkAlignment15);
         this.GtkLabel99 = new Gtk.Label();
@@ -2102,13 +2622,13 @@ public partial class MainWindow {
         this.GtkLabel99.UseMarkup = true;
         this.frame14.LabelWidget = this.GtkLabel99;
         this.vbox16.Add(this.frame14);
-        Gtk.Box.BoxChild w174 = ((Gtk.Box.BoxChild)(this.vbox16[this.frame14]));
-        w174.Position = 2;
-        w174.Expand = false;
-        w174.Fill = false;
+        Gtk.Box.BoxChild w216 = ((Gtk.Box.BoxChild)(this.vbox16[this.frame14]));
+        w216.Position = 2;
+        w216.Expand = false;
+        w216.Fill = false;
         this.notebook3.Add(this.vbox16);
-        Gtk.Notebook.NotebookChild w175 = ((Gtk.Notebook.NotebookChild)(this.notebook3[this.vbox16]));
-        w175.Position = 8;
+        Gtk.Notebook.NotebookChild w217 = ((Gtk.Notebook.NotebookChild)(this.notebook3[this.vbox16]));
+        w217.Position = 10;
         // Notebook tab
         this.label12 = new Gtk.Label();
         this.label12.Name = "label12";
@@ -2128,10 +2648,10 @@ public partial class MainWindow {
         this.checkPos.DrawIndicator = true;
         this.checkPos.UseUnderline = true;
         this.vbox18.Add(this.checkPos);
-        Gtk.Box.BoxChild w176 = ((Gtk.Box.BoxChild)(this.vbox18[this.checkPos]));
-        w176.Position = 0;
-        w176.Expand = false;
-        w176.Fill = false;
+        Gtk.Box.BoxChild w218 = ((Gtk.Box.BoxChild)(this.vbox18[this.checkPos]));
+        w218.Position = 0;
+        w218.Expand = false;
+        w218.Fill = false;
         // Container child vbox18.Gtk.Box+BoxChild
         this.checkCoords = new Gtk.CheckButton();
         this.checkCoords.CanFocus = true;
@@ -2140,10 +2660,10 @@ public partial class MainWindow {
         this.checkCoords.DrawIndicator = true;
         this.checkCoords.UseUnderline = true;
         this.vbox18.Add(this.checkCoords);
-        Gtk.Box.BoxChild w177 = ((Gtk.Box.BoxChild)(this.vbox18[this.checkCoords]));
-        w177.Position = 1;
-        w177.Expand = false;
-        w177.Fill = false;
+        Gtk.Box.BoxChild w219 = ((Gtk.Box.BoxChild)(this.vbox18[this.checkCoords]));
+        w219.Position = 1;
+        w219.Expand = false;
+        w219.Fill = false;
         // Container child vbox18.Gtk.Box+BoxChild
         this.checkTimerBar = new Gtk.CheckButton();
         this.checkTimerBar.CanFocus = true;
@@ -2152,10 +2672,10 @@ public partial class MainWindow {
         this.checkTimerBar.DrawIndicator = true;
         this.checkTimerBar.UseUnderline = true;
         this.vbox18.Add(this.checkTimerBar);
-        Gtk.Box.BoxChild w178 = ((Gtk.Box.BoxChild)(this.vbox18[this.checkTimerBar]));
-        w178.Position = 2;
-        w178.Expand = false;
-        w178.Fill = false;
+        Gtk.Box.BoxChild w220 = ((Gtk.Box.BoxChild)(this.vbox18[this.checkTimerBar]));
+        w220.Position = 2;
+        w220.Expand = false;
+        w220.Fill = false;
         // Container child vbox18.Gtk.Box+BoxChild
         this.checkStats = new Gtk.CheckButton();
         this.checkStats.CanFocus = true;
@@ -2164,21 +2684,21 @@ public partial class MainWindow {
         this.checkStats.DrawIndicator = true;
         this.checkStats.UseUnderline = true;
         this.vbox18.Add(this.checkStats);
-        Gtk.Box.BoxChild w179 = ((Gtk.Box.BoxChild)(this.vbox18[this.checkStats]));
-        w179.Position = 3;
-        w179.Expand = false;
-        w179.Fill = false;
+        Gtk.Box.BoxChild w221 = ((Gtk.Box.BoxChild)(this.vbox18[this.checkStats]));
+        w221.Position = 3;
+        w221.Expand = false;
+        w221.Fill = false;
         // Container child vbox18.Gtk.Box+BoxChild
         this.checkShowMumUsage = new Gtk.CheckButton();
         this.checkShowMumUsage.CanFocus = true;
         this.checkShowMumUsage.Name = "checkShowMumUsage";
-        this.checkShowMumUsage.Label = Mono.Unix.Catalog.GetString("Show really detailed memory statistics (show_mem_usage)");
+        this.checkShowMumUsage.Label = Mono.Unix.Catalog.GetString("Show detailed memory statistics (show_mem_usage)");
         this.checkShowMumUsage.DrawIndicator = true;
         this.vbox18.Add(this.checkShowMumUsage);
-        Gtk.Box.BoxChild w180 = ((Gtk.Box.BoxChild)(this.vbox18[this.checkShowMumUsage]));
-        w180.Position = 4;
-        w180.Expand = false;
-        w180.Fill = false;
+        Gtk.Box.BoxChild w222 = ((Gtk.Box.BoxChild)(this.vbox18[this.checkShowMumUsage]));
+        w222.Position = 4;
+        w222.Expand = false;
+        w222.Fill = false;
         // Container child vbox18.Gtk.Box+BoxChild
         this.checkPofSpew = new Gtk.CheckButton();
         this.checkPofSpew.CanFocus = true;
@@ -2187,10 +2707,10 @@ public partial class MainWindow {
         this.checkPofSpew.DrawIndicator = true;
         this.checkPofSpew.UseUnderline = true;
         this.vbox18.Add(this.checkPofSpew);
-        Gtk.Box.BoxChild w181 = ((Gtk.Box.BoxChild)(this.vbox18[this.checkPofSpew]));
-        w181.Position = 5;
-        w181.Expand = false;
-        w181.Fill = false;
+        Gtk.Box.BoxChild w223 = ((Gtk.Box.BoxChild)(this.vbox18[this.checkPofSpew]));
+        w223.Position = 5;
+        w223.Expand = false;
+        w223.Fill = false;
         // Container child vbox18.Gtk.Box+BoxChild
         this.checkTableCRCs = new Gtk.CheckButton();
         this.checkTableCRCs.CanFocus = true;
@@ -2199,10 +2719,10 @@ public partial class MainWindow {
         this.checkTableCRCs.DrawIndicator = true;
         this.checkTableCRCs.UseUnderline = true;
         this.vbox18.Add(this.checkTableCRCs);
-        Gtk.Box.BoxChild w182 = ((Gtk.Box.BoxChild)(this.vbox18[this.checkTableCRCs]));
-        w182.Position = 6;
-        w182.Expand = false;
-        w182.Fill = false;
+        Gtk.Box.BoxChild w224 = ((Gtk.Box.BoxChild)(this.vbox18[this.checkTableCRCs]));
+        w224.Position = 6;
+        w224.Expand = false;
+        w224.Fill = false;
         // Container child vbox18.Gtk.Box+BoxChild
         this.checkMissionCRCs = new Gtk.CheckButton();
         this.checkMissionCRCs.CanFocus = true;
@@ -2211,10 +2731,10 @@ public partial class MainWindow {
         this.checkMissionCRCs.DrawIndicator = true;
         this.checkMissionCRCs.UseUnderline = true;
         this.vbox18.Add(this.checkMissionCRCs);
-        Gtk.Box.BoxChild w183 = ((Gtk.Box.BoxChild)(this.vbox18[this.checkMissionCRCs]));
-        w183.Position = 7;
-        w183.Expand = false;
-        w183.Fill = false;
+        Gtk.Box.BoxChild w225 = ((Gtk.Box.BoxChild)(this.vbox18[this.checkMissionCRCs]));
+        w225.Position = 7;
+        w225.Expand = false;
+        w225.Fill = false;
         // Container child vbox18.Gtk.Box+BoxChild
         this.checkDisableCollisions = new Gtk.CheckButton();
         this.checkDisableCollisions.CanFocus = true;
@@ -2222,10 +2742,10 @@ public partial class MainWindow {
         this.checkDisableCollisions.Label = Mono.Unix.Catalog.GetString("Disable Collisions (dis_collisions)");
         this.checkDisableCollisions.DrawIndicator = true;
         this.vbox18.Add(this.checkDisableCollisions);
-        Gtk.Box.BoxChild w184 = ((Gtk.Box.BoxChild)(this.vbox18[this.checkDisableCollisions]));
-        w184.Position = 8;
-        w184.Expand = false;
-        w184.Fill = false;
+        Gtk.Box.BoxChild w226 = ((Gtk.Box.BoxChild)(this.vbox18[this.checkDisableCollisions]));
+        w226.Position = 8;
+        w226.Expand = false;
+        w226.Fill = false;
         // Container child vbox18.Gtk.Box+BoxChild
         this.checkDisableWeapons = new Gtk.CheckButton();
         this.checkDisableWeapons.CanFocus = true;
@@ -2233,10 +2753,10 @@ public partial class MainWindow {
         this.checkDisableWeapons.Label = Mono.Unix.Catalog.GetString("Disable Weapons Rendering (dis_weapons)");
         this.checkDisableWeapons.DrawIndicator = true;
         this.vbox18.Add(this.checkDisableWeapons);
-        Gtk.Box.BoxChild w185 = ((Gtk.Box.BoxChild)(this.vbox18[this.checkDisableWeapons]));
-        w185.Position = 9;
-        w185.Expand = false;
-        w185.Fill = false;
+        Gtk.Box.BoxChild w227 = ((Gtk.Box.BoxChild)(this.vbox18[this.checkDisableWeapons]));
+        w227.Position = 9;
+        w227.Expand = false;
+        w227.Fill = false;
         // Container child vbox18.Gtk.Box+BoxChild
         this.checkOutputSEXPs = new Gtk.CheckButton();
         this.checkOutputSEXPs.CanFocus = true;
@@ -2244,10 +2764,10 @@ public partial class MainWindow {
         this.checkOutputSEXPs.Label = Mono.Unix.Catalog.GetString("Output SEXPs (output_sexps)");
         this.checkOutputSEXPs.DrawIndicator = true;
         this.vbox18.Add(this.checkOutputSEXPs);
-        Gtk.Box.BoxChild w186 = ((Gtk.Box.BoxChild)(this.vbox18[this.checkOutputSEXPs]));
-        w186.Position = 10;
-        w186.Expand = false;
-        w186.Fill = false;
+        Gtk.Box.BoxChild w228 = ((Gtk.Box.BoxChild)(this.vbox18[this.checkOutputSEXPs]));
+        w228.Position = 10;
+        w228.Expand = false;
+        w228.Fill = false;
         // Container child vbox18.Gtk.Box+BoxChild
         this.checkOutputScripting = new Gtk.CheckButton();
         this.checkOutputScripting.CanFocus = true;
@@ -2255,13 +2775,13 @@ public partial class MainWindow {
         this.checkOutputScripting.Label = Mono.Unix.Catalog.GetString("Output Scripting (output_scripting)");
         this.checkOutputScripting.DrawIndicator = true;
         this.vbox18.Add(this.checkOutputScripting);
-        Gtk.Box.BoxChild w187 = ((Gtk.Box.BoxChild)(this.vbox18[this.checkOutputScripting]));
-        w187.Position = 11;
-        w187.Expand = false;
-        w187.Fill = false;
+        Gtk.Box.BoxChild w229 = ((Gtk.Box.BoxChild)(this.vbox18[this.checkOutputScripting]));
+        w229.Position = 11;
+        w229.Expand = false;
+        w229.Fill = false;
         this.notebook3.Add(this.vbox18);
-        Gtk.Notebook.NotebookChild w188 = ((Gtk.Notebook.NotebookChild)(this.notebook3[this.vbox18]));
-        w188.Position = 9;
+        Gtk.Notebook.NotebookChild w230 = ((Gtk.Notebook.NotebookChild)(this.notebook3[this.vbox18]));
+        w230.Position = 11;
         // Notebook tab
         this.label14 = new Gtk.Label();
         this.label14.Name = "label14";
@@ -2269,104 +2789,104 @@ public partial class MainWindow {
         this.notebook3.SetTabLabel(this.vbox18, this.label14);
         this.label14.ShowAll();
         // Container child notebook3.Gtk.Notebook+NotebookChild
-        this.vbox3 = new Gtk.VBox();
-        this.vbox3.Name = "vbox3";
-        this.vbox3.Spacing = 6;
-        // Container child vbox3.Gtk.Box+BoxChild
+        this.vbox20 = new Gtk.VBox();
+        this.vbox20.Name = "vbox20";
+        this.vbox20.Spacing = 6;
+        // Container child vbox20.Gtk.Box+BoxChild
         this.checkImgToDDS = new Gtk.CheckButton();
         this.checkImgToDDS.CanFocus = true;
         this.checkImgToDDS.Name = "checkImgToDDS";
         this.checkImgToDDS.Label = Mono.Unix.Catalog.GetString("Convert images to DDS (img2dds)");
         this.checkImgToDDS.DrawIndicator = true;
         this.checkImgToDDS.UseUnderline = true;
-        this.vbox3.Add(this.checkImgToDDS);
-        Gtk.Box.BoxChild w189 = ((Gtk.Box.BoxChild)(this.vbox3[this.checkImgToDDS]));
-        w189.Position = 0;
-        w189.Expand = false;
-        w189.Fill = false;
-        // Container child vbox3.Gtk.Box+BoxChild
+        this.vbox20.Add(this.checkImgToDDS);
+        Gtk.Box.BoxChild w231 = ((Gtk.Box.BoxChild)(this.vbox20[this.checkImgToDDS]));
+        w231.Position = 0;
+        w231.Expand = false;
+        w231.Fill = false;
+        // Container child vbox20.Gtk.Box+BoxChild
         this.checkCacheBitmaps = new Gtk.CheckButton();
         this.checkCacheBitmaps.CanFocus = true;
         this.checkCacheBitmaps.Name = "checkCacheBitmaps";
         this.checkCacheBitmaps.Label = Mono.Unix.Catalog.GetString("Cache Bitmaps (cache_bitmaps)");
         this.checkCacheBitmaps.DrawIndicator = true;
-        this.vbox3.Add(this.checkCacheBitmaps);
-        Gtk.Box.BoxChild w190 = ((Gtk.Box.BoxChild)(this.vbox3[this.checkCacheBitmaps]));
-        w190.Position = 1;
-        w190.Expand = false;
-        w190.Fill = false;
-        // Container child vbox3.Gtk.Box+BoxChild
+        this.vbox20.Add(this.checkCacheBitmaps);
+        Gtk.Box.BoxChild w232 = ((Gtk.Box.BoxChild)(this.vbox20[this.checkCacheBitmaps]));
+        w232.Position = 1;
+        w232.Expand = false;
+        w232.Fill = false;
+        // Container child vbox20.Gtk.Box+BoxChild
         this.checkNoAPInterrupt = new Gtk.CheckButton();
         this.checkNoAPInterrupt.CanFocus = true;
         this.checkNoAPInterrupt.Name = "checkNoAPInterrupt";
         this.checkNoAPInterrupt.Label = Mono.Unix.Catalog.GetString("No Autopilot Interrupt (no_ap_interrupt)");
         this.checkNoAPInterrupt.DrawIndicator = true;
-        this.vbox3.Add(this.checkNoAPInterrupt);
-        Gtk.Box.BoxChild w191 = ((Gtk.Box.BoxChild)(this.vbox3[this.checkNoAPInterrupt]));
-        w191.Position = 2;
-        w191.Expand = false;
-        w191.Fill = false;
-        // Container child vbox3.Gtk.Box+BoxChild
+        this.vbox20.Add(this.checkNoAPInterrupt);
+        Gtk.Box.BoxChild w233 = ((Gtk.Box.BoxChild)(this.vbox20[this.checkNoAPInterrupt]));
+        w233.Position = 2;
+        w233.Expand = false;
+        w233.Fill = false;
+        // Container child vbox20.Gtk.Box+BoxChild
         this.checkNoParseErrors = new Gtk.CheckButton();
         this.checkNoParseErrors.CanFocus = true;
         this.checkNoParseErrors.Name = "checkNoParseErrors";
         this.checkNoParseErrors.Label = Mono.Unix.Catalog.GetString("No Parse Errors (noparseerrors)");
         this.checkNoParseErrors.DrawIndicator = true;
         this.checkNoParseErrors.UseUnderline = true;
-        this.vbox3.Add(this.checkNoParseErrors);
-        Gtk.Box.BoxChild w192 = ((Gtk.Box.BoxChild)(this.vbox3[this.checkNoParseErrors]));
-        w192.Position = 3;
-        w192.Expand = false;
-        w192.Fill = false;
-        // Container child vbox3.Gtk.Box+BoxChild
+        this.vbox20.Add(this.checkNoParseErrors);
+        Gtk.Box.BoxChild w234 = ((Gtk.Box.BoxChild)(this.vbox20[this.checkNoParseErrors]));
+        w234.Position = 3;
+        w234.Expand = false;
+        w234.Fill = false;
+        // Container child vbox20.Gtk.Box+BoxChild
         this.checkSafeLoading = new Gtk.CheckButton();
         this.checkSafeLoading.CanFocus = true;
         this.checkSafeLoading.Name = "checkSafeLoading";
         this.checkSafeLoading.Label = Mono.Unix.Catalog.GetString("Safe Loading (safeloading)");
         this.checkSafeLoading.DrawIndicator = true;
         this.checkSafeLoading.UseUnderline = true;
-        this.vbox3.Add(this.checkSafeLoading);
-        Gtk.Box.BoxChild w193 = ((Gtk.Box.BoxChild)(this.vbox3[this.checkSafeLoading]));
-        w193.Position = 4;
-        w193.Expand = false;
-        w193.Fill = false;
-        // Container child vbox3.Gtk.Box+BoxChild
+        this.vbox20.Add(this.checkSafeLoading);
+        Gtk.Box.BoxChild w235 = ((Gtk.Box.BoxChild)(this.vbox20[this.checkSafeLoading]));
+        w235.Position = 4;
+        w235.Expand = false;
+        w235.Fill = false;
+        // Container child vbox20.Gtk.Box+BoxChild
         this.checkNoVBO = new Gtk.CheckButton();
         this.checkNoVBO.CanFocus = true;
         this.checkNoVBO.Name = "checkNoVBO";
         this.checkNoVBO.Label = Mono.Unix.Catalog.GetString("Disable OpenGL VBO (novbo)");
         this.checkNoVBO.DrawIndicator = true;
         this.checkNoVBO.UseUnderline = true;
-        this.vbox3.Add(this.checkNoVBO);
-        Gtk.Box.BoxChild w194 = ((Gtk.Box.BoxChild)(this.vbox3[this.checkNoVBO]));
-        w194.Position = 5;
-        w194.Expand = false;
-        w194.Fill = false;
-        // Container child vbox3.Gtk.Box+BoxChild
+        this.vbox20.Add(this.checkNoVBO);
+        Gtk.Box.BoxChild w236 = ((Gtk.Box.BoxChild)(this.vbox20[this.checkNoVBO]));
+        w236.Position = 5;
+        w236.Expand = false;
+        w236.Fill = false;
+        // Container child vbox20.Gtk.Box+BoxChild
         this.checkNoIBX = new Gtk.CheckButton();
         this.checkNoIBX.CanFocus = true;
         this.checkNoIBX.Name = "checkNoIBX";
         this.checkNoIBX.Label = Mono.Unix.Catalog.GetString("Disable IBX Caching (noibx)");
         this.checkNoIBX.DrawIndicator = true;
         this.checkNoIBX.UseUnderline = true;
-        this.vbox3.Add(this.checkNoIBX);
-        Gtk.Box.BoxChild w195 = ((Gtk.Box.BoxChild)(this.vbox3[this.checkNoIBX]));
-        w195.Position = 6;
-        w195.Expand = false;
-        w195.Fill = false;
-        // Container child vbox3.Gtk.Box+BoxChild
+        this.vbox20.Add(this.checkNoIBX);
+        Gtk.Box.BoxChild w237 = ((Gtk.Box.BoxChild)(this.vbox20[this.checkNoIBX]));
+        w237.Position = 6;
+        w237.Expand = false;
+        w237.Fill = false;
+        // Container child vbox20.Gtk.Box+BoxChild
         this.checkLoadAllWeps = new Gtk.CheckButton();
         this.checkLoadAllWeps.CanFocus = true;
         this.checkLoadAllWeps.Name = "checkLoadAllWeps";
         this.checkLoadAllWeps.Label = Mono.Unix.Catalog.GetString("Load All Weapons (loadallweps)");
         this.checkLoadAllWeps.DrawIndicator = true;
         this.checkLoadAllWeps.UseUnderline = true;
-        this.vbox3.Add(this.checkLoadAllWeps);
-        Gtk.Box.BoxChild w196 = ((Gtk.Box.BoxChild)(this.vbox3[this.checkLoadAllWeps]));
-        w196.Position = 7;
-        w196.Expand = false;
-        w196.Fill = false;
-        // Container child vbox3.Gtk.Box+BoxChild
+        this.vbox20.Add(this.checkLoadAllWeps);
+        Gtk.Box.BoxChild w238 = ((Gtk.Box.BoxChild)(this.vbox20[this.checkLoadAllWeps]));
+        w238.Position = 7;
+        w238.Expand = false;
+        w238.Fill = false;
+        // Container child vbox20.Gtk.Box+BoxChild
         this.frame22 = new Gtk.Frame();
         this.frame22.Name = "frame22";
         this.frame22.ShadowType = ((Gtk.ShadowType)(0));
@@ -2375,31 +2895,84 @@ public partial class MainWindow {
         this.GtkAlignment5.Name = "GtkAlignment5";
         this.GtkAlignment5.LeftPadding = ((uint)(12));
         // Container child GtkAlignment5.Gtk.Container+ContainerChild
+        this.forceLocalPortSpinner = new Gtk.SpinButton(0, 100, 1);
+        this.forceLocalPortSpinner.CanFocus = true;
+        this.forceLocalPortSpinner.Name = "forceLocalPortSpinner";
+        this.forceLocalPortSpinner.Adjustment.PageIncrement = 10;
+        this.forceLocalPortSpinner.ClimbRate = 1;
+        this.forceLocalPortSpinner.Numeric = true;
+        this.GtkAlignment5.Add(this.forceLocalPortSpinner);
+        this.frame22.Add(this.GtkAlignment5);
+        this.GtkLabel100 = new Gtk.Label();
+        this.GtkLabel100.Name = "GtkLabel100";
+        this.GtkLabel100.LabelProp = Mono.Unix.Catalog.GetString("<b>Force Local Port</b>");
+        this.GtkLabel100.UseMarkup = true;
+        this.frame22.LabelWidget = this.GtkLabel100;
+        this.vbox20.Add(this.frame22);
+        Gtk.Box.BoxChild w241 = ((Gtk.Box.BoxChild)(this.vbox20[this.frame22]));
+        w241.Position = 8;
+        w241.Expand = false;
+        w241.Fill = false;
+        // Container child vbox20.Gtk.Box+BoxChild
+        this.frame27 = new Gtk.Frame();
+        this.frame27.Name = "frame27";
+        this.frame27.ShadowType = ((Gtk.ShadowType)(0));
+        // Container child frame27.Gtk.Container+ContainerChild
+        this.GtkAlignment32 = new Gtk.Alignment(0F, 0F, 1F, 1F);
+        this.GtkAlignment32.Name = "GtkAlignment32";
+        this.GtkAlignment32.LeftPadding = ((uint)(12));
+        // Container child GtkAlignment32.Gtk.Container+ContainerChild
+        this.forceIpAddressEntry = new Gtk.Entry();
+        this.forceIpAddressEntry.CanFocus = true;
+        this.forceIpAddressEntry.Name = "forceIpAddressEntry";
+        this.forceIpAddressEntry.IsEditable = true;
+        this.forceIpAddressEntry.InvisibleChar = '●';
+        this.GtkAlignment32.Add(this.forceIpAddressEntry);
+        this.frame27.Add(this.GtkAlignment32);
+        this.GtkLabel106 = new Gtk.Label();
+        this.GtkLabel106.Name = "GtkLabel106";
+        this.GtkLabel106.LabelProp = Mono.Unix.Catalog.GetString("<b>Force IP Address</b>");
+        this.GtkLabel106.UseMarkup = true;
+        this.frame27.LabelWidget = this.GtkLabel106;
+        this.vbox20.Add(this.frame27);
+        Gtk.Box.BoxChild w244 = ((Gtk.Box.BoxChild)(this.vbox20[this.frame27]));
+        w244.Position = 9;
+        w244.Expand = false;
+        w244.Fill = false;
+        // Container child vbox20.Gtk.Box+BoxChild
+        this.frame29 = new Gtk.Frame();
+        this.frame29.Name = "frame29";
+        this.frame29.ShadowType = ((Gtk.ShadowType)(0));
+        // Container child frame29.Gtk.Container+ContainerChild
+        this.GtkAlignment34 = new Gtk.Alignment(0F, 0F, 1F, 1F);
+        this.GtkAlignment34.Name = "GtkAlignment34";
+        this.GtkAlignment34.LeftPadding = ((uint)(12));
+        // Container child GtkAlignment34.Gtk.Container+ContainerChild
         this.entryCustom = new Gtk.Entry();
         this.entryCustom.CanFocus = true;
         this.entryCustom.Name = "entryCustom";
         this.entryCustom.IsEditable = true;
         this.entryCustom.InvisibleChar = '●';
-        this.GtkAlignment5.Add(this.entryCustom);
-        this.frame22.Add(this.GtkAlignment5);
-        this.GtkLabel96 = new Gtk.Label();
-        this.GtkLabel96.Name = "GtkLabel96";
-        this.GtkLabel96.LabelProp = Mono.Unix.Catalog.GetString("<b>Custom Switches:</b>");
-        this.GtkLabel96.UseMarkup = true;
-        this.frame22.LabelWidget = this.GtkLabel96;
-        this.vbox3.Add(this.frame22);
-        Gtk.Box.BoxChild w199 = ((Gtk.Box.BoxChild)(this.vbox3[this.frame22]));
-        w199.Position = 8;
-        w199.Expand = false;
-        w199.Fill = false;
-        this.notebook3.Add(this.vbox3);
-        Gtk.Notebook.NotebookChild w200 = ((Gtk.Notebook.NotebookChild)(this.notebook3[this.vbox3]));
-        w200.Position = 10;
+        this.GtkAlignment34.Add(this.entryCustom);
+        this.frame29.Add(this.GtkAlignment34);
+        this.GtkLabel108 = new Gtk.Label();
+        this.GtkLabel108.Name = "GtkLabel108";
+        this.GtkLabel108.LabelProp = Mono.Unix.Catalog.GetString("<b>Custom Switches:</b>");
+        this.GtkLabel108.UseMarkup = true;
+        this.frame29.LabelWidget = this.GtkLabel108;
+        this.vbox20.Add(this.frame29);
+        Gtk.Box.BoxChild w247 = ((Gtk.Box.BoxChild)(this.vbox20[this.frame29]));
+        w247.Position = 10;
+        w247.Expand = false;
+        w247.Fill = false;
+        this.notebook3.Add(this.vbox20);
+        Gtk.Notebook.NotebookChild w248 = ((Gtk.Notebook.NotebookChild)(this.notebook3[this.vbox20]));
+        w248.Position = 12;
         // Notebook tab
         this.label20 = new Gtk.Label();
         this.label20.Name = "label20";
         this.label20.LabelProp = Mono.Unix.Catalog.GetString("Other");
-        this.notebook3.SetTabLabel(this.vbox3, this.label20);
+        this.notebook3.SetTabLabel(this.vbox20, this.label20);
         this.label20.ShowAll();
         // Container child notebook3.Gtk.Notebook+NotebookChild
         this.vbox11 = new Gtk.VBox();
@@ -2426,14 +2999,14 @@ public partial class MainWindow {
         this.GtkScrolledWindow1.Add(this.textErrorOutput);
         this.GtkAlignment24.Add(this.GtkScrolledWindow1);
         this.frame20.Add(this.GtkAlignment24);
-        this.GtkLabel97 = new Gtk.Label();
-        this.GtkLabel97.Name = "GtkLabel97";
-        this.GtkLabel97.LabelProp = Mono.Unix.Catalog.GetString("<b>fs2_open Error Output</b>");
-        this.GtkLabel97.UseMarkup = true;
-        this.frame20.LabelWidget = this.GtkLabel97;
+        this.GtkLabel101 = new Gtk.Label();
+        this.GtkLabel101.Name = "GtkLabel101";
+        this.GtkLabel101.LabelProp = Mono.Unix.Catalog.GetString("<b>fs2_open Error Output</b>");
+        this.GtkLabel101.UseMarkup = true;
+        this.frame20.LabelWidget = this.GtkLabel101;
         this.vbox11.Add(this.frame20);
-        Gtk.Box.BoxChild w204 = ((Gtk.Box.BoxChild)(this.vbox11[this.frame20]));
-        w204.Position = 0;
+        Gtk.Box.BoxChild w252 = ((Gtk.Box.BoxChild)(this.vbox11[this.frame20]));
+        w252.Position = 0;
         // Container child vbox11.Gtk.Box+BoxChild
         this.frame21 = new Gtk.Frame();
         this.frame21.Name = "frame21";
@@ -2455,17 +3028,17 @@ public partial class MainWindow {
         this.GtkScrolledWindow2.Add(this.textStandardOutput);
         this.GtkAlignment25.Add(this.GtkScrolledWindow2);
         this.frame21.Add(this.GtkAlignment25);
-        this.GtkLabel98 = new Gtk.Label();
-        this.GtkLabel98.Name = "GtkLabel98";
-        this.GtkLabel98.LabelProp = Mono.Unix.Catalog.GetString("<b>fs2_open Standard Output</b>");
-        this.GtkLabel98.UseMarkup = true;
-        this.frame21.LabelWidget = this.GtkLabel98;
+        this.GtkLabel104 = new Gtk.Label();
+        this.GtkLabel104.Name = "GtkLabel104";
+        this.GtkLabel104.LabelProp = Mono.Unix.Catalog.GetString("<b>fs2_open Standard Output</b>");
+        this.GtkLabel104.UseMarkup = true;
+        this.frame21.LabelWidget = this.GtkLabel104;
         this.vbox11.Add(this.frame21);
-        Gtk.Box.BoxChild w208 = ((Gtk.Box.BoxChild)(this.vbox11[this.frame21]));
-        w208.Position = 1;
+        Gtk.Box.BoxChild w256 = ((Gtk.Box.BoxChild)(this.vbox11[this.frame21]));
+        w256.Position = 1;
         this.notebook3.Add(this.vbox11);
-        Gtk.Notebook.NotebookChild w209 = ((Gtk.Notebook.NotebookChild)(this.notebook3[this.vbox11]));
-        w209.Position = 11;
+        Gtk.Notebook.NotebookChild w257 = ((Gtk.Notebook.NotebookChild)(this.notebook3[this.vbox11]));
+        w257.Position = 13;
         // Notebook tab
         this.label7 = new Gtk.Label();
         this.label7.Name = "label7";
@@ -2473,8 +3046,8 @@ public partial class MainWindow {
         this.notebook3.SetTabLabel(this.vbox11, this.label7);
         this.label7.ShowAll();
         this.vbox2.Add(this.notebook3);
-        Gtk.Box.BoxChild w210 = ((Gtk.Box.BoxChild)(this.vbox2[this.notebook3]));
-        w210.Position = 0;
+        Gtk.Box.BoxChild w258 = ((Gtk.Box.BoxChild)(this.vbox2[this.notebook3]));
+        w258.Position = 0;
         // Container child vbox2.Gtk.Box+BoxChild
         this.hbuttonbox1 = new Gtk.HButtonBox();
         this.hbuttonbox1.Name = "hbuttonbox1";
@@ -2484,25 +3057,25 @@ public partial class MainWindow {
         this.CancelButton.Name = "CancelButton";
         this.CancelButton.UseUnderline = true;
         // Container child CancelButton.Gtk.Container+ContainerChild
-        Gtk.Alignment w211 = new Gtk.Alignment(0.5F, 0.5F, 0F, 0F);
+        Gtk.Alignment w259 = new Gtk.Alignment(0.5F, 0.5F, 0F, 0F);
         // Container child GtkAlignment.Gtk.Container+ContainerChild
-        Gtk.HBox w212 = new Gtk.HBox();
-        w212.Spacing = 2;
+        Gtk.HBox w260 = new Gtk.HBox();
+        w260.Spacing = 2;
         // Container child GtkHBox.Gtk.Container+ContainerChild
-        Gtk.Image w213 = new Gtk.Image();
-        w213.Pixbuf = Stetic.IconLoader.LoadIcon(this, "gtk-cancel", Gtk.IconSize.Menu, 16);
-        w212.Add(w213);
+        Gtk.Image w261 = new Gtk.Image();
+        w261.Pixbuf = Stetic.IconLoader.LoadIcon(this, "gtk-cancel", Gtk.IconSize.Menu, 16);
+        w260.Add(w261);
         // Container child GtkHBox.Gtk.Container+ContainerChild
-        Gtk.Label w215 = new Gtk.Label();
-        w215.LabelProp = Mono.Unix.Catalog.GetString("Cancel");
-        w215.UseUnderline = true;
-        w212.Add(w215);
-        w211.Add(w212);
-        this.CancelButton.Add(w211);
+        Gtk.Label w263 = new Gtk.Label();
+        w263.LabelProp = Mono.Unix.Catalog.GetString("Cancel");
+        w263.UseUnderline = true;
+        w260.Add(w263);
+        w259.Add(w260);
+        this.CancelButton.Add(w259);
         this.hbuttonbox1.Add(this.CancelButton);
-        Gtk.ButtonBox.ButtonBoxChild w219 = ((Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox1[this.CancelButton]));
-        w219.Expand = false;
-        w219.Fill = false;
+        Gtk.ButtonBox.ButtonBoxChild w267 = ((Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox1[this.CancelButton]));
+        w267.Expand = false;
+        w267.Fill = false;
         // Container child hbuttonbox1.Gtk.ButtonBox+ButtonBoxChild
         this.ApplyButton = new Gtk.Button();
         this.ApplyButton.Sensitive = false;
@@ -2510,26 +3083,26 @@ public partial class MainWindow {
         this.ApplyButton.Name = "ApplyButton";
         this.ApplyButton.UseUnderline = true;
         // Container child ApplyButton.Gtk.Container+ContainerChild
-        Gtk.Alignment w220 = new Gtk.Alignment(0.5F, 0.5F, 0F, 0F);
+        Gtk.Alignment w268 = new Gtk.Alignment(0.5F, 0.5F, 0F, 0F);
         // Container child GtkAlignment.Gtk.Container+ContainerChild
-        Gtk.HBox w221 = new Gtk.HBox();
-        w221.Spacing = 2;
+        Gtk.HBox w269 = new Gtk.HBox();
+        w269.Spacing = 2;
         // Container child GtkHBox.Gtk.Container+ContainerChild
-        Gtk.Image w222 = new Gtk.Image();
-        w222.Pixbuf = Stetic.IconLoader.LoadIcon(this, "gtk-apply", Gtk.IconSize.Menu, 16);
-        w221.Add(w222);
+        Gtk.Image w270 = new Gtk.Image();
+        w270.Pixbuf = Stetic.IconLoader.LoadIcon(this, "gtk-apply", Gtk.IconSize.Menu, 16);
+        w269.Add(w270);
         // Container child GtkHBox.Gtk.Container+ContainerChild
-        Gtk.Label w224 = new Gtk.Label();
-        w224.LabelProp = Mono.Unix.Catalog.GetString("Apply");
-        w224.UseUnderline = true;
-        w221.Add(w224);
-        w220.Add(w221);
-        this.ApplyButton.Add(w220);
+        Gtk.Label w272 = new Gtk.Label();
+        w272.LabelProp = Mono.Unix.Catalog.GetString("Apply");
+        w272.UseUnderline = true;
+        w269.Add(w272);
+        w268.Add(w269);
+        this.ApplyButton.Add(w268);
         this.hbuttonbox1.Add(this.ApplyButton);
-        Gtk.ButtonBox.ButtonBoxChild w228 = ((Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox1[this.ApplyButton]));
-        w228.Position = 1;
-        w228.Expand = false;
-        w228.Fill = false;
+        Gtk.ButtonBox.ButtonBoxChild w276 = ((Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox1[this.ApplyButton]));
+        w276.Position = 1;
+        w276.Expand = false;
+        w276.Fill = false;
         // Container child hbuttonbox1.Gtk.ButtonBox+ButtonBoxChild
         this.LauchButton = new Gtk.Button();
         this.LauchButton.Sensitive = false;
@@ -2537,37 +3110,37 @@ public partial class MainWindow {
         this.LauchButton.Name = "LauchButton";
         this.LauchButton.UseUnderline = true;
         // Container child LauchButton.Gtk.Container+ContainerChild
-        Gtk.Alignment w229 = new Gtk.Alignment(0.5F, 0.5F, 0F, 0F);
+        Gtk.Alignment w277 = new Gtk.Alignment(0.5F, 0.5F, 0F, 0F);
         // Container child GtkAlignment.Gtk.Container+ContainerChild
-        Gtk.HBox w230 = new Gtk.HBox();
-        w230.Spacing = 2;
+        Gtk.HBox w278 = new Gtk.HBox();
+        w278.Spacing = 2;
         // Container child GtkHBox.Gtk.Container+ContainerChild
-        Gtk.Image w231 = new Gtk.Image();
-        w231.Pixbuf = Stetic.IconLoader.LoadIcon(this, "gtk-execute", Gtk.IconSize.Menu, 16);
-        w230.Add(w231);
+        Gtk.Image w279 = new Gtk.Image();
+        w279.Pixbuf = Stetic.IconLoader.LoadIcon(this, "gtk-execute", Gtk.IconSize.Menu, 16);
+        w278.Add(w279);
         // Container child GtkHBox.Gtk.Container+ContainerChild
-        Gtk.Label w233 = new Gtk.Label();
-        w233.LabelProp = Mono.Unix.Catalog.GetString("Launch");
-        w233.UseUnderline = true;
-        w230.Add(w233);
-        w229.Add(w230);
-        this.LauchButton.Add(w229);
+        Gtk.Label w281 = new Gtk.Label();
+        w281.LabelProp = Mono.Unix.Catalog.GetString("Launch!");
+        w281.UseUnderline = true;
+        w278.Add(w281);
+        w277.Add(w278);
+        this.LauchButton.Add(w277);
         this.hbuttonbox1.Add(this.LauchButton);
-        Gtk.ButtonBox.ButtonBoxChild w237 = ((Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox1[this.LauchButton]));
-        w237.Position = 2;
-        w237.Expand = false;
-        w237.Fill = false;
+        Gtk.ButtonBox.ButtonBoxChild w285 = ((Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox1[this.LauchButton]));
+        w285.Position = 2;
+        w285.Expand = false;
+        w285.Fill = false;
         this.vbox2.Add(this.hbuttonbox1);
-        Gtk.Box.BoxChild w238 = ((Gtk.Box.BoxChild)(this.vbox2[this.hbuttonbox1]));
-        w238.Position = 1;
-        w238.Expand = false;
-        w238.Fill = false;
+        Gtk.Box.BoxChild w286 = ((Gtk.Box.BoxChild)(this.vbox2[this.hbuttonbox1]));
+        w286.Position = 1;
+        w286.Expand = false;
+        w286.Fill = false;
         this.Add(this.vbox2);
         if ((this.Child != null)) {
             this.Child.ShowAll();
         }
         this.DefaultWidth = 515;
-        this.DefaultHeight = 393;
+        this.DefaultHeight = 413;
         this.Show();
         this.DeleteEvent += new Gtk.DeleteEventHandler(this.OnDeleteEvent);
         this.binaryPicker.SelectionChanged += new System.EventHandler(this.OnBinaryPickerSelectionChanged);

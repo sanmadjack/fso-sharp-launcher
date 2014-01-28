@@ -31,13 +31,16 @@ public partial class MainWindow: Gtk.Window
 			os_name = "Linux";
 			home_path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
 			fs2_openIni = new iniHandler(home_path + System.IO.Path.DirectorySeparatorChar + ".fs2_open" + System.IO.Path.DirectorySeparatorChar + "fs2_open.ini");
+			speechFrame.Visible = false;
 		} else if(os_name.StartsWith("Microsoft")) {
 			os_name = "Windows";
 			home_path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
 			fs2_registry = new registryHandler("SOFTWARE\\Volition\\FreeSpace2");
+			checkNoGrab.Visible = false;
 		} else {
 			os_name = "OSX";
 			home_path = "/home/sanmadjack/";
+			speechFrame.Visible = false;
 		}
 
 		launcherIni = new iniHandler(home_path + System.IO.Path.DirectorySeparatorChar + ".fs2_open" + System.IO.Path.DirectorySeparatorChar + "launcher.ini");
@@ -113,6 +116,182 @@ public partial class MainWindow: Gtk.Window
 		}
 
 
+		if(os_name=="Windows") {
+			read_me = fs2_registry.getKey("ComputerSpeed");
+		} else {
+			read_me = fs2_openIni.get("[Default]","ComputerSpeed");
+		}
+		if(read_me!=null) 
+			generalGraphicsCombo.Active = int.Parse(read_me)-1;
+
+		if(os_name=="Windows") {
+			read_me = fs2_registry.getKey("SpeechVoice");
+		} else {
+			read_me = fs2_openIni.get("[Default]","SpeechVoice");
+		}
+		if(read_me!=null) 
+			voiceCombo.Active = int.Parse(read_me);
+		else
+			voiceCombo.Active = 0;
+
+
+		if(os_name=="Windows") {
+			read_me = fs2_registry.getKey("SpeechBriefings");
+		} else {
+			read_me = fs2_openIni.get("[Default]","SpeechBriefings");
+		}
+		if(read_me!=null) {
+			if(read_me=="1") {
+				briefingsVoiceCheck.Active = true;
+			} else {
+				briefingsVoiceCheck.Active = false;
+			}
+		}
+
+		if(os_name=="Windows") {
+			read_me = fs2_registry.getKey("SpeechIngame");
+		} else {
+			read_me = fs2_openIni.get("[Default]","SpeechIngame");
+		}
+		if(read_me!=null) {
+			if(read_me=="1") {
+				ingameVoiceCheck.Active = true;
+			} else {
+				ingameVoiceCheck.Active = false;
+			}
+		}
+		
+		if(os_name=="Windows") {
+			read_me = fs2_registry.getKey("SpeechTechRoom");
+		} else {
+			read_me = fs2_openIni.get("[Default]","SpeechTechRoom");
+		}
+		if(read_me!=null) {
+			if(read_me=="1") {
+				techroomVoiceCheck.Active = true;
+			} else {
+				techroomVoiceCheck.Active = false;
+			}
+		}
+
+		if(os_name=="Windows") {
+			read_me = fs2_registry.getKey("SpeechVolume");
+		} else {
+			read_me = fs2_openIni.get("[Default]","SpeechVolume");
+		}
+		if(read_me!=null) {
+			voiceVolumeScale.Value = int.Parse(read_me);
+		}
+
+	
+		if(os_name=="Windows") {
+			read_me = fs2_registry.getKey("NetworkConnection");
+		} else {
+			read_me = fs2_openIni.get("[Default]","NetworkConnection");
+		}
+		if(read_me!=null) {
+			switch(read_me) {
+				case "None":
+					connectionTypeCombo.Active = 0;
+					break;
+				case "Dialup":
+					connectionTypeCombo.Active = 1;
+					break;
+				case "LAN":
+					connectionTypeCombo.Active = 2;
+					break;
+			}
+		}
+
+		if(os_name=="Windows") {
+			read_me = fs2_registry.getKey("ConnectionSpeed");
+		} else {
+			read_me = fs2_openIni.get("[Default]","ConnectionSpeed");
+		}
+		if(read_me!=null) {
+			switch(read_me) {
+				case "None":
+					connectionSpeedCombo.Active = 0;
+					break;
+				case "Slow":
+					connectionSpeedCombo.Active = 1;
+					break;
+				case "56K":
+					connectionSpeedCombo.Active = 2;
+					break;
+				case "ISDN":
+					connectionSpeedCombo.Active = 3;
+					break;
+				case "Cable":
+					connectionSpeedCombo.Active = 4;
+					break;
+				case "Fast":
+					connectionSpeedCombo.Active = 5;
+					break;
+			}
+		}
+
+
+
+
+		if(os_name=="Windows") {
+			read_me = fs2_registry.getKey("EnableJoystickFF");
+		} else {
+			read_me = fs2_openIni.get("[Default]","EnableJoystickFF");
+		}
+		if(read_me=="1") 
+			forceFeedbackCheck.Active= true;
+		else
+			forceFeedbackCheck.Active = false;
+
+		if(os_name=="Windows") {
+			read_me = fs2_registry.getKey("EnableHitEffect");
+		} else {
+			read_me = fs2_openIni.get("[Default]","EnableHitEffect");
+		}
+		Console.WriteLine(read_me);
+		if(read_me=="1") 
+			directionalHitCheck.Active= true;
+		else
+			directionalHitCheck.Active = false;
+
+
+		if(os_name=="Windows") {
+			read_me = fs2_registry.getKey("CurrentJoystick");
+		} else {
+			read_me = fs2_openIni.get("[Default]","CurrentJoystick");
+		}
+		if(read_me!=null) {
+			if(read_me=="9999") {
+				joystickCombo.Active = 0;
+			} else {
+				joystickCombo.Active = int.Parse(read_me)+1;
+			}
+		}
+
+
+
+		if(os_name=="Windows") {
+			read_me = fs2_registry.getKey("ForcePort");
+		} else {
+			read_me = fs2_openIni.get("[Default]","ForcePort");
+		}
+		if(read_me!=null) {
+			forceLocalPortSpinner.Value = int.Parse(read_me);
+		}
+
+		if(os_name=="Windows") {
+			registryHandler fs2_network_registry = new registryHandler("SOFTWARE\\Volition\\FreeSpace2\\Network");
+			read_me = fs2_network_registry.getKey("CustomIP");
+		} else {
+			read_me = fs2_openIni.get("[Network]","CustomIP");
+		}
+		if(read_me!=null) {
+			forceIpAddressEntry.Text = read_me;
+		}
+
+
+
 		read_me = launcherIni.get("[launcher]","game_flags");
 		switches = new switchManager();
 		if(read_me!=null) {
@@ -132,27 +311,30 @@ public partial class MainWindow: Gtk.Window
 		
 	}
 	
+	private string generateArguments() {
+		string mod_list = "";
+		string mod_argument = "";
+		if(comboMod.Active!=0&&current_mod!=null) {
+			// Put together the mod argument
+			if(mods.get_primarymods(current_mod)!=null) {
+				mod_list += mods.get_primarymods(current_mod).Trim().Trim(',') + ",";
+			}
+			mod_list += current_mod;
+			if(mods.get_secondarymods(current_mod)!=null) {
+				mod_list += "," + mods.get_secondarymods(current_mod).Trim().Trim(',');
+			}
+			mod_argument = " -mod " + mod_list.Trim(',');
+		}
+		return switches.output_settings().Trim() + " " + entryCustom.Text.Trim() + mod_argument;
+	}
+	
 	protected virtual void launch_game() {
 		write_settings();
 		Process binary = new Process();
 		
 		if(File.Exists(binaryPicker.Filename))	{
 			binary.StartInfo.FileName = binaryPicker.Filename;
-			string mod_list = "";
-			string mod_argument = "";
-			if(comboMod.Active!=0) {
-				// Put together the mod argument
-				if(mods.get_primarymods(current_mod)!="failure") {
-					mod_list += mods.get_primarymods(current_mod).Trim().Trim(',') + ",";
-				}
-				mod_list += current_mod;
-				if(mods.get_secondarymods(current_mod)!="failure") {
-					mod_list += "," + mods.get_secondarymods(current_mod).Trim().Trim(',');
-				}
-				mod_argument = " -mod " + mod_list.Trim(',');
-			}
-			
-			binary.StartInfo.Arguments = switches.output_settings().Trim() + " " + entryCustom.Text.Trim() + mod_argument;
+			binary.StartInfo.Arguments = generateArguments();
 			Console.WriteLine(binary.StartInfo.Arguments);
 			binary.StartInfo.WorkingDirectory = binaryPicker.CurrentFolder;
 			binary.StartInfo.UseShellExecute = false;
@@ -186,6 +368,8 @@ public partial class MainWindow: Gtk.Window
 				Console.WriteLine(set_me + " Disable Failed");
 			}
 		}
+		switchTextView.Buffer.Clear();
+		switchTextView.Buffer.Text = generateArguments();
 	}
 	protected virtual void checkbox_handler(bool status, string set_me, string to_me) {
 		if(status) {
@@ -198,6 +382,8 @@ public partial class MainWindow: Gtk.Window
 			}
 		}
 		Console.WriteLine(switches.output_settings());
+		switchTextView.Buffer.Clear();
+		switchTextView.Buffer.Text = generateArguments();
 	}
 	
 	protected virtual string resolution_generator() {
@@ -276,6 +462,164 @@ public partial class MainWindow: Gtk.Window
 			fs2_openIni.set("[Default]","OGL_FSAA",aa.ToString());
 		}
 		
+		if(os_name=="Windows") {
+			fs2_registry.setKey("ComputerSpeed",generalGraphicsCombo.Active+1,Microsoft.Win32.RegistryValueKind.DWord);
+		} else {
+			fs2_openIni.set("[Default]","ComputerSpeed",(generalGraphicsCombo.Active+1).ToString());
+		}
+
+		int toggle;
+		if(briefingsVoiceCheck.Active) {
+			toggle = 1;
+		} else {
+			toggle = 0;
+		}
+		if(os_name=="Windows") {
+			fs2_registry.setKey("SpeechBriefings",toggle,Microsoft.Win32.RegistryValueKind.DWord);
+		} else {
+			fs2_openIni.set("[Default]","SpeechBriefings",toggle.ToString());
+		}
+		if(ingameVoiceCheck.Active) {
+			toggle = 1;
+		} else {
+			toggle = 0;
+		}
+		if(os_name=="Windows") {
+			fs2_registry.setKey("SpeechIngame",toggle,Microsoft.Win32.RegistryValueKind.DWord);
+		} else {
+			fs2_openIni.set("[Default]","SpeechIngame",toggle.ToString());
+		}
+		if(techroomVoiceCheck.Active) {
+			toggle = 1;
+		} else {
+			toggle = 0;
+		}
+		if(os_name=="Windows") {
+			fs2_registry.setKey("SpeechTechRoom",toggle,Microsoft.Win32.RegistryValueKind.DWord);
+		} else {
+			fs2_openIni.set("[Default]","SpeechTechRoom",toggle.ToString());
+		}
+
+		if(os_name=="Windows") {
+			fs2_registry.setKey("SpeechVolume",voiceVolumeScale.Value,Microsoft.Win32.RegistryValueKind.DWord);
+		} else {
+			fs2_openIni.set("[Default]","SpeechVolume",voiceVolumeScale.Value.ToString());
+		}
+
+		//This will be the voice comboe=
+		if(os_name=="Windows") {
+			fs2_registry.setKey("SpeechVoice",voiceCombo.Active,Microsoft.Win32.RegistryValueKind.DWord);
+		} else {
+			fs2_openIni.set("[Default]","SpeechVoice",voiceCombo.Active.ToString());
+		}
+
+		
+		string connection = null;
+		switch(connectionTypeCombo.Active) {
+		case 0:
+			connection = "None";
+			break;
+		case 1:
+			connection = "Dialup";
+			break;
+		case 2:
+			connection = "LAN";
+			break;
+		}
+		if(os_name=="Windows") {
+			fs2_registry.setKey("NetworkConnection",connection,Microsoft.Win32.RegistryValueKind.String);
+		} else {
+			fs2_openIni.set("[Default]","NetworkConnection",connection);
+		}
+
+		switch(connectionSpeedCombo.Active) {
+		case 0:
+			connection = "None";
+			break;
+		case 1:
+			connection = "Slow";
+			break;
+		case 2:
+			connection = "56K";
+			break;
+		case 3:
+			connection = "ISDN";
+			break;
+		case 4:
+			connection = "Cable";
+			break;
+		case 5:
+			connection = "Fast";
+			break;
+		}
+		if(os_name=="Windows") {
+			fs2_registry.setKey("ConnectionSpeed",connection,Microsoft.Win32.RegistryValueKind.String);
+		} else {
+			fs2_openIni.set("[Default]","ConnectionSpeed",connection);
+		}
+
+		if(forceFeedbackCheck.Active) {
+			toggle = 1;
+		} else {
+			toggle = 0;
+		}
+		if(os_name=="Windows") {
+			fs2_registry.setKey("EnableJoystickFF",toggle,Microsoft.Win32.RegistryValueKind.DWord);
+		} else {
+			fs2_openIni.set("[Default]","EnableJoystickFF",toggle.ToString());
+		}
+		if(directionalHitCheck.Active) {
+			toggle = 1;
+		} else {
+			toggle = 0;
+		}
+		if(os_name=="Windows") {
+			fs2_registry.setKey("EnableHitEffect",toggle,Microsoft.Win32.RegistryValueKind.DWord);
+		} else {
+			fs2_openIni.set("[Default]","EnableHitEffect",toggle.ToString());
+		}
+
+		if(joystickCombo.Active==0) {
+			toggle = 9999;
+		} else {
+			toggle = joystickCombo.Active-1;
+		}
+		if(os_name=="Windows") {
+			fs2_registry.setKey("CurrentJoystick",toggle,Microsoft.Win32.RegistryValueKind.DWord);
+		} else {
+			fs2_openIni.set("[Default]","CurrentJoysick",toggle.ToString());
+		}
+
+		if(forceLocalPortSpinner.Value!=0) {
+			if(os_name=="Windows") {
+				fs2_registry.setKey("ForcePort",forceLocalPortSpinner.Value,Microsoft.Win32.RegistryValueKind.DWord);
+			} else {
+				fs2_openIni.set("[Default]","ForcePort",forceLocalPortSpinner.Value.ToString());
+			}
+		} else {
+			if(os_name=="Windows") {
+				fs2_registry.deleteValue("ForcePort");
+			} else {
+				fs2_openIni.delete("[Default]","ForcePort");
+			}
+		}
+
+		if(forceIpAddressEntry.Text!="") {
+			if(os_name=="Windows") {
+				registryHandler fs2_network_registry = new registryHandler("SOFTWARE\\Volition\\FreeSpace2\\Network");
+				fs2_network_registry.setKey("CustomIP",forceIpAddressEntry.Text,Microsoft.Win32.RegistryValueKind.String);
+			} else {
+				fs2_openIni.set("[Network]","CustomIP",forceIpAddressEntry.Text);
+			}
+		} else {
+			if(os_name=="Windows") {
+				registryHandler fs2_network_registry = new registryHandler("SOFTWARE\\Volition\\FreeSpace2\\Network");
+				fs2_network_registry.deleteValue("CustomIP");
+			} else {
+				fs2_openIni.delete("[Network]","CustomIP");
+			}
+		}
+
 		if(os_name!="Windows")
 			fs2_openIni.writeIni();
 		
@@ -307,7 +651,7 @@ public partial class MainWindow: Gtk.Window
 		foreach(string mod_name in mods.get_names()) {
 			store.AppendValues(mod_name);
 		}
-		if(current_mod=="failure"||current_mod=="") {
+		if(current_mod==null||current_mod=="") {
 			comboMod.Active = 0;
 		} else {
 			int original_mod = comboMod.Active;
@@ -327,11 +671,11 @@ public partial class MainWindow: Gtk.Window
 	{
 		// Loads up the description
 		textMod.Buffer.Clear();
-		if(mods.get_website(comboMod.ActiveText)!="failure")
+		if(mods.get_website(comboMod.ActiveText)!=null)
 			textMod.Buffer.Text = "Website: " + mods.get_website(comboMod.ActiveText) + "\n";
-		if(mods.get_forum(comboMod.ActiveText)!="failure")
+		if(mods.get_forum(comboMod.ActiveText)!=null)
 			textMod.Buffer.Text += "Forum: " + mods.get_forum(comboMod.ActiveText) + "\n";
-		if(mods.get_website(comboMod.ActiveText)!="failure"||mods.get_forum(comboMod.ActiveText)!="failure")
+		if(mods.get_website(comboMod.ActiveText)!=null||mods.get_forum(comboMod.ActiveText)!=null)
 			textMod.Buffer.Text += "\n";
 
 		
@@ -345,6 +689,8 @@ public partial class MainWindow: Gtk.Window
 		}
 		current_mod = mods.get_name(comboMod.ActiveText);
 		
+		switchTextView.Buffer.Clear();
+		switchTextView.Buffer.Text = generateArguments();
 	
 	}
 
@@ -449,38 +795,46 @@ public partial class MainWindow: Gtk.Window
 				break;
 			case "-ambient_factor":
 				checkAmbient.Active = true;
-				spinAmbient.Value = Convert.ToDouble(parse_me[++i]);
+				if(parse_me[i+1]!=null)
+					spinAmbient.Value = Convert.ToDouble(parse_me[++i]);
 				break;
 			case "-no_emissive_light":
 				checkEmissiveLight.Active = true;
 				break;
 			case "-spec_exp":
 				checkSpecExp.Active = true;
-				spinSpecExp.Value = Convert.ToDouble(parse_me[++i]);
+				if(parse_me[i+1]!=null)
+					spinSpecExp.Value = Convert.ToDouble(parse_me[++i]);
 				break;
 			case "-spec_point":
 				checkSpecPoint.Active = true;
-				spinSpecPoint.Value = Convert.ToDouble(parse_me[++i]);
+				if(parse_me[i+1]!=null)
+					spinSpecPoint.Value = Convert.ToDouble(parse_me[++i]);
 				break;
 			case "-spec_static":
 				checkSpecStatic.Active = true;
-				spinSpecStatic.Value = Convert.ToDouble(parse_me[++i]);
+				if(parse_me[i+1]!=null)
+					spinSpecStatic.Value = Convert.ToDouble(parse_me[++i]);
 				break;
 			case "-spec_tube":
 				checkSpecTube.Active = true;
-				spinSpecTube.Value = Convert.ToDouble(parse_me[++i]);
+				if(parse_me[i+1]!=null)
+					spinSpecTube.Value = Convert.ToDouble(parse_me[++i]);
 				break;
 			case "-ogl_spec":
 				checkOGLSpec.Active = true;
-				spinOGLSpec.Value = Convert.ToDouble(parse_me[++i]);
+				if(parse_me[i+1]!=null)
+					spinOGLSpec.Value = Convert.ToDouble(parse_me[++i]);
 				break;
 			case "-clipdist":
 				checkClipDist.Active = true;
-				spinClipDist.Value = Convert.ToDouble(parse_me[++i]);
+				if(parse_me[i+1]!=null)
+					spinClipDist.Value = Convert.ToDouble(parse_me[++i]);
 				break;
 			case "-fov":
 				checkFOV.Active = true;
-				spinFOV.Value = Convert.ToDouble(parse_me[++i]);
+				if(parse_me[i+1]!=null)
+					spinFOV.Value = Convert.ToDouble(parse_me[++i]);
 				break;
 			case "-standalone":
 				checkStandalone.Active = true;
@@ -518,23 +872,28 @@ public partial class MainWindow: Gtk.Window
 				break;
 			case "-allowabove":
 				checkAllowAbove.Active = true;
-				spinAllowAbove.Value = Convert.ToDouble(parse_me[++i]);
+				if(parse_me[i+1]!=null)
+					spinAllowAbove.Value = Convert.ToDouble(parse_me[++i]);
 				break;
 			case "-allowbelow":
 				checkAllowBelow.Active = true;
-				spinAllowBelow.Value = Convert.ToDouble(parse_me[++i]);
+				if(parse_me[i+1]!=null)
+					spinAllowBelow.Value = Convert.ToDouble(parse_me[++i]);
 				break;
 			case "-port":
 				checkPort.Active = true;
-				spinPort.Value = Convert.ToDouble(parse_me[++i]);
+				if(parse_me[i+1]!=null)
+					spinPort.Value = Convert.ToDouble(parse_me[++i]);
 				break;
 			case "-timeout":
 				checkTimeout.Active = true;
-				spinTimeout.Value = Convert.ToDouble(parse_me[++i]);
+				if(parse_me[i+1]!=null)
+					spinTimeout.Value = Convert.ToDouble(parse_me[++i]);
 				break;
 			case "-cap_object_update":
 				checkCapObjectUpdate.Active = true;
-				spinCapObjectUpdate.Value = Convert.ToDouble(parse_me[++i]);
+				if(parse_me[i+1]!=null)
+					spinCapObjectUpdate.Value = Convert.ToDouble(parse_me[++i]);
 				break;
 			case "-pos":
 				checkPos.Active = true;
