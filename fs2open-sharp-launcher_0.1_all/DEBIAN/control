@@ -1,0 +1,9 @@
+Package: fs2open-sharp-launcher
+Architecture: all
+Priority: optional
+Section: games
+Installed-Size: 0.7
+Maintainer: SanMadJack
+Version: 0:0.1
+Depends: mono-runtime, libgtk2.0-0, libmono-posix2.0-cil, libglade2-0, libglib2.0-0, mono-common, libmono0
+Description: A C# launcher for fs2_open

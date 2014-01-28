@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fs2_open Launcher", "fs2_open Launcher.csproj", "{FDDE259D-F180-4297-A8B7-D628264E0FE6}"
+EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "Packages", "Packages.mdproj", "{FAAB20C0-5C86-4296-96D4-7E880B2B62C3}"
+EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "fs2_open LauncherTranslation", "fs2_open LauncherTranslation\fs2_open LauncherTranslation.mdproj", "{883B533C-208D-425F-84D2-C6F672A3F92A}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "fs2_open Launcehr Installer", "..\fs2_open Launcehr Installer\fs2_open Launcehr Installer.vdproj", "{BF4FC32D-55B5-48E1-B289-5FD3B45A01CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDDE259D-F180-4297-A8B7-D628264E0FE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDDE259D-F180-4297-A8B7-D628264E0FE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDDE259D-F180-4297-A8B7-D628264E0FE6}.Debug|x86.ActiveCfg = Debug|x86
+		{FDDE259D-F180-4297-A8B7-D628264E0FE6}.Debug|x86.Build.0 = Debug|x86
+		{FDDE259D-F180-4297-A8B7-D628264E0FE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDDE259D-F180-4297-A8B7-D628264E0FE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDDE259D-F180-4297-A8B7-D628264E0FE6}.Release|x86.ActiveCfg = Release|x86
+		{FDDE259D-F180-4297-A8B7-D628264E0FE6}.Release|x86.Build.0 = Release|x86
+		{FAAB20C0-5C86-4296-96D4-7E880B2B62C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAAB20C0-5C86-4296-96D4-7E880B2B62C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAAB20C0-5C86-4296-96D4-7E880B2B62C3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FAAB20C0-5C86-4296-96D4-7E880B2B62C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAAB20C0-5C86-4296-96D4-7E880B2B62C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAAB20C0-5C86-4296-96D4-7E880B2B62C3}.Release|x86.ActiveCfg = Release|Any CPU
+		{883B533C-208D-425F-84D2-C6F672A3F92A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{883B533C-208D-425F-84D2-C6F672A3F92A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{883B533C-208D-425F-84D2-C6F672A3F92A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{883B533C-208D-425F-84D2-C6F672A3F92A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{883B533C-208D-425F-84D2-C6F672A3F92A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{883B533C-208D-425F-84D2-C6F672A3F92A}.Release|x86.ActiveCfg = Release|Any CPU
+		{BF4FC32D-55B5-48E1-B289-5FD3B45A01CA}.Debug|Any CPU.ActiveCfg = Debug
+		{BF4FC32D-55B5-48E1-B289-5FD3B45A01CA}.Debug|x86.ActiveCfg = Debug
+		{BF4FC32D-55B5-48E1-B289-5FD3B45A01CA}.Release|Any CPU.ActiveCfg = Release
+		{BF4FC32D-55B5-48E1-B289-5FD3B45A01CA}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		version = 0.1
+		StartupItem = fs2_open Launcher.csproj
+	EndGlobalSection
+EndGlobal

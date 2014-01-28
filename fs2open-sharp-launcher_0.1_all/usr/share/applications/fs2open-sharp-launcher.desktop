@@ -1,0 +1,10 @@
+
+[Desktop Entry]
+Name=fs2_open#Launcher
+Comment=Launcher for fs2_open
+Exec=/usr/bin/fs2open-sharp-launcher
+Terminal=false
+Type=Application
+Icon=fs2open-sharp-launcher
+Categories=GNOME;GTK;Game;
+StartupNotify=false

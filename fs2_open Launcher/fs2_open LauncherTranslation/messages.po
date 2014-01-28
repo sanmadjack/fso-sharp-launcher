@@ -1,0 +1,534 @@
+msgid ""
+msgstr ""
+"X-Generator: MonoDevelop Gettext addin\n"
+"Language-Team: \n"
+"PO-Revision-Date: 2009-06-15 13:50:40-0500\n"
+"POT-Creation-Date: 2009-06-15 13:50:40-0500\n"
+"Project-Id-Version: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: sanmadjack <sanmadjack@gmail.com>\n"
+"Content-Type: text/plain; charset=utf-8\n"
+
+#: ../gtk-gui/MainWindow.cs:462
+msgid "fs2_open Launcher"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:493
+msgid ""
+"<b>fs2_open!</b>\n"
+"Before the launching the game, \n"
+"some settings should be set!"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:518
+msgid "Select A fs2_open Executable"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:525
+msgid "<b>First, where is fs2_open on your computer?</b>"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:565
+msgid "go through each of the tabs to set all of the scary options!"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:576
+msgid "<b>Next, you can</b>"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:619
+msgid "Nothing Special"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:644
+msgid "All that and a bag of chips"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:658
+msgid "<b>OR you can pick from these lovely quick setup buttons</b>"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:670
+msgid "Start!"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:692
+msgid "640x480"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:693
+msgid "800x600"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:694
+msgid "1024x768"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:695
+msgid "1152x768"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:696
+msgid "1280x720"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:697
+msgid "1280x960"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:698
+msgid "1280x1024"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:699
+msgid "1366x768"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:700
+msgid "1600x1200"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:701
+msgid "1920x1080"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:708
+msgid "<b>Screen Size</b>"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:726
+msgid "Thousands (16-bit)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:727
+msgid "Millions (32-bit)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:734
+msgid "<b>Number of colors</b>"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:762
+#: ../gtk-gui/MainWindow.cs:791
+msgid "2x"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:763
+#: ../gtk-gui/MainWindow.cs:792
+msgid "4x"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:764
+#: ../gtk-gui/MainWindow.cs:793
+msgid "8x"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:765
+#: ../gtk-gui/MainWindow.cs:794
+msgid "16x"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:773
+msgid "<b>Edge Smoothing</b> "
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:802
+msgid "<b>Surface Detail</b>"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:832
+msgid "Run In A Window (window)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:844
+msgid "Show the number of frames per second (fps)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:856
+msgid "Keep the frame rate up (no_vsync)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:867
+msgid "Don't check this (nohtl)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:879
+msgid "Or this (no_set_gamma)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:890
+msgid "Only check this if GLSL  doesn't work (no_glsl)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:901
+msgid "Prevent window grabbing in Unix (nograb)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:913
+#: ../gtk-gui/MainWindow.cs:1779
+msgid "<b>Other Stuff</b>"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:927
+msgid "Video"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:947
+msgid "Enable shiny ships (spec)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:959
+msgid "Make the windows reflect space (env)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:971
+msgid "Makes the ships glow in all the right places (glow)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:983
+msgid "Makes the missiles look more realistic (missile_lighting)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:994
+msgid "Makes ships explode with a 3D shockwave (3dshockwave)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1006
+msgid "Make the warp-out look cooler (3dwarp)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1018
+msgid "Show 3D models when picking your ship (ship_choice_3d)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1029
+msgid "Show 3D models when picking missiles (weapon_choice_3d)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1040
+msgid "Add more detail to ship surfaces (normal)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1052
+msgid "Add even more detail to ship surfaces (height)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1064
+msgid "Get rid of space junk flying past your ship (nomotiondebris)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1076
+msgid "Disable stretching videos to fill the screen (noscalevid)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1088
+msgid "Disable all the awesome videos (nomovies)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1104
+msgid "Graphics"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1124
+msgid "Prevent stuttering in-game (snd_preload)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1135
+msgid "Disable the awesome music :( (nomusic)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1147
+msgid "Disable all sound :(( (nosound)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1163
+msgid "Audio"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1183
+msgid "Add 2 more lines to the scanning animation (dualscanlines)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1195
+msgid "Display target info next to the target! Brilliant! (targetinfo)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1207
+msgid "Use a 3D radar instead of a 2D one (orbradar)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1219
+msgid "Add a gauge for ammo-based weapons (ballistic_gauge)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1230
+msgid "Show how long until a rearm finishes (rearm_timer)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1245
+msgid "HUD"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1267
+msgid "<b>MOD</b> - Play something new! Or don't!"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1303
+msgid "Enable Babylon Project Features"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1315
+msgid "Enable Wing Commander Saga Features"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1329
+msgid "Mods"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1361
+msgid "Just click the Launch! button below to start playing!"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1371
+msgid "<b>You're all set to go!</b>"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1395
+msgid "fs2_open Homepage"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1405
+msgid "Freespace Wiki"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1415
+msgid "<b>Click these buttons to learn more about fs2_open!</b>"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1434
+msgid "They are for advanced users"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1439
+msgid "<b>The tabs below this one don't have explanations</b>"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1453
+msgid "Done!"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1480
+msgid "Ambient Factor"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1509
+msgid "No Emissive Light"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1525
+msgid "Specularity Exp(ansion?)"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1558
+msgid "Specularity Point"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1592
+msgid "Specularity Static"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1626
+msgid "Specularity Tube"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1660
+msgid "OpenGL Specularity"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1689
+msgid "<b>Lighting</b>"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1717
+msgid "Clipping Distance"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1749
+msgid "Field Of View"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1793
+msgid "Graphics 2"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1804
+msgid "Start Standalone Server"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1816
+msgid "Immediately Start Server"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1844
+msgid "Closed"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1854
+msgid "Restricted"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1864
+msgid "Multilog"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1874
+msgid "MPNoReturn"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1893
+msgid "Game Name"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1923
+msgid "Password"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1954
+msgid "Minimum Rank"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:1986
+msgid "Maximum Rank"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2018
+msgid "Port"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2050
+msgid "Timeout"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2083
+msgid "Connect"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2112
+msgid "Cap Object Update"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2140
+msgid "<b>Server Options</b>"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2154
+msgid "Server"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2166
+msgid "Show camera coordinates"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2178
+msgid "Show mouse coordinates"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2190
+msgid "Show a timer bar at the top of the screen"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2202
+msgid "Show memory statistics"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2214
+msgid "Show really detailed memory statistics"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2226
+msgid "POF Spew"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2238
+msgid "Table CRCs"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2250
+msgid "Mission CRCs"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2262
+msgid "Disable Collisions"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2274
+msgid "Disable Weapons Rendering"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2286
+msgid "Output SEXPs"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2298
+msgid "Output Scripting"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2312
+msgid "Dev"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2324
+msgid "Convert images to DDS"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2336
+msgid "Cache Bitmaps"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2348
+msgid "No Autopilot Interrupt"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2360
+msgid "No Parse Errors"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2372
+msgid "Safe Loading"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2384
+msgid "Disable OpenGL VBO"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2396
+msgid "Disable IBX Caching"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2408
+msgid "Load All Weapons"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2422
+msgid "Other"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2446
+msgid "<b>Switches!</b>"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2473
+msgid "Cancel"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2499
+msgid "Apply"
+msgstr ""
+
+#: ../gtk-gui/MainWindow.cs:2526
+msgid ""
+"Launch!\n"
+"Wooosh!"
+msgstr ""
+

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec mono "/usr/lib/fs2open-sharp-launcher/fs2open-sharp-launcher.exe" "$@"
