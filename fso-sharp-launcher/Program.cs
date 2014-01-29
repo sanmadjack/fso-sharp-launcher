@@ -1,12 +1,9 @@
 using System;
 using Gtk;
 
-namespace fs2_openLauncher
-{
-	class MainClass
-	{
-		public static void Main (string[] args)
-		{
+namespace fsosharplauncher {
+	class MainClass {
+		public static void Main (string[] args) {
 			Application.Init ();
 			MainWindow win = new MainWindow ();
 			win.Show ();
