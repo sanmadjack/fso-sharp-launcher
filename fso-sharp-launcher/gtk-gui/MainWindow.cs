@@ -301,7 +301,7 @@ public partial class MainWindow
 		this.notebook1 = new global::Gtk.Notebook ();
 		this.notebook1.CanFocus = true;
 		this.notebook1.Name = "notebook1";
-		this.notebook1.CurrentPage = 8;
+		this.notebook1.CurrentPage = 0;
 		this.notebook1.TabPos = ((global::Gtk.PositionType)(0));
 		// Container child notebook1.Gtk.Notebook+NotebookChild
 		this.vbox22 = new global::Gtk.VBox ();
@@ -320,7 +320,7 @@ public partial class MainWindow
 		// Container child vbox22.Gtk.Box+BoxChild
 		this.label24 = new global::Gtk.Label ();
 		this.label24.Name = "label24";
-		this.label24.LabelProp = global::Mono.Unix.Catalog.GetString ("<b>fs2_open!</b>\nBefore the launching the game, \nsome settings should be set!");
+		this.label24.LabelProp = global::Mono.Unix.Catalog.GetString ("<b>fs2_open!</b>\r\nBefore the launching the game, \r\nsome settings should be set!");
 		this.label24.UseMarkup = true;
 		this.label24.Justify = ((global::Gtk.Justification)(2));
 		this.vbox22.Add (this.label24);
@@ -543,16 +543,16 @@ public partial class MainWindow
 		this.GtkAlignment9.LeftPadding = ((uint)(12));
 		// Container child GtkAlignment9.Gtk.Container+ContainerChild
 		this.comboResolution = global::Gtk.ComboBoxEntry.NewText ();
-		this.comboResolution.AppendText (global::Mono.Unix.Catalog.GetString ("640x480"));
-		this.comboResolution.AppendText (global::Mono.Unix.Catalog.GetString ("800x600"));
-		this.comboResolution.AppendText (global::Mono.Unix.Catalog.GetString ("1024x768"));
-		this.comboResolution.AppendText (global::Mono.Unix.Catalog.GetString ("1152x768"));
-		this.comboResolution.AppendText (global::Mono.Unix.Catalog.GetString ("1280x720"));
-		this.comboResolution.AppendText (global::Mono.Unix.Catalog.GetString ("1280x960"));
-		this.comboResolution.AppendText (global::Mono.Unix.Catalog.GetString ("1280x1024"));
-		this.comboResolution.AppendText (global::Mono.Unix.Catalog.GetString ("1366x768"));
-		this.comboResolution.AppendText (global::Mono.Unix.Catalog.GetString ("1440x900"));
-		this.comboResolution.AppendText (global::Mono.Unix.Catalog.GetString ("1600x1200"));
+		this.comboResolution.AppendText (global::Mono.Unix.Catalog.GetString ("640x480\r"));
+		this.comboResolution.AppendText (global::Mono.Unix.Catalog.GetString ("800x600\r"));
+		this.comboResolution.AppendText (global::Mono.Unix.Catalog.GetString ("1024x768\r"));
+		this.comboResolution.AppendText (global::Mono.Unix.Catalog.GetString ("1152x768\r"));
+		this.comboResolution.AppendText (global::Mono.Unix.Catalog.GetString ("1280x720\r"));
+		this.comboResolution.AppendText (global::Mono.Unix.Catalog.GetString ("1280x960\r"));
+		this.comboResolution.AppendText (global::Mono.Unix.Catalog.GetString ("1280x1024\r"));
+		this.comboResolution.AppendText (global::Mono.Unix.Catalog.GetString ("1366x768\r"));
+		this.comboResolution.AppendText (global::Mono.Unix.Catalog.GetString ("1440x900\r"));
+		this.comboResolution.AppendText (global::Mono.Unix.Catalog.GetString ("1600x1200\r"));
 		this.comboResolution.AppendText (global::Mono.Unix.Catalog.GetString ("1920x1080"));
 		this.comboResolution.Name = "comboResolution";
 		this.comboResolution.Active = 0;
@@ -578,7 +578,7 @@ public partial class MainWindow
 		this.GtkAlignment22.LeftPadding = ((uint)(12));
 		// Container child GtkAlignment22.Gtk.Container+ContainerChild
 		this.comboColorDepth = global::Gtk.ComboBox.NewText ();
-		this.comboColorDepth.AppendText (global::Mono.Unix.Catalog.GetString ("Thousands (16-bit)"));
+		this.comboColorDepth.AppendText (global::Mono.Unix.Catalog.GetString ("Thousands (16-bit)\r"));
 		this.comboColorDepth.AppendText (global::Mono.Unix.Catalog.GetString ("Millions (32-bit)"));
 		this.comboColorDepth.Name = "comboColorDepth";
 		this.comboColorDepth.Active = 0;
@@ -614,10 +614,10 @@ public partial class MainWindow
 		this.GtkAlignment20.LeftPadding = ((uint)(12));
 		// Container child GtkAlignment20.Gtk.Container+ContainerChild
 		this.comboAA = global::Gtk.ComboBox.NewText ();
-		this.comboAA.AppendText (global::Mono.Unix.Catalog.GetString ("None"));
-		this.comboAA.AppendText (global::Mono.Unix.Catalog.GetString ("2x"));
-		this.comboAA.AppendText (global::Mono.Unix.Catalog.GetString ("4x"));
-		this.comboAA.AppendText (global::Mono.Unix.Catalog.GetString ("8x"));
+		this.comboAA.AppendText (global::Mono.Unix.Catalog.GetString ("None\r"));
+		this.comboAA.AppendText (global::Mono.Unix.Catalog.GetString ("2x\r"));
+		this.comboAA.AppendText (global::Mono.Unix.Catalog.GetString ("4x\r"));
+		this.comboAA.AppendText (global::Mono.Unix.Catalog.GetString ("8x\r"));
 		this.comboAA.AppendText (global::Mono.Unix.Catalog.GetString ("16x"));
 		this.comboAA.Name = "comboAA";
 		this.comboAA.Active = 0;
@@ -643,11 +643,11 @@ public partial class MainWindow
 		this.GtkAlignment19.LeftPadding = ((uint)(12));
 		// Container child GtkAlignment19.Gtk.Container+ContainerChild
 		this.comboAF = global::Gtk.ComboBox.NewText ();
-		this.comboAF.AppendText (global::Mono.Unix.Catalog.GetString ("Bilinear"));
-		this.comboAF.AppendText (global::Mono.Unix.Catalog.GetString ("Trilinear"));
-		this.comboAF.AppendText (global::Mono.Unix.Catalog.GetString ("2x"));
-		this.comboAF.AppendText (global::Mono.Unix.Catalog.GetString ("4x"));
-		this.comboAF.AppendText (global::Mono.Unix.Catalog.GetString ("8x"));
+		this.comboAF.AppendText (global::Mono.Unix.Catalog.GetString ("Bilinear\r"));
+		this.comboAF.AppendText (global::Mono.Unix.Catalog.GetString ("Trilinear\r"));
+		this.comboAF.AppendText (global::Mono.Unix.Catalog.GetString ("2x\r"));
+		this.comboAF.AppendText (global::Mono.Unix.Catalog.GetString ("4x\r"));
+		this.comboAF.AppendText (global::Mono.Unix.Catalog.GetString ("8x\r"));
 		this.comboAF.AppendText (global::Mono.Unix.Catalog.GetString ("16x"));
 		this.comboAF.Name = "comboAF";
 		this.comboAF.Active = 0;
@@ -678,9 +678,9 @@ public partial class MainWindow
 		this.GtkAlignment10.LeftPadding = ((uint)(12));
 		// Container child GtkAlignment10.Gtk.Container+ContainerChild
 		this.generalGraphicsCombo = global::Gtk.ComboBox.NewText ();
-		this.generalGraphicsCombo.AppendText (global::Mono.Unix.Catalog.GetString ("Terrible"));
-		this.generalGraphicsCombo.AppendText (global::Mono.Unix.Catalog.GetString ("Low"));
-		this.generalGraphicsCombo.AppendText (global::Mono.Unix.Catalog.GetString ("Medium"));
+		this.generalGraphicsCombo.AppendText (global::Mono.Unix.Catalog.GetString ("Terrible\r"));
+		this.generalGraphicsCombo.AppendText (global::Mono.Unix.Catalog.GetString ("Low\r"));
+		this.generalGraphicsCombo.AppendText (global::Mono.Unix.Catalog.GetString ("Medium\r"));
 		this.generalGraphicsCombo.AppendText (global::Mono.Unix.Catalog.GetString ("High"));
 		this.generalGraphicsCombo.Name = "generalGraphicsCombo";
 		this.generalGraphicsCombo.Active = 3;
@@ -1278,7 +1278,7 @@ public partial class MainWindow
 		this.GtkAlignment36.LeftPadding = ((uint)(12));
 		// Container child GtkAlignment36.Gtk.Container+ContainerChild
 		this.joystickCombo = global::Gtk.ComboBox.NewText ();
-		this.joystickCombo.AppendText (global::Mono.Unix.Catalog.GetString ("None"));
+		this.joystickCombo.AppendText (global::Mono.Unix.Catalog.GetString ("None\r"));
 		this.joystickCombo.AppendText (global::Mono.Unix.Catalog.GetString ("Whatever was connected first"));
 		this.joystickCombo.Name = "joystickCombo";
 		this.joystickCombo.Active = 1;
@@ -1342,8 +1342,8 @@ public partial class MainWindow
 		this.GtkAlignment30.LeftPadding = ((uint)(12));
 		// Container child GtkAlignment30.Gtk.Container+ContainerChild
 		this.connectionTypeCombo = global::Gtk.ComboBox.NewText ();
-		this.connectionTypeCombo.AppendText (global::Mono.Unix.Catalog.GetString ("None"));
-		this.connectionTypeCombo.AppendText (global::Mono.Unix.Catalog.GetString ("Dialup"));
+		this.connectionTypeCombo.AppendText (global::Mono.Unix.Catalog.GetString ("None\r"));
+		this.connectionTypeCombo.AppendText (global::Mono.Unix.Catalog.GetString ("Dialup\r"));
 		this.connectionTypeCombo.AppendText (global::Mono.Unix.Catalog.GetString ("LAN, DSL, Cable or some other really good kind"));
 		this.connectionTypeCombo.Name = "connectionTypeCombo";
 		this.connectionTypeCombo.Active = 0;
@@ -1369,11 +1369,11 @@ public partial class MainWindow
 		this.GtkAlignment31.LeftPadding = ((uint)(12));
 		// Container child GtkAlignment31.Gtk.Container+ContainerChild
 		this.connectionSpeedCombo = global::Gtk.ComboBox.NewText ();
-		this.connectionSpeedCombo.AppendText (global::Mono.Unix.Catalog.GetString ("I don\'t know"));
-		this.connectionSpeedCombo.AppendText (global::Mono.Unix.Catalog.GetString ("Slower than 56Kbps"));
-		this.connectionSpeedCombo.AppendText (global::Mono.Unix.Catalog.GetString ("56Kbps"));
-		this.connectionSpeedCombo.AppendText (global::Mono.Unix.Catalog.GetString ("64Kbps"));
-		this.connectionSpeedCombo.AppendText (global::Mono.Unix.Catalog.GetString ("128Kbps"));
+		this.connectionSpeedCombo.AppendText (global::Mono.Unix.Catalog.GetString ("I don\'t know\r"));
+		this.connectionSpeedCombo.AppendText (global::Mono.Unix.Catalog.GetString ("Slower than 56Kbps\r"));
+		this.connectionSpeedCombo.AppendText (global::Mono.Unix.Catalog.GetString ("56Kbps\r"));
+		this.connectionSpeedCombo.AppendText (global::Mono.Unix.Catalog.GetString ("64Kbps\r"));
+		this.connectionSpeedCombo.AppendText (global::Mono.Unix.Catalog.GetString ("128Kbps\r"));
 		this.connectionSpeedCombo.AppendText (global::Mono.Unix.Catalog.GetString ("Greater than 128Kbps"));
 		this.connectionSpeedCombo.Name = "connectionSpeedCombo";
 		this.connectionSpeedCombo.Active = 0;

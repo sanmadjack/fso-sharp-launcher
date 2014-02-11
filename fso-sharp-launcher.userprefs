@@ -1,13 +1,21 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="e:\GIT\fso-sharp-launcher\fso-sharp-launcher\gtk-gui\MainWindow.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="fso-sharp-launcher\MainWindow.cs">
     <Files>
-      <File FileName="e:\GIT\fso-sharp-launcher\fso-sharp-launcher\gtk-gui\MainWindow.cs" Line="1431" Column="68" />
-      <File FileName="fso-sharp-launcher\MainWindow.cs" Line="344" Column="23" />
+      <File FileName="fso-sharp-launcher\MainWindow.cs" Line="20" Column="49" />
+      <File FileName="fso-sharp-launcher\Display\Resolution.cs" Line="22" Column="30" />
+      <File FileName="fso-sharp-launcher\gtk-gui\gui.stetic" Line="16" Column="57" />
+      <File FileName="fso-sharp-launcher\switchManager.cs" Line="8" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="E:\GIT\fsolauncher\fso-sharp-launcher\Display\Resolution.cs" line="29" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="fso-sharp-launcher\MainWindow.cs" line="341" offsetX="571" offsetY="5440" expression="res" liveUpdate="False" />
+    <Watch file="fso-sharp-launcher\MainWindow.cs" line="341" offsetX="571" offsetY="5440" expression="display.AvailableResolutions" liveUpdate="False" />
+    <Watch file="fso-sharp-launcher\Display\Resolution.cs" line="6" offsetX="473" offsetY="80" expression="new_res" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
 </Properties>

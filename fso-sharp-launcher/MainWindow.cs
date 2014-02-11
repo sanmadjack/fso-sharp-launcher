@@ -4,6 +4,8 @@ using System.Threading;
 using Gtk;
 using Gdk;
 using System.Diagnostics;
+using System.Collections.Generic;
+using OpenTK;
 using fsosharplauncher;
 
 public partial class MainWindow: Gtk.Window {
@@ -15,7 +17,7 @@ public partial class MainWindow: Gtk.Window {
 	private iniHandler launcherIni;
 	// Loads up data on all the available mods
 	private modManager mods;
-	// Holds the current states of all the switches, up to 256 of them
+	// Holds the current states of all the switches
 	private switchManager switches;
 	// Gets the name of the user's OS
 	private OperatingSystemType OS;
@@ -47,6 +49,11 @@ public partial class MainWindow: Gtk.Window {
 			home_path = "/home/sanmadjack/";
 			speechFrame.Visible = false;
 		}
+
+		LoadAvailableGraphicSettings ();
+
+		comboResolution.Model = available_res;
+
 
 		launcherIni = new iniHandler (home_path + System.IO.Path.DirectorySeparatorChar + ".fs2_open" + System.IO.Path.DirectorySeparatorChar + "launcher.ini");
 
@@ -330,6 +337,17 @@ public partial class MainWindow: Gtk.Window {
 			mod_argument = " -mod " + mod_list.Trim (',');
 		}
 		return switches.output_settings ().Trim () + " " + entryCustom.Text.Trim () + mod_argument;
+	}
+
+	private Resolutions available_res;
+
+	private void LoadAvailableGraphicSettings() {
+		DisplayDevice display = DisplayDevice.GetDisplay (0);
+		available_res = new Resolutions ();
+
+		foreach (DisplayResolution res in display.AvailableResolutions) {
+			available_res.Add (res);
+		}
 	}
 
 	protected virtual void launch_game () {

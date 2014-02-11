@@ -5,7 +5,6 @@ using System.Collections.Generic;
 namespace fsosharplauncher {
 	public class switchManager {
 		public Dictionary<string,string> settings = new Dictionary<string,string> ();
-		//	private string[] settings = new string[256];
 		public switchManager () {
 		}
 

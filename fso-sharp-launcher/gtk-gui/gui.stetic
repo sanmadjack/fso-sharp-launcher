@@ -5,8 +5,8 @@
     <target-gtk-version>2.12</target-gtk-version>
   </configuration>
   <import>
-    <widget-library name="../bin/Debug/fso-sharp-launcher.exe" internal="true" />
     <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <widget-library name="../bin/Debug/fso-sharp-launcher.exe" internal="true" />
   </import>
   <widget class="Gtk.Window" id="MainWindow" design-size="513 533">
     <property name="MemberName" />
@@ -22,7 +22,7 @@
           <widget class="Gtk.Notebook" id="notebook1">
             <property name="MemberName" />
             <property name="CanFocus">True</property>
-            <property name="CurrentPage">0</property>
+            <property name="CurrentPage">2</property>
             <property name="TabPos">Left</property>
             <child>
               <widget class="Gtk.VBox" id="vbox22">
@@ -353,18 +353,7 @@ some settings should be set!</property>
                               <widget class="Gtk.ComboBoxEntry" id="comboResolution">
                                 <property name="MemberName" />
                                 <property name="IsTextCombo">True</property>
-                                <property name="Items" translatable="yes">640x480
-800x600
-1024x768
-1152x768
-1280x720
-1280x960
-1280x1024
-1366x768
-1440x900
-1600x1200
-1920x1080</property>
-                                <property name="Active">0</property>
+                                <property name="Items" />
                               </widget>
                             </child>
                           </widget>
